@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 598a6b979c89d0946a8dad1bd0f1e68e, type: 3}
+  m_Name: AppleTree
+  m_EditorClassIdentifier: Assembly-CSharp::MiniFazendinha.FruitTrees.FruitTreeDefinition
+  identifier: apple-tree
+  displayName: Macieira
+  modelPrefab: {fileID: 919132149155446097, guid: 264792b0ad4060645b40b013983da8f0, type: 3}
+  fruit: {fileID: 11400000, guid: 0a563bcce7d04ad4980f6126214a081e, type: 2}
+  growthSeconds: 45
+  productionSeconds: 34
+  yieldAmount: 3
+  matureScale: 1
+  spacingRadius: 1.3

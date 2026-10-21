@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 217036d7de3ceb04bb128ac87bc396f8, type: 3}
+  m_Name: Chicken
+  m_EditorClassIdentifier: Assembly-CSharp::MiniFazendinha.Animals.AnimalDefinition
+  identifier: chicken
+  displayName: Galinha
+  visualPrefab: {fileID: 1828292505832119840, guid: c1675e0dfcc8b3044aa5ce6899e85aff, type: 3}
+  animatorController: {fileID: 9100000, guid: 0b3a6757b18a358418a2f4f095fc5170, type: 2}
+  product: {fileID: 11400000, guid: 72defa4fad7dcbe4ba3444706affa39b, type: 2}
+  productYield: 1
+  productionSeconds: 28
+  walkSpeed: 0.9
+  bodyRadius: 0.4
+  separationRadius: 0.92
+  visualScale: 1
+  idleSecondsMin: 2.5
+  idleSecondsMax: 6
+  restChance: 0.18
+  careChance: 0.26
+  fedProductionMultiplier: 1.4
+  fedForSeconds: 55
+  idleState: Idle
+  walkState: Walk
+  eatingState: Eating

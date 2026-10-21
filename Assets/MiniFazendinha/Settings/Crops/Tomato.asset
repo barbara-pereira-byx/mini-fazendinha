@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5e9e380bd5404640abce8bf8d42fc01, type: 3}
+  m_Name: Tomato
+  m_EditorClassIdentifier: Assembly-CSharp::MiniFazendinha.Planting.CropDefinition
+  identifier: tomate
+  displayName: Tomate
+  icon: {fileID: 0}
+  growthSeconds: 24
+  yieldAmount: 3
+  accentColor: {r: 0.86, g: 0.2, b: 0.16, a: 1}
+  growingVisual:
+    prefab: {fileID: 4271003121100568098, guid: 8b8767401a3e5084b8e0439dac36bfac, type: 3}
+    materialOverride: {fileID: 0}
+    eulerAngles: {x: 0, y: 0, z: 0}
+    scale: {x: 0.42, y: 0.42, z: 0.42}
+  intermediateVisual:
+    prefab: {fileID: 4271003121100568098, guid: 8b8767401a3e5084b8e0439dac36bfac, type: 3}
+    materialOverride: {fileID: 0}
+    eulerAngles: {x: 0, y: 0, z: 0}
+    scale: {x: 0.7, y: 0.7, z: 0.7}
+  matureVisual:
+    prefab: {fileID: 4271003121100568098, guid: 8b8767401a3e5084b8e0439dac36bfac, type: 3}
+    materialOverride: {fileID: 0}
+    eulerAngles: {x: 0, y: 0, z: 0}
+    scale: {x: 1, y: 1, z: 1}
+  visualRows: 3
+  visualSpacing: 0.47
+  visualNotes: Voxel Farm FBX model composed as repeated low-poly plants; same source silhouette in three size stages as a documented prototype until separate growth meshes are authored.

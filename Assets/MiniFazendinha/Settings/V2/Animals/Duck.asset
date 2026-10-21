@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 217036d7de3ceb04bb128ac87bc396f8, type: 3}
+  m_Name: Duck
+  m_EditorClassIdentifier: Assembly-CSharp::MiniFazendinha.Animals.AnimalDefinition
+  identifier: duck
+  displayName: Pato
+  visualPrefab: {fileID: 5228452249538409115, guid: bc01cf4f1dc043149a5d387eadaa3415, type: 3}
+  animatorController: {fileID: 9100000, guid: 04b1bde322422ab40bf40a88b379c2f9, type: 2}
+  product: {fileID: 0}
+  productYield: 0
+  productionSeconds: 33
+  walkSpeed: 0.65
+  bodyRadius: 0.38
+  separationRadius: 0.87399995
+  visualScale: 1
+  idleSecondsMin: 2.5
+  idleSecondsMax: 6
+  restChance: 0.18
+  careChance: 0.26
+  fedProductionMultiplier: 1.4
+  fedForSeconds: 55
+  idleState: Idle
+  walkState: Walk
+  eatingState: Idle

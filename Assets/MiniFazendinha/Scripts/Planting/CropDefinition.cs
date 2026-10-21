@@ -11,11 +11,10 @@ namespace MiniFazendinha.Planting
         public Vector3 eulerAngles;
         public Vector3 scale = Vector3.one;
     }
+
     [CreateAssetMenu(fileName="Crop", menuName="MiniFazendinha/Crop Definition")]
-    public sealed class CropDefinition : ScriptableObject
+    public sealed class CropDefinition : InventoryItemDefinition
     {
-        [SerializeField] string identifier;
-        [SerializeField] string displayName;
         [SerializeField, Min(0.1f)] float growthSeconds;
         [SerializeField, Min(1)] int yieldAmount = 3;
         [SerializeField] Color accentColor = Color.green;
@@ -25,8 +24,7 @@ namespace MiniFazendinha.Planting
         [SerializeField, Range(1,5)] int visualRows = 3;
         [SerializeField, Min(0.1f)] float visualSpacing = 1.2f;
         [SerializeField, TextArea] string visualNotes;
-        public string Identifier => identifier;
-        public string DisplayName => displayName;
+
         public float GrowthSeconds => growthSeconds;
         public int YieldAmount => yieldAmount;
         public Color AccentColor => accentColor;
@@ -35,6 +33,7 @@ namespace MiniFazendinha.Planting
         public CropVisualDefinition MatureVisual => matureVisual;
         public int VisualRows => visualRows;
         public float VisualSpacing => visualSpacing;
-        public bool IsValid => !string.IsNullOrWhiteSpace(identifier) && !string.IsNullOrWhiteSpace(displayName) && growthSeconds>0 && !float.IsNaN(growthSeconds) && !float.IsInfinity(growthSeconds) && yieldAmount>0;
+        public override bool IsValid => base.IsValid && growthSeconds > 0 && !float.IsNaN(growthSeconds) &&
+            !float.IsInfinity(growthSeconds) && yieldAmount > 0;
     }
 }
