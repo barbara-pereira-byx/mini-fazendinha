@@ -1,0 +1,61 @@
+CONTEXT UX PLAY MODE TESTS
+Real queued Input System mouse/keyboard events plus deterministic model fixtures. Durations/assets unchanged.
+PASS: Fresh scene: 12 plots; warehouse and contextual menu closed
+PASS: Sickle hidden when no harvest is ready
+PASS: Warehouse button opens animated panel without moving camera
+PASS: Warehouse X closes panel
+PASS: World click closes warehouse
+PASS: Empty plot click opens anchored seed choices without accidental planting
+PASS: Empty contextual menu never offers sickle
+PASS: Context X closes panel
+PASS: Context seed choice plants origin exactly once and keeps tool active
+PASS: Real fast left drag paints only 3 crossed plots and does not pan camera
+PASS: Growing context shows crop/time/progress without sickle
+PASS: Real Escape closes context and cancels tool
+PASS: Opening warehouse closes previous plot context
+PASS: Real Escape closes warehouse
+PASS: Each data-defined crop works in any of 12 plots: carrot
+PASS: Each data-defined crop works in any of 12 plots: corn
+PASS: Each data-defined crop works in any of 12 plots: wheat
+PASS: Stroke begins on a valid plot
+PASS: Single plot path plants one
+PASS: Stroke begins on a valid plot
+PASS: 3 plot fast path plants three
+PASS: Stroke begins on a valid plot
+PASS: 5 plot path excludes untraversed neighbors
+PASS: Stroke begins on a valid plot
+PASS: 12 plot snake path plants all crossed plots
+PASS: Stroke begins on a valid plot
+PASS: Backtracking never consumes twice
+PASS: Stroke begins on a valid plot
+PASS: Insufficient seeds stop new plantings at zero
+PASS: Stroke begins on a valid plot
+PASS: Occupied crop preserved without spending a selected seed
+PASS: Tool switch cancels old gesture
+PASS: Focus loss cancels gesture
+PASS: Mature context offers sickle
+PASS: Context sickle harvests origin with configured quantity
+PASS: Real harvest drag skips growing plots
+PASS: Stroke begins on a valid plot
+PASS: Mass harvest credits mixed crops and leaves growing plants
+PASS: Stroke begins on a valid plot
+PASS: Repeated mass harvest cannot duplicate products
+PASS: Sickle disappears and harvest mode ends when no crop is ready
+PASS: Drag beginning over UI cannot paint after entering field
+PASS: Right drag pans independently of selected planting tool
+PASS: Left drag on empty terrain pans without planting
+PASS: Mouse release stops navigation
+PASS: Normalized scroll=1 changes zoom visibly and preserves cursor ground region
+PASS: Camera remains orthographic
+PASS: Minimum zoom clamps
+PASS: Maximum zoom clamps
+PASS: Navigation limits keep center near playable area
+PASS: Scroll over UI zooms Game camera while warehouse and button remain visible
+PASS: Normalized negative scroll visibly zooms out
+PASS: Context menus clamp to screen edges for all four field corners
+PASS: Context follows zoom while retaining fixed canvas size
+PASS: Warehouse never displays a sickle, even when crops are ready
+PASS: 12 original colliders and single EventSystem retained
+RESULT: PASS
+
+FINISHED

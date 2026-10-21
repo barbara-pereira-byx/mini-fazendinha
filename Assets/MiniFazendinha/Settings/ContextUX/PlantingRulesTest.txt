@@ -1,0 +1,44 @@
+UNIFIED CROP STOCK BUSINESS TESTS
+PASS: Three valid crop assets
+PASS: Unique identifiers
+PASS: 20/35/50 second assets unchanged
+PASS: Starts with 12 resources: carrot
+PASS: Planting spends one from unified stock
+PASS: Double planting cannot spend twice
+PASS: Early harvest leaves stock unchanged
+PASS: Halfway progress uses configured duration
+PASS: Ready at configured deadline
+PASS: Harvest adds 3 to same balance: 12 -> 11 -> 14
+PASS: Duplicate harvest cannot increase stock
+PASS: Harvested resources can immediately be replanted
+PASS: Zero stock rejects planting without negatives
+PASS: One resource grows into enough stock to plant three plots
+PASS: Overflow cannot destroy crop or corrupt stock
+PASS: Starts with 12 resources: corn
+PASS: Planting spends one from unified stock
+PASS: Double planting cannot spend twice
+PASS: Early harvest leaves stock unchanged
+PASS: Halfway progress uses configured duration
+PASS: Ready at configured deadline
+PASS: Harvest adds 3 to same balance: 12 -> 11 -> 14
+PASS: Duplicate harvest cannot increase stock
+PASS: Harvested resources can immediately be replanted
+PASS: Zero stock rejects planting without negatives
+PASS: One resource grows into enough stock to plant three plots
+PASS: Overflow cannot destroy crop or corrupt stock
+PASS: Starts with 12 resources: wheat
+PASS: Planting spends one from unified stock
+PASS: Double planting cannot spend twice
+PASS: Early harvest leaves stock unchanged
+PASS: Halfway progress uses configured duration
+PASS: Ready at configured deadline
+PASS: Harvest adds 3 to same balance: 12 -> 11 -> 14
+PASS: Duplicate harvest cannot increase stock
+PASS: Harvested resources can immediately be replanted
+PASS: Zero stock rejects planting without negatives
+PASS: One resource grows into enough stock to plant three plots
+PASS: Overflow cannot destroy crop or corrupt stock
+PASS: Reentrant planting cannot spend twice
+PASS: Reentrant harvesting cannot credit twice
+PASS: Fourth data-only crop uses configured yield without new logic
+RESULT: PASS

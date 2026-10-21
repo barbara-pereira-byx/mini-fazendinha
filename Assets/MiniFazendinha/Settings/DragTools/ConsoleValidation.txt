@@ -1,0 +1,6 @@
+Final check 2026-10-21 18:03:00 UTC, official Unity CLI, project My project, Unity 6000.6.7f1.
+script recompile_status: completed; failed=false; errors=[]; compilationFailed=false.
+Console ground truth: 0 errors, 0 warnings, 2 logs, compiling=false.
+Pipeline cursor 444 / session a0f96619fd514f56a67619e58157b15d retains historical entries from earlier test failures, guard exceptions and unrelated Unity AI services; it is not the current Console count. Console was not manually cleared. A fresh successful Play Mode session and structural validation followed the test setup corrections.
+One existing obsolete API warning in FarmSceneBuilder may reappear on full recompilation. No new compilation error.
+Play Mode stopped; FarmMain saved with contextual panels initially inactive. Runtime test fixtures were discarded.

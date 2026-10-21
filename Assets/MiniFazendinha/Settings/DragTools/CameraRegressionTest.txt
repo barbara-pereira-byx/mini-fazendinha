@@ -1,0 +1,13 @@
+PASS: Player loop is advancing
+PASS: Maximum zoom clamps correctly
+PASS: Minimum zoom clamps correctly
+PASS: Positive boundary clamps
+PASS: Negative boundary clamps
+PASS: Input System scroll changes zoom
+PASS: Input System right-button drag pans the camera
+PASS: Releasing right button stops panning
+PASS: Portrait viewport retains farm bounds
+PASS: Left drag pans at maximum zoom without planting
+PASS: Releasing left button stops panning
+PASS: Multiple gameplay frames observed
+RESULT: PASS

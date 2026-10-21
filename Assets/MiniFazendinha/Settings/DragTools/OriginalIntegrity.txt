@@ -1,0 +1,7 @@
+Protected files compared: 6887
+Differences: 0
+
+Camera component and Transform serialized blocks identical to checkpoint: True
+FarmPlotModel/FarmInventoryModel/FarmInventory/FarmPlot: 4/4 identical (verified separately).
+Camera script intentionally updated for left/right panning and wide-zoom movement.
+ProjectSettings restored byte-for-byte; temporary runInBackground test flag removed.

@@ -1,0 +1,46 @@
+Scene: Assets/MiniFazendinha/Scenes/FarmMain.unity | dirty=False
+Plots=12
+Canteiro_01 | asset=Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Farm Ranch Pack/Prefabs/Env_FarmLand_03.prefab | position=(-14.70, 0.00, -13.60) | scale=(1.00, 1.00, 1.00)
+ collider=MeshCollider | enabled=True | trigger=False | bounds=Center: (-14.70, 0.30, -13.60), Extents: (2.50, 0.30, 2.50)
+Canteiro_02 | asset=Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Farm Ranch Pack/Prefabs/Env_FarmLand_03.prefab | position=(-9.10, 0.00, -13.60) | scale=(1.00, 1.00, 1.00)
+ collider=MeshCollider | enabled=True | trigger=False | bounds=Center: (-9.10, 0.30, -13.60), Extents: (2.50, 0.30, 2.50)
+Canteiro_03 | asset=Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Farm Ranch Pack/Prefabs/Env_FarmLand_03.prefab | position=(-3.50, 0.00, -13.60) | scale=(1.00, 1.00, 1.00)
+ collider=MeshCollider | enabled=True | trigger=False | bounds=Center: (-3.50, 0.30, -13.60), Extents: (2.50, 0.30, 2.50)
+Canteiro_04 | asset=Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Farm Ranch Pack/Prefabs/Env_FarmLand_03.prefab | position=(2.10, 0.00, -13.60) | scale=(1.00, 1.00, 1.00)
+ collider=MeshCollider | enabled=True | trigger=False | bounds=Center: (2.10, 0.30, -13.60), Extents: (2.50, 0.30, 2.50)
+Canteiro_05 | asset=Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Farm Ranch Pack/Prefabs/Env_FarmLand_03.prefab | position=(-14.70, 0.00, -8.00) | scale=(1.00, 1.00, 1.00)
+ collider=MeshCollider | enabled=True | trigger=False | bounds=Center: (-14.70, 0.30, -8.00), Extents: (2.50, 0.30, 2.50)
+Canteiro_06 | asset=Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Farm Ranch Pack/Prefabs/Env_FarmLand_03.prefab | position=(-9.10, 0.00, -8.00) | scale=(1.00, 1.00, 1.00)
+ collider=MeshCollider | enabled=True | trigger=False | bounds=Center: (-9.10, 0.30, -8.00), Extents: (2.50, 0.30, 2.50)
+Canteiro_07 | asset=Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Farm Ranch Pack/Prefabs/Env_FarmLand_03.prefab | position=(-3.50, 0.00, -8.00) | scale=(1.00, 1.00, 1.00)
+ collider=MeshCollider | enabled=True | trigger=False | bounds=Center: (-3.50, 0.30, -8.00), Extents: (2.50, 0.30, 2.50)
+Canteiro_08 | asset=Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Farm Ranch Pack/Prefabs/Env_FarmLand_03.prefab | position=(2.10, 0.00, -8.00) | scale=(1.00, 1.00, 1.00)
+ collider=MeshCollider | enabled=True | trigger=False | bounds=Center: (2.10, 0.30, -8.00), Extents: (2.50, 0.30, 2.50)
+Canteiro_09 | asset=Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Farm Ranch Pack/Prefabs/Env_FarmLand_03.prefab | position=(-14.70, 0.00, -2.40) | scale=(1.00, 1.00, 1.00)
+ collider=MeshCollider | enabled=True | trigger=False | bounds=Center: (-14.70, 0.30, -2.40), Extents: (2.50, 0.30, 2.50)
+Canteiro_10 | asset=Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Farm Ranch Pack/Prefabs/Env_FarmLand_03.prefab | position=(-9.10, 0.00, -2.40) | scale=(1.00, 1.00, 1.00)
+ collider=MeshCollider | enabled=True | trigger=False | bounds=Center: (-9.10, 0.30, -2.40), Extents: (2.50, 0.30, 2.50)
+Canteiro_11 | asset=Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Farm Ranch Pack/Prefabs/Env_FarmLand_03.prefab | position=(-3.50, 0.00, -2.40) | scale=(1.00, 1.00, 1.00)
+ collider=MeshCollider | enabled=True | trigger=False | bounds=Center: (-3.50, 0.30, -2.40), Extents: (2.50, 0.30, 2.50)
+Canteiro_12 | asset=Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Farm Ranch Pack/Prefabs/Env_FarmLand_03.prefab | position=(2.10, 0.00, -2.40) | scale=(1.00, 1.00, 1.00)
+ collider=MeshCollider | enabled=True | trigger=False | bounds=Center: (2.10, 0.30, -2.40), Extents: (2.50, 0.30, 2.50)
+Canvas count=0
+SCRIPT Assets/MiniFazendinha/Scripts/Editor/FarmAssetInspection.cs
+SCRIPT Assets/MiniFazendinha/Scripts/Editor/FarmCameraPlayTest.cs
+SCRIPT Assets/MiniFazendinha/Scripts/Editor/FarmPlantingInspection.cs
+SCRIPT Assets/MiniFazendinha/Scripts/Editor/FarmSceneBuilder.cs
+SCRIPT Assets/MiniFazendinha/Scripts/FarmCameraController.cs
+CROP Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Kitchen Food/Prefabs/Food_Carrot.prefab | size=(0.311, 0.092, 0.077) | center=(-0.022, 0.047, 0.002)
+ MATERIAL Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Kitchen Food/Materials/Panda Mat.mat | shader=Standard
+CROP Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Farm Ranch Pack/Prefabs/Env_GrassPlant_06.prefab | size=(0.360, 0.574, 0.386) | center=(0.096, 0.253, 0.019)
+ MATERIAL Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Farm Ranch Pack/Materials/PandaMat.mat | shader=Standard
+CROP Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Farm Ranch Pack/Prefabs/food_Carrot.prefab | size=(0.103, 0.128, 0.457) | center=(0.010, 0.015, -0.039)
+ MATERIAL Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Farm Ranch Pack/Materials/PandaMat.mat | shader=Standard
+CROP Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Kitchen Food/Prefabs/Food_Carrot Soup.prefab | size=(0.274, 0.213, 0.274) | center=(0.000, 0.106, 0.000)
+ MATERIAL Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Kitchen Food/Materials/Panda Mat.mat | shader=Standard
+CROP Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Kitchen Food/Prefabs/Food_Chopped Carrot.prefab | size=(0.314, 0.085, 0.079) | center=(-0.024, 0.041, 0.003)
+ MATERIAL Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Kitchen Food/Materials/Panda Mat.mat | shader=Standard
+CROP Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Farm Ranch Pack/Prefabs/Env_Wheat.prefab | size=(0.249, 1.321, 0.036) | center=(-0.097, 0.651, 0.000)
+ MATERIAL Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Farm Ranch Pack/Materials/PandaMat.mat | shader=Standard
+CROP Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Kitchen Food/Prefabs/Food_Corn.prefab | size=(0.254, 0.165, 0.166) | center=(0.005, 0.050, -0.002)
+ MATERIAL Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Kitchen Food/Materials/Panda Mat.mat | shader=Standard

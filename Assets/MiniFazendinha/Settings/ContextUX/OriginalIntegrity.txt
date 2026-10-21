@@ -1,0 +1,9 @@
+Final original integrity check, 2026-10-21.
+Protected Pandazole/SampleScene/ProjectSettings/package files compared: 6887
+Differences: 0
+
+Camera component and Transform preserved: True
+FarmMain same GUID, 12 original plots/colliders: scene validation PASS.
+Inventory source deliberately refactored to unified quantities per latest user request.
+Temporary test runInBackground flag restored byte-for-byte to original ProjectSettings.
+No package installed; no GLB imported; Downloads unchanged.

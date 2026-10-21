@@ -1,0 +1,8 @@
+Installed in-place on FarmMain.
+12 FarmPlot + FarmPlotView; original MeshColliders preserved.
+12 seeds per culture, 3 products per harvest.
+Carrot=20s; Corn=35s; Wheat=50s (ScriptableObject assets).
+Static decorative seedlings disabled, not deleted.
+Camera controller unchanged.
+One Canvas, GraphicRaycaster, EventSystem and InputSystemUIInputModule.
+Original Pandazole assets not modified.

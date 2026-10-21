@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5e9e380bd5404640abce8bf8d42fc01, type: 3}
+  m_Name: Corn
+  m_EditorClassIdentifier: Assembly-CSharp::MiniFazendinha.Planting.CropDefinition
+  identifier: corn
+  displayName: Milho
+  growthSeconds: 35
+  yieldAmount: 3
+  accentColor: {r: 0.91, g: 0.72, b: 0.18, a: 1}
+  growingVisual:
+    prefab: {fileID: 1012387932255751141, guid: 6b8c90e899ca2c34ba9b48a9422f09f0, type: 3}
+    materialOverride: {fileID: 0}
+    eulerAngles: {x: 0, y: 0, z: 0}
+    scale: {x: 1, y: 1, z: 1}
+  intermediateVisual:
+    prefab: {fileID: 7605308026078007861, guid: 0ee1b12df88f80b4e8f56b8efd06bda7, type: 3}
+    materialOverride: {fileID: 0}
+    eulerAngles: {x: 0, y: 0, z: 0}
+    scale: {x: 1, y: 1, z: 1}
+  matureVisual:
+    prefab: {fileID: 3949369887560258586, guid: 4255cb8afd2051744ab199d13e72993d, type: 3}
+    materialOverride: {fileID: 0}
+    eulerAngles: {x: 0, y: 0, z: 0}
+    scale: {x: 1, y: 1, z: 1}
+  visualRows: 4
+  visualSpacing: 1.02
+  visualNotes: 'Three composed provisional corn stages: generic leaves, a simple stem and the real Food_Corn cob. No complete corn-stalk prefab exists in the pack. All compositions live under MiniFazendinha, with bounded footprints.'

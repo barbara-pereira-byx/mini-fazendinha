@@ -1,0 +1,33 @@
+FULL PLAY MODE CYCLE: real Input System clicks; timeScale=1; original duration assets
+PASS: Player loop advances
+PASS: Normal time scale, no accelerated growth
+PASS: All twelve plots retain colliders and have views
+PASS: UI button selects corn through Input System
+PASS: Clicking UI does not plant or consume seeds
+PASS: UI raycast blocks plot interaction at the click position
+PASS: UI button selects carrot
+PASS: Real click plants carrot and consumes one seed
+PASS: A second culture cannot occupy a growing plot
+PASS: Growing plot cannot be harvested
+PASS: Repeated click during growth does not change inventory
+PASS: Corn seed selected
+PASS: Real click plants corn
+PASS: Wheat seed selected
+PASS: Real click plants wheat
+PASS: Growing plot exposes progress
+PASS: Natural growth completed for carrot after 20,01 game seconds
+PASS: Natural growth completed for corn after 35,01 game seconds
+PASS: Natural growth completed for wheat after 50,01 game seconds
+PASS: Click harvests carrot even while wheat seed is selected
+PASS: Second harvest cannot duplicate carrot production
+PASS: Click harvests corn
+PASS: Second corn harvest rejected
+PASS: Click harvests wheat
+PASS: Second wheat harvest rejected
+PASS: One seed per initial planting, no extra seed consumption
+PASS: Seed quantity labels update in UI
+PASS: Harvested plot can be replanted with another culture
+PASS: Replanting does not duplicate the previous harvest
+RESULT: PASS
+
+STATE: FINISHED

@@ -1,0 +1,8 @@
+Final official Unity CLI check: 2026-10-21 18:52:05 UTC, Unity 6000.6.7f1, project My project.
+Compilation: completed; failed=false; errors=[]; compilationFailed=false.
+Current Console ground truth: 0 errors, 0 warnings, 2 logs; compiling=false.
+Pipeline cursor1299/session a0f96619fd514f56a67619e58157b15d retains historical entries from migration, Edit Mode guards and interrupted tests. Historical pipeline counts are not current Console counts. No manual Console clearing was performed. Fresh successful test sessions followed those corrections.
+Context UX integrated test: PASS, including normalized scroll +1/-1, scroll over UI, visible warehouse controls, sickle only in mature context and unified inventory.
+Natural Play Mode cycle: PASS; timeScale=1; carrot20.01s, corn35.01s, wheat50.01s. Harvest yielded balances14 for each crop; replant consumed1 wheat leaving13. Legacy wording seed/products in some old assertion descriptions refers to unified crop quantities in this updated test.
+Edit Mode confirmed by native safe finalizer, FarmMain saved, transient test crops discarded. Global background option restored.
+Manual validation remains: physical mouse feel in focused Game View/build and extended sessions. Input tests used synthetic device events.

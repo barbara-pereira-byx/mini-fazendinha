@@ -1,0 +1,17 @@
+Scene: Assets/MiniFazendinha/Scenes/FarmMain.unity | dirty=False
+Prefab instances: 131 | beds=12 | missingScripts=0 | incompatibleMaterials=0
+Original source/settings integrity: PASS | checked=96
+1 x Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Farm Ranch Pack/Prefabs/Bld_Barn_01.prefab
+1 x Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Farm Ranch Pack/Prefabs/Bld_FarmerHouse.prefab
+12 x Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Farm Ranch Pack/Prefabs/Env_FarmLand_03.prefab
+54 x Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Farm Ranch Pack/Prefabs/Env_GrassPlant_06.prefab
+1 x Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Farm Ranch Pack/Prefabs/Env_Well_01.prefab
+15 x Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Farm Ranch Pack/Prefabs/Env_WoodFence_05.prefab
+1 x Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Farm Ranch Pack/Prefabs/Prop_Berrel_03.prefab
+3 x Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Farm Ranch Pack/Prefabs/Prop_Haystack_01.prefab
+1 x Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Farm Ranch Pack/Prefabs/Prop_WateringCan_01.prefab
+1 x Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Farm Ranch Pack/Prefabs/Prop_Wheelbarrow.prefab
+2 x Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Farm Ranch Pack/Prefabs/Prop_WoodenCrates_01.prefab
+12 x Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Bush_04.prefab
+16 x Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Flower_23.prefab
+11 x Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Nature Environment Pack/Prefabs/Tree_02_Spring.prefab

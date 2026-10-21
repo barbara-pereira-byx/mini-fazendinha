@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5e9e380bd5404640abce8bf8d42fc01, type: 3}
+  m_Name: Wheat
+  m_EditorClassIdentifier: Assembly-CSharp::MiniFazendinha.Planting.CropDefinition
+  identifier: wheat
+  displayName: Trigo
+  growthSeconds: 50
+  yieldAmount: 3
+  accentColor: {r: 0.72, g: 0.58, b: 0.22, a: 1}
+  growingVisual:
+    prefab: {fileID: 5538564938367004026, guid: 3fb2ec863f3bcb444b005e11584f072e, type: 3}
+    materialOverride: {fileID: 0}
+    eulerAngles: {x: 0, y: 0, z: 0}
+    scale: {x: 1, y: 1, z: 1}
+  intermediateVisual:
+    prefab: {fileID: 8124332670031937472, guid: d09e2f276f435494fa73675e3bf61a21, type: 3}
+    materialOverride: {fileID: 0}
+    eulerAngles: {x: 0, y: 0, z: 0}
+    scale: {x: 1, y: 1, z: 1}
+  matureVisual:
+    prefab: {fileID: 2196265655536912661, guid: 9815359686ffbac44948f38371434667, type: 3}
+    materialOverride: {fileID: 0}
+    eulerAngles: {x: 0, y: 0, z: 0}
+    scale: {x: 1, y: 1, z: 1}
+  visualRows: 5
+  visualSpacing: 0.78
+  visualNotes: Three composed crop stages using original Pandazole models with bounded per-cell dimensions; original assets unchanged.

@@ -1,0 +1,9 @@
+Assets/MiniFazendinha/Prefabs/Crops/Carrot_Initial.prefab | size=(0.461, 0.350, 0.494) | minY=0,0000
+Assets/MiniFazendinha/Prefabs/Crops/Carrot_Intermediate.prefab | size=(0.597, 0.680, 0.640) | minY=0,0000
+Assets/MiniFazendinha/Prefabs/Crops/Carrot_Mature.prefab | size=(0.662, 1.160, 0.710) | minY=0,0000
+Assets/MiniFazendinha/Prefabs/Crops/Corn_Initial.prefab | size=(0.512, 0.430, 0.549) | minY=0,0000
+Assets/MiniFazendinha/Prefabs/Crops/Corn_Intermediate.prefab | size=(0.696, 1.243, 0.709) | minY=0,0000
+Assets/MiniFazendinha/Prefabs/Crops/Corn_Mature.prefab | size=(0.763, 1.850, 0.650) | minY=0,0000
+Assets/MiniFazendinha/Prefabs/Crops/Wheat_Initial.prefab | size=(0.373, 0.330, 0.373) | minY=0,0000
+Assets/MiniFazendinha/Prefabs/Crops/Wheat_Intermediate.prefab | size=(0.339, 0.900, 0.339) | minY=0,0000
+Assets/MiniFazendinha/Prefabs/Crops/Wheat_Mature.prefab | size=(0.467, 1.550, 0.467) | minY=0,0000

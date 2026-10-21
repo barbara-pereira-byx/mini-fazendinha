@@ -1,0 +1,36 @@
+BUSINESS RULE TESTS
+PASS: All three crop assets are valid
+PASS: Unique crop identifiers
+PASS: Configured 20/35/50 second durations
+PASS: Planting consumes one seed: carrot
+PASS: Double planting rejected: carrot
+PASS: Early harvest rejected: carrot
+PASS: Halfway progress: carrot
+PASS: Exact deadline becomes ready: carrot
+PASS: Harvest yield and reset: carrot
+PASS: Double harvest rejected: carrot
+PASS: Replanting after harvest: carrot
+PASS: No-seed planting rejected without negative stock: carrot
+PASS: Planting consumes one seed: corn
+PASS: Double planting rejected: corn
+PASS: Early harvest rejected: corn
+PASS: Halfway progress: corn
+PASS: Exact deadline becomes ready: corn
+PASS: Harvest yield and reset: corn
+PASS: Double harvest rejected: corn
+PASS: Replanting after harvest: corn
+PASS: No-seed planting rejected without negative stock: corn
+PASS: Planting consumes one seed: wheat
+PASS: Double planting rejected: wheat
+PASS: Early harvest rejected: wheat
+PASS: Halfway progress: wheat
+PASS: Exact deadline becomes ready: wheat
+PASS: Harvest yield and reset: wheat
+PASS: Double harvest rejected: wheat
+PASS: Replanting after harvest: wheat
+PASS: No-seed planting rejected without negative stock: wheat
+PASS: Reentrant inventory callbacks cannot double-plant
+PASS: Reentrant inventory callbacks cannot double-harvest
+PASS: No selection leaves plot empty
+PASS: A fourth data-only crop works without changing logic
+RESULT: PASS

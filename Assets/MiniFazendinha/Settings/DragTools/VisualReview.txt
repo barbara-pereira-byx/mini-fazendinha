@@ -1,0 +1,14 @@
+Direct render of CURRENT Play Mode state; screen-overlay HUD temporarily rendered by the same camera, restored afterwards.
+Orthographic size=23 | tilt=38,37114 | screenshot aspect=1.44
+Canteiro_01 | Growing | crop=carrot | visual stage=0 | plants=16
+Canteiro_02 | Growing | crop=corn | visual stage=0 | plants=16
+Canteiro_03 | Growing | crop=wheat | visual stage=0 | plants=25
+Canteiro_04 | Growing | crop=carrot | visual stage=0 | plants=16
+Canteiro_05 | Growing | crop=corn | visual stage=1 | plants=16
+Canteiro_06 | Growing | crop=wheat | visual stage=1 | plants=25
+Canteiro_07 | Growing | crop=carrot | visual stage=1 | plants=16
+Canteiro_08 | Growing | crop=corn | visual stage=1 | plants=16
+Canteiro_09 | ReadyToHarvest | crop=wheat | visual stage=2 | plants=25
+Canteiro_10 | ReadyToHarvest | crop=carrot | visual stage=2 | plants=16
+Canteiro_11 | ReadyToHarvest | crop=corn | visual stage=2 | plants=16
+Canteiro_12 | ReadyToHarvest | crop=wheat | visual stage=2 | plants=25

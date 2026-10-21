@@ -1,0 +1,23 @@
+PASS: Canteiro_01 | original MeshCollider active | prefab=Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Farm Ranch Pack/Prefabs/Env_FarmLand_03.prefab | Empty | view references valid
+PASS: Canteiro_02 | original MeshCollider active | prefab=Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Farm Ranch Pack/Prefabs/Env_FarmLand_03.prefab | Empty | view references valid
+PASS: Canteiro_03 | original MeshCollider active | prefab=Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Farm Ranch Pack/Prefabs/Env_FarmLand_03.prefab | Empty | view references valid
+PASS: Canteiro_04 | original MeshCollider active | prefab=Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Farm Ranch Pack/Prefabs/Env_FarmLand_03.prefab | Empty | view references valid
+PASS: Canteiro_05 | original MeshCollider active | prefab=Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Farm Ranch Pack/Prefabs/Env_FarmLand_03.prefab | Empty | view references valid
+PASS: Canteiro_06 | original MeshCollider active | prefab=Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Farm Ranch Pack/Prefabs/Env_FarmLand_03.prefab | Empty | view references valid
+PASS: Canteiro_07 | original MeshCollider active | prefab=Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Farm Ranch Pack/Prefabs/Env_FarmLand_03.prefab | Empty | view references valid
+PASS: Canteiro_08 | original MeshCollider active | prefab=Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Farm Ranch Pack/Prefabs/Env_FarmLand_03.prefab | Empty | view references valid
+PASS: Canteiro_09 | original MeshCollider active | prefab=Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Farm Ranch Pack/Prefabs/Env_FarmLand_03.prefab | Empty | view references valid
+PASS: Canteiro_10 | original MeshCollider active | prefab=Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Farm Ranch Pack/Prefabs/Env_FarmLand_03.prefab | Empty | view references valid
+PASS: Canteiro_11 | original MeshCollider active | prefab=Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Farm Ranch Pack/Prefabs/Env_FarmLand_03.prefab | Empty | view references valid
+PASS: Canteiro_12 | original MeshCollider active | prefab=Assets/Pandazole_Lowpoly_Asset_Bundle/Pandazole Farm Ranch Pack/Prefabs/Env_FarmLand_03.prefab | Empty | view references valid
+PASS: Assets/MiniFazendinha/Settings/Crops/Carrot.asset | seconds=20 | yield=3 | initial seeds=12
+Growing visual: Assets/MiniFazendinha/Prefabs/Crops/Carrot_Initial.prefab
+Mature visual: Assets/MiniFazendinha/Prefabs/Crops/Carrot_Mature.prefab
+PASS: Assets/MiniFazendinha/Settings/Crops/Corn.asset | seconds=35 | yield=3 | initial seeds=12
+Growing visual: Assets/MiniFazendinha/Prefabs/Crops/Corn_Initial.prefab
+Mature visual: Assets/MiniFazendinha/Prefabs/Crops/Corn_Mature.prefab
+PASS: Assets/MiniFazendinha/Settings/Crops/Wheat.asset | seconds=50 | yield=3 | initial seeds=12
+Growing visual: Assets/MiniFazendinha/Prefabs/Crops/Wheat_Initial.prefab
+Mature visual: Assets/MiniFazendinha/Prefabs/Crops/Wheat_Mature.prefab
+PASS: one inventory, interactor, HUD and Input System EventSystem; zero missing scripts.
+RESULT: PASS

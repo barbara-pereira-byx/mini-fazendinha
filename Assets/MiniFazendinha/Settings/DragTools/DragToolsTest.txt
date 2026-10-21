@@ -1,0 +1,85 @@
+DRAG TOOLS PLAY MODE TESTS
+Deterministic fixtures reset only transient models between cases. Aged fixtures use the existing model clock parameter; crop assets, durations and timeScale are unchanged.
+PASS: Fresh Play Mode begins with the contextual menu hidden
+PASS: Gesture begins on playable area
+PASS: Drag/click through 1 plot affects exactly 1
+PASS: Gesture begins on playable area
+PASS: Fast drag through 3 affects only the 3 crossed plots
+PASS: Gesture begins on playable area
+PASS: Drag through 5 affects exactly the chosen path
+PASS: Gesture begins on playable area
+PASS: One snake gesture can plant all 12 plots
+PASS: Fast interpolation fills intermediate plots; revisiting never spends twice
+PASS: Gesture begins on playable area
+PASS: Insufficient stock plants only available seeds and warns once per gesture
+PASS: Gesture begins on playable area
+PASS: Occupied plots retain their original crop and do not spend selected seeds
+PASS: Switching tool cancels the active planting stroke
+PASS: None mode and cancel prevent planting
+PASS: Focus loss cancels drag while preserving selected tool
+PASS: Mouse release leaves no active stroke
+PASS: UI-origin press cannot begin a world gesture
+PASS: Moving from a UI-origin press into the farm does nothing
+PASS: Entering UI during a stroke cancels it
+PASS: Plot-only raycast ignores an intervening decoration collider
+PASS: Data-selected culture works in every plot: carrot
+PASS: Data-selected culture works in every plot: corn
+PASS: Data-selected culture works in every plot: wheat
+PASS: Gesture begins on playable area
+PASS: Mass harvest affects only ready crossed plots in a mixed field
+PASS: Mixed-culture harvest credits each configured product and quantity
+PASS: Gesture begins on playable area
+PASS: Repeating the harvest path cannot duplicate products
+PASS: Real UI seed click selects persistent Plant mode
+PASS: Real Input System fast press/move/release plants 4 and stops
+PASS: Real held UI-origin press cannot paint the farm
+PASS: Real UI foice click selects Harvest mode
+PASS: Real Input System harvest drag skips growing plants
+PASS: Context menu starts hidden after closing
+PASS: Short field click opens menu without planting
+PASS: Context menu seed button activates tool
+PASS: Click outside closes menu and cancels tool without planting
+PASS: Close button hides menu and cancels tool
+PASS: Grouped plant count matches data: Canteiro_01
+PASS: Crop stays inside its plot footprint: Canteiro_01
+PASS: Crop grouping rests on the soil without floating: Canteiro_01
+PASS: Grouped plant count matches data: Canteiro_02
+PASS: Crop stays inside its plot footprint: Canteiro_02
+PASS: Crop grouping rests on the soil without floating: Canteiro_02
+PASS: Grouped plant count matches data: Canteiro_03
+PASS: Crop stays inside its plot footprint: Canteiro_03
+PASS: Crop grouping rests on the soil without floating: Canteiro_03
+PASS: Grouped plant count matches data: Canteiro_04
+PASS: Crop stays inside its plot footprint: Canteiro_04
+PASS: Crop grouping rests on the soil without floating: Canteiro_04
+PASS: Grouped plant count matches data: Canteiro_05
+PASS: Crop stays inside its plot footprint: Canteiro_05
+PASS: Crop grouping rests on the soil without floating: Canteiro_05
+PASS: Grouped plant count matches data: Canteiro_06
+PASS: Crop stays inside its plot footprint: Canteiro_06
+PASS: Crop grouping rests on the soil without floating: Canteiro_06
+PASS: Grouped plant count matches data: Canteiro_07
+PASS: Crop stays inside its plot footprint: Canteiro_07
+PASS: Crop grouping rests on the soil without floating: Canteiro_07
+PASS: Grouped plant count matches data: Canteiro_08
+PASS: Crop stays inside its plot footprint: Canteiro_08
+PASS: Crop grouping rests on the soil without floating: Canteiro_08
+PASS: Grouped plant count matches data: Canteiro_09
+PASS: Crop stays inside its plot footprint: Canteiro_09
+PASS: Crop grouping rests on the soil without floating: Canteiro_09
+PASS: Grouped plant count matches data: Canteiro_10
+PASS: Crop stays inside its plot footprint: Canteiro_10
+PASS: Crop grouping rests on the soil without floating: Canteiro_10
+PASS: Grouped plant count matches data: Canteiro_11
+PASS: Crop stays inside its plot footprint: Canteiro_11
+PASS: Crop grouping rests on the soil without floating: Canteiro_11
+PASS: Grouped plant count matches data: Canteiro_12
+PASS: Crop stays inside its plot footprint: Canteiro_12
+PASS: Crop grouping rests on the soil without floating: Canteiro_12
+PASS: Initial, intermediate and mature visual stages are all present
+PASS: Hover panel appears only for hovered planted plot
+PASS: Hover progress panel disappears when leaving plots
+Preview fixture: three visual stages and all cultures, camera at original default zoom.
+RESULT: PASS
+
+FINISHED
