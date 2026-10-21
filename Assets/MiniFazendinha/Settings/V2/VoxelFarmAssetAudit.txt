@@ -1,0 +1,313 @@
+Voxel Farm imported asset audit
+Asset root: Assets/ThirdParty/VoxelFarm
+Date: 2026-10-21 16:47:42
+FBX files: 54
+
+MODEL Assets/ThirdParty/VoxelFarm/Animations/Animals/Bull_Idle_Anim.fbx
+  exists=True; rig=Generic; importAnimation=True; materialMode=ImportViaMaterialDescription
+  renderer=SkinnedMeshRenderer/VS_Farm_Cow; meshBounds=(0.01, 0.03, 0.05); materials=palette.001[Universal Render Pipeline/Lit]
+CLIP Assets/ThirdParty/VoxelFarm/Animations/Animals/Bull_Idle_Anim.fbx :: Armature|ArmatureAction; length=3,29s; fps=24,0; boundPaths=23; skeletonPathMatch=True; unmatchedPaths=
+CLIP Assets/ThirdParty/VoxelFarm/Animations/Animals/Bull_Idle_Anim.fbx :: __preview__Armature|ArmatureAction; length=3,29s; fps=24,0; boundPaths=23; skeletonPathMatch=True; unmatchedPaths=
+
+MODEL Assets/ThirdParty/VoxelFarm/Animations/Animals/Chicken_Idle_Anim.fbx
+  exists=True; rig=Generic; importAnimation=True; materialMode=ImportViaMaterialDescription
+  renderer=SkinnedMeshRenderer/VS_Farm_Chicken; meshBounds=(0.01, 0.01, 0.02); materials=palette.002[Universal Render Pipeline/Lit]
+CLIP Assets/ThirdParty/VoxelFarm/Animations/Animals/Chicken_Idle_Anim.fbx :: Armature|ArmatureAction; length=1,48s; fps=50,0; boundPaths=15; skeletonPathMatch=True; unmatchedPaths=
+CLIP Assets/ThirdParty/VoxelFarm/Animations/Animals/Chicken_Idle_Anim.fbx :: __preview__Armature|ArmatureAction; length=1,48s; fps=50,0; boundPaths=15; skeletonPathMatch=True; unmatchedPaths=
+
+MODEL Assets/ThirdParty/VoxelFarm/Animations/Animals/Chicken_Peck_Anim.fbx
+  exists=True; rig=Generic; importAnimation=True; materialMode=ImportViaMaterialDescription
+  renderer=SkinnedMeshRenderer/VS_Farm_Chicken; meshBounds=(0.01, 0.01, 0.02); materials=palette.002[Universal Render Pipeline/Lit]
+CLIP Assets/ThirdParty/VoxelFarm/Animations/Animals/Chicken_Peck_Anim.fbx :: Armature|ArmatureAction; length=2,25s; fps=24,0; boundPaths=15; skeletonPathMatch=True; unmatchedPaths=
+CLIP Assets/ThirdParty/VoxelFarm/Animations/Animals/Chicken_Peck_Anim.fbx :: __preview__Armature|ArmatureAction; length=2,25s; fps=24,0; boundPaths=15; skeletonPathMatch=True; unmatchedPaths=
+
+MODEL Assets/ThirdParty/VoxelFarm/Animations/Animals/Chicken_Walk_Anim.fbx
+  exists=True; rig=Generic; importAnimation=True; materialMode=ImportViaMaterialDescription
+  renderer=SkinnedMeshRenderer/VS_Farm_Chicken; meshBounds=(0.01, 0.01, 0.02); materials=palette.002[Universal Render Pipeline/Lit]
+CLIP Assets/ThirdParty/VoxelFarm/Animations/Animals/Chicken_Walk_Anim.fbx :: Armature|ArmatureAction; length=1,30s; fps=30,0; boundPaths=15; skeletonPathMatch=True; unmatchedPaths=
+CLIP Assets/ThirdParty/VoxelFarm/Animations/Animals/Chicken_Walk_Anim.fbx :: __preview__Armature|ArmatureAction; length=1,30s; fps=30,0; boundPaths=15; skeletonPathMatch=True; unmatchedPaths=
+
+MODEL Assets/ThirdParty/VoxelFarm/Animations/Animals/Cow_Idle_Anim.fbx
+  exists=True; rig=Generic; importAnimation=True; materialMode=ImportViaMaterialDescription
+  renderer=SkinnedMeshRenderer/VS_Farm_Cow; meshBounds=(0.01, 0.03, 0.05); materials=palette.001[Universal Render Pipeline/Lit]
+CLIP Assets/ThirdParty/VoxelFarm/Animations/Animals/Cow_Idle_Anim.fbx :: Armature|ArmatureAction; length=2,46s; fps=24,0; boundPaths=23; skeletonPathMatch=True; unmatchedPaths=
+CLIP Assets/ThirdParty/VoxelFarm/Animations/Animals/Cow_Idle_Anim.fbx :: __preview__Armature|ArmatureAction; length=2,46s; fps=24,0; boundPaths=23; skeletonPathMatch=True; unmatchedPaths=
+
+MODEL Assets/ThirdParty/VoxelFarm/Animations/Animals/Cow_Walk_Anim.fbx
+  exists=True; rig=Generic; importAnimation=True; materialMode=ImportViaMaterialDescription
+  renderer=SkinnedMeshRenderer/VS_Knights_Animals_Horse_001; meshBounds=(0.01, 0.03, 0.05); materials=palette[Universal Render Pipeline/Lit]
+CLIP Assets/ThirdParty/VoxelFarm/Animations/Animals/Cow_Walk_Anim.fbx :: Armature|ArmatureAction; length=4,96s; fps=24,0; boundPaths=23; skeletonPathMatch=True; unmatchedPaths=
+CLIP Assets/ThirdParty/VoxelFarm/Animations/Animals/Cow_Walk_Anim.fbx :: __preview__Armature|ArmatureAction; length=4,96s; fps=24,0; boundPaths=23; skeletonPathMatch=True; unmatchedPaths=
+
+MODEL Assets/ThirdParty/VoxelFarm/Animations/Animals/Duck_Idle_Anim.fbx
+  exists=True; rig=Generic; importAnimation=True; materialMode=ImportViaMaterialDescription
+  renderer=SkinnedMeshRenderer/VS_Farm_Duck; meshBounds=(0.01, 0.01, 0.01); materials=palette[Universal Render Pipeline/Lit]
+CLIP Assets/ThirdParty/VoxelFarm/Animations/Animals/Duck_Idle_Anim.fbx :: Armature|ArmatureAction; length=2,47s; fps=30,0; boundPaths=15; skeletonPathMatch=True; unmatchedPaths=
+CLIP Assets/ThirdParty/VoxelFarm/Animations/Animals/Duck_Idle_Anim.fbx :: __preview__Armature|ArmatureAction; length=2,47s; fps=30,0; boundPaths=15; skeletonPathMatch=True; unmatchedPaths=
+
+MODEL Assets/ThirdParty/VoxelFarm/Animations/Animals/Duck_Walk_Anim.fbx
+  exists=True; rig=Generic; importAnimation=True; materialMode=ImportViaMaterialDescription
+  renderer=SkinnedMeshRenderer/VS_Farm_Duck; meshBounds=(0.01, 0.01, 0.01); materials=palette[Universal Render Pipeline/Lit]
+CLIP Assets/ThirdParty/VoxelFarm/Animations/Animals/Duck_Walk_Anim.fbx :: __preview__Armature|ArmatureAction; length=1,30s; fps=30,0; boundPaths=15; skeletonPathMatch=True; unmatchedPaths=
+CLIP Assets/ThirdParty/VoxelFarm/Animations/Animals/Duck_Walk_Anim.fbx :: Armature|ArmatureAction; length=1,30s; fps=30,0; boundPaths=15; skeletonPathMatch=True; unmatchedPaths=
+
+MODEL Assets/ThirdParty/VoxelFarm/Animations/Animals/Pig_Idle_Anim.fbx
+  exists=True; rig=Generic; importAnimation=True; materialMode=ImportViaMaterialDescription
+  renderer=SkinnedMeshRenderer/VS_Farm_Pig; meshBounds=(0.01, 0.01, 0.03); materials=palette.002[Universal Render Pipeline/Lit]
+CLIP Assets/ThirdParty/VoxelFarm/Animations/Animals/Pig_Idle_Anim.fbx :: Armature|ArmatureAction; length=4,54s; fps=24,0; boundPaths=17; skeletonPathMatch=True; unmatchedPaths=
+CLIP Assets/ThirdParty/VoxelFarm/Animations/Animals/Pig_Idle_Anim.fbx :: __preview__Armature|ArmatureAction; length=4,54s; fps=24,0; boundPaths=17; skeletonPathMatch=True; unmatchedPaths=
+
+MODEL Assets/ThirdParty/VoxelFarm/Animations/Animals/Pig_Walk_Anim.fbx
+  exists=True; rig=Generic; importAnimation=True; materialMode=ImportViaMaterialDescription
+  renderer=SkinnedMeshRenderer/VS_Farm_Pig; meshBounds=(0.01, 0.01, 0.03); materials=palette.002[Universal Render Pipeline/Lit]
+CLIP Assets/ThirdParty/VoxelFarm/Animations/Animals/Pig_Walk_Anim.fbx :: Armature|ArmatureAction; length=2,46s; fps=24,0; boundPaths=17; skeletonPathMatch=True; unmatchedPaths=
+CLIP Assets/ThirdParty/VoxelFarm/Animations/Animals/Pig_Walk_Anim.fbx :: __preview__Armature|ArmatureAction; length=2,46s; fps=24,0; boundPaths=17; skeletonPathMatch=True; unmatchedPaths=
+
+MODEL Assets/ThirdParty/VoxelFarm/Animations/Animals/Sheep_Idle_Anim.fbx
+  exists=True; rig=Generic; importAnimation=True; materialMode=ImportViaMaterialDescription
+  renderer=SkinnedMeshRenderer/VS_Farm_Sheep; meshBounds=(0.01, 0.01, 0.02); materials=palette.001[Universal Render Pipeline/Lit]
+CLIP Assets/ThirdParty/VoxelFarm/Animations/Animals/Sheep_Idle_Anim.fbx :: Armature|ArmatureAction; length=2,04s; fps=24,0; boundPaths=17; skeletonPathMatch=True; unmatchedPaths=
+CLIP Assets/ThirdParty/VoxelFarm/Animations/Animals/Sheep_Idle_Anim.fbx :: __preview__Armature|ArmatureAction; length=2,04s; fps=24,0; boundPaths=17; skeletonPathMatch=True; unmatchedPaths=
+
+MODEL Assets/ThirdParty/VoxelFarm/Animations/Animals/Sheep_Walk_Anim.fbx
+  exists=True; rig=Generic; importAnimation=True; materialMode=ImportViaMaterialDescription
+  renderer=SkinnedMeshRenderer/VS_Farm_Sheep; meshBounds=(0.01, 0.01, 0.02); materials=palette.001[Universal Render Pipeline/Lit]
+CLIP Assets/ThirdParty/VoxelFarm/Animations/Animals/Sheep_Walk_Anim.fbx :: Armature|ArmatureAction; length=2,46s; fps=24,0; boundPaths=17; skeletonPathMatch=True; unmatchedPaths=
+CLIP Assets/ThirdParty/VoxelFarm/Animations/Animals/Sheep_Walk_Anim.fbx :: __preview__Armature|ArmatureAction; length=2,46s; fps=24,0; boundPaths=17; skeletonPathMatch=True; unmatchedPaths=
+
+MODEL Assets/ThirdParty/VoxelFarm/Animations/Human/Human_Dig_Anim.fbx
+  exists=True; rig=Generic; importAnimation=True; materialMode=ImportViaMaterialDescription
+  renderer=SkinnedMeshRenderer/Human_Template; meshBounds=(0.03, 0.04, 0.01); materials=palette.002[Universal Render Pipeline/Lit]
+CLIP Assets/ThirdParty/VoxelFarm/Animations/Human/Human_Dig_Anim.fbx :: Armature|ArmatureAction; length=4,33s; fps=24,0; boundPaths=21; skeletonPathMatch=True; unmatchedPaths=
+CLIP Assets/ThirdParty/VoxelFarm/Animations/Human/Human_Dig_Anim.fbx :: __preview__Armature|ArmatureAction; length=4,33s; fps=24,0; boundPaths=21; skeletonPathMatch=True; unmatchedPaths=
+
+MODEL Assets/ThirdParty/VoxelFarm/Animations/Human/Human_Idle_Anim.fbx
+  exists=True; rig=Generic; importAnimation=True; materialMode=ImportViaMaterialDescription
+  renderer=SkinnedMeshRenderer/Human_Template; meshBounds=(0.03, 0.04, 0.01); materials=palette[Universal Render Pipeline/Lit]
+CLIP Assets/ThirdParty/VoxelFarm/Animations/Human/Human_Idle_Anim.fbx :: Armature|ArmatureAction; length=2,46s; fps=24,0; boundPaths=21; skeletonPathMatch=True; unmatchedPaths=
+CLIP Assets/ThirdParty/VoxelFarm/Animations/Human/Human_Idle_Anim.fbx :: __preview__Armature|ArmatureAction; length=2,46s; fps=24,0; boundPaths=21; skeletonPathMatch=True; unmatchedPaths=
+
+MODEL Assets/ThirdParty/VoxelFarm/Animations/Human/Human_Jump_Anim.fbx
+  exists=True; rig=Generic; importAnimation=True; materialMode=ImportViaMaterialDescription
+  renderer=SkinnedMeshRenderer/Human_Template; meshBounds=(0.03, 0.04, 0.01); materials=palette[Universal Render Pipeline/Lit]
+CLIP Assets/ThirdParty/VoxelFarm/Animations/Human/Human_Jump_Anim.fbx :: Armature|ArmatureAction; length=2,46s; fps=24,0; boundPaths=21; skeletonPathMatch=True; unmatchedPaths=
+CLIP Assets/ThirdParty/VoxelFarm/Animations/Human/Human_Jump_Anim.fbx :: __preview__Armature|ArmatureAction; length=2,46s; fps=24,0; boundPaths=21; skeletonPathMatch=True; unmatchedPaths=
+
+MODEL Assets/ThirdParty/VoxelFarm/Animations/Human/Human_Walk_Anim.fbx
+  exists=True; rig=Generic; importAnimation=True; materialMode=ImportViaMaterialDescription
+  renderer=SkinnedMeshRenderer/Human_Template; meshBounds=(0.03, 0.04, 0.01); materials=palette[Universal Render Pipeline/Lit]
+CLIP Assets/ThirdParty/VoxelFarm/Animations/Human/Human_Walk_Anim.fbx :: __preview__Armature|ArmatureAction; length=1,67s; fps=24,0; boundPaths=21; skeletonPathMatch=True; unmatchedPaths=
+CLIP Assets/ThirdParty/VoxelFarm/Animations/Human/Human_Walk_Anim.fbx :: Armature|ArmatureAction; length=1,67s; fps=24,0; boundPaths=21; skeletonPathMatch=True; unmatchedPaths=
+
+MODEL Assets/ThirdParty/VoxelFarm/FBX/Animals/TVS_VoxelFarm_Bull.fbx
+  exists=True; rig=Generic; importAnimation=True; materialMode=ImportViaMaterialDescription
+  renderer=SkinnedMeshRenderer/VS_Farm_Bull; meshBounds=(0.01, 0.02, 0.05); materials=palette.002[Universal Render Pipeline/Lit]
+
+MODEL Assets/ThirdParty/VoxelFarm/FBX/Animals/TVS_VoxelFarm_Chicken.fbx
+  exists=True; rig=Generic; importAnimation=True; materialMode=ImportViaMaterialDescription
+  renderer=SkinnedMeshRenderer/VS_Farm_Chicken; meshBounds=(0.01, 0.01, 0.02); materials=palette.002[Universal Render Pipeline/Lit]
+
+MODEL Assets/ThirdParty/VoxelFarm/FBX/Animals/TVS_VoxelFarm_Cow.fbx
+  exists=True; rig=Generic; importAnimation=True; materialMode=ImportViaMaterialDescription
+  renderer=SkinnedMeshRenderer/VS_Farm_Cow; meshBounds=(0.01, 0.03, 0.05); materials=palette.001[Universal Render Pipeline/Lit]
+
+MODEL Assets/ThirdParty/VoxelFarm/FBX/Animals/TVS_VoxelFarm_Duck.fbx
+  exists=True; rig=Generic; importAnimation=True; materialMode=ImportViaMaterialDescription
+  renderer=SkinnedMeshRenderer/VS_Farm_Duck; meshBounds=(0.01, 0.01, 0.01); materials=palette[Universal Render Pipeline/Lit]
+
+MODEL Assets/ThirdParty/VoxelFarm/FBX/Animals/TVS_VoxelFarm_Goat.fbx
+  exists=True; rig=Generic; importAnimation=True; materialMode=ImportViaMaterialDescription
+  renderer=SkinnedMeshRenderer/VS_Farm_Goat; meshBounds=(0.01, 0.02, 0.02); materials=palette[Universal Render Pipeline/Lit]
+
+MODEL Assets/ThirdParty/VoxelFarm/FBX/Animals/TVS_VoxelFarm_Mallard.fbx
+  exists=True; rig=Generic; importAnimation=True; materialMode=ImportViaMaterialDescription
+  renderer=SkinnedMeshRenderer/VS_Farm_Mallard; meshBounds=(0.01, 0.01, 0.01); materials=palette.001[Universal Render Pipeline/Lit]
+
+MODEL Assets/ThirdParty/VoxelFarm/FBX/Animals/TVS_VoxelFarm_Pig.fbx
+  exists=True; rig=Generic; importAnimation=True; materialMode=ImportViaMaterialDescription
+  renderer=SkinnedMeshRenderer/VS_Farm_Pig; meshBounds=(0.01, 0.01, 0.03); materials=palette.002[Universal Render Pipeline/Lit]
+
+MODEL Assets/ThirdParty/VoxelFarm/FBX/Animals/TVS_VoxelFarm_Rooster.fbx
+  exists=True; rig=Generic; importAnimation=True; materialMode=ImportViaMaterialDescription
+  renderer=SkinnedMeshRenderer/VS_Farm_Rooster; meshBounds=(0.01, 0.01, 0.02); materials=palette.003[Universal Render Pipeline/Lit]
+
+MODEL Assets/ThirdParty/VoxelFarm/FBX/Animals/TVS_VoxelFarm_Sheep.fbx
+  exists=True; rig=Generic; importAnimation=True; materialMode=ImportViaMaterialDescription
+  renderer=SkinnedMeshRenderer/VS_Farm_Sheep; meshBounds=(0.01, 0.01, 0.02); materials=palette.001[Universal Render Pipeline/Lit]
+
+MODEL Assets/ThirdParty/VoxelFarm/FBX/Characters/TVS_VoxelFarm_Farmer.fbx
+  exists=True; rig=Generic; importAnimation=True; materialMode=ImportViaMaterialDescription
+  renderer=SkinnedMeshRenderer/VS_Farm_Farmer; meshBounds=(0.04, 0.03, 0.02); materials=palette[Universal Render Pipeline/Lit]
+
+MODEL Assets/ThirdParty/VoxelFarm/FBX/Characters/TVS_VoxelFarm_FarmersDaughter.fbx
+  exists=True; rig=Generic; importAnimation=True; materialMode=ImportViaMaterialDescription
+  renderer=SkinnedMeshRenderer/VS_Farm_FarmersDaughter; meshBounds=(0.03, 0.03, 0.01); materials=palette[Universal Render Pipeline/Lit]
+
+MODEL Assets/ThirdParty/VoxelFarm/FBX/Characters/TVS_VoxelFarm_FarmHand.fbx
+  exists=True; rig=Generic; importAnimation=True; materialMode=ImportViaMaterialDescription
+  renderer=SkinnedMeshRenderer/VS_Farm_Farmhand; meshBounds=(0.04, 0.03, 0.01); materials=palette[Universal Render Pipeline/Lit]
+
+MODEL Assets/ThirdParty/VoxelFarm/FBX/Environment/TVS_VoxelFarm_AppleTree.fbx
+  exists=True; rig=Generic; importAnimation=True; materialMode=ImportViaMaterialDescription
+  renderer=MeshRenderer/TVS_VoxelFarm_AppleTree; meshBounds=(0.02, 0.03, 0.02); materials=palette.084[Universal Render Pipeline/Lit]
+
+MODEL Assets/ThirdParty/VoxelFarm/FBX/Environment/TVS_VoxelFarm_Barn.fbx
+  exists=True; rig=Generic; importAnimation=True; materialMode=ImportViaMaterialDescription
+  renderer=MeshRenderer/TVS_VoxelFarm_Barn; meshBounds=(0.08, 0.11, 0.12); materials=palette.083[Universal Render Pipeline/Lit]
+
+MODEL Assets/ThirdParty/VoxelFarm/FBX/Environment/TVS_VoxelFarm_BlackberryBush.fbx
+  exists=True; rig=Generic; importAnimation=True; materialMode=ImportViaMaterialDescription
+  renderer=MeshRenderer/TVS_VoxelFarm_BlackberryBush; meshBounds=(0.01, 0.01, 0.01); materials=palette.082[Universal Render Pipeline/Lit]
+
+MODEL Assets/ThirdParty/VoxelFarm/FBX/Environment/TVS_VoxelFarm_BlueberryBush.fbx
+  exists=True; rig=Generic; importAnimation=True; materialMode=ImportViaMaterialDescription
+  renderer=MeshRenderer/TVS_VoxelFarm_BlueberryBush; meshBounds=(0.01, 0.01, 0.01); materials=palette.081[Universal Render Pipeline/Lit]
+
+MODEL Assets/ThirdParty/VoxelFarm/FBX/Environment/TVS_VoxelFarm_EmptyTrough.fbx
+  exists=True; rig=Generic; importAnimation=True; materialMode=ImportViaMaterialDescription
+  renderer=MeshRenderer/TVS_VoxelFarm_EmptyTrough; meshBounds=(0.02, 0.01, 0.01); materials=palette.069[Universal Render Pipeline/Lit]
+
+MODEL Assets/ThirdParty/VoxelFarm/FBX/Environment/TVS_VoxelFarm_FarmHouse.fbx
+  exists=True; rig=Generic; importAnimation=True; materialMode=ImportViaMaterialDescription
+  renderer=MeshRenderer/TVS_VoxelFarm_FarmHouse; meshBounds=(0.16, 0.07, 0.08); materials=palette.079[Universal Render Pipeline/Lit]
+
+MODEL Assets/ThirdParty/VoxelFarm/FBX/Environment/TVS_VoxelFarm_Fence.fbx
+  exists=True; rig=Generic; importAnimation=True; materialMode=ImportViaMaterialDescription
+  renderer=MeshRenderer/TVS_VoxelFarm_Fence; meshBounds=(0.00, 0.02, 0.02); materials=palette.089[Universal Render Pipeline/Lit]
+
+MODEL Assets/ThirdParty/VoxelFarm/FBX/Environment/TVS_VoxelFarm_FencePost.fbx
+  exists=True; rig=Generic; importAnimation=True; materialMode=ImportViaMaterialDescription
+  renderer=MeshRenderer/TVS_VoxelFarm_FencePost; meshBounds=(0.00, 0.02, 0.00); materials=palette.088[Universal Render Pipeline/Lit]
+
+MODEL Assets/ThirdParty/VoxelFarm/FBX/Environment/TVS_VoxelFarm_FoodTrough.fbx
+  exists=True; rig=Generic; importAnimation=True; materialMode=ImportViaMaterialDescription
+  renderer=MeshRenderer/TVS_VoxelFarm_FoodTrough; meshBounds=(0.02, 0.01, 0.01); materials=palette.068[Universal Render Pipeline/Lit]
+
+MODEL Assets/ThirdParty/VoxelFarm/FBX/Environment/TVS_VoxelFarm_HayBale.fbx
+  exists=True; rig=Generic; importAnimation=True; materialMode=ImportViaMaterialDescription
+  renderer=MeshRenderer/TVS_VoxelFarm_HayBale; meshBounds=(0.01, 0.01, 0.01); materials=palette.080[Universal Render Pipeline/Lit]
+
+MODEL Assets/ThirdParty/VoxelFarm/FBX/Environment/TVS_VoxelFarm_LemonTree.fbx
+  exists=True; rig=Generic; importAnimation=True; materialMode=ImportViaMaterialDescription
+  renderer=MeshRenderer/TVS_VoxelFarm_LemonTree; meshBounds=(0.02, 0.03, 0.02); materials=palette.078[Universal Render Pipeline/Lit]
+
+MODEL Assets/ThirdParty/VoxelFarm/FBX/Environment/TVS_VoxelFarm_MedPlant.fbx
+  exists=True; rig=Generic; importAnimation=True; materialMode=ImportViaMaterialDescription
+  renderer=MeshRenderer/TVS_VoxelFarm_MedPlant; meshBounds=(0.01, 0.01, 0.01); materials=palette.076[Universal Render Pipeline/Lit]
+
+MODEL Assets/ThirdParty/VoxelFarm/FBX/Environment/TVS_VoxelFarm_OrangeTree.fbx
+  exists=True; rig=Generic; importAnimation=True; materialMode=ImportViaMaterialDescription
+  renderer=MeshRenderer/TVS_VoxelFarm_OrangeTree; meshBounds=(0.02, 0.03, 0.02); materials=palette.077[Universal Render Pipeline/Lit]
+
+MODEL Assets/ThirdParty/VoxelFarm/FBX/Environment/TVS_VoxelFarm_Potato.fbx
+  exists=True; rig=Generic; importAnimation=True; materialMode=ImportViaMaterialDescription
+  renderer=MeshRenderer/TVS_VoxelFarm_Potato; meshBounds=(0.01, 0.01, 0.01); materials=palette.074[Universal Render Pipeline/Lit]
+
+MODEL Assets/ThirdParty/VoxelFarm/FBX/Environment/TVS_VoxelFarm_Pumpkin.fbx
+  exists=True; rig=Generic; importAnimation=True; materialMode=ImportViaMaterialDescription
+  renderer=MeshRenderer/TVS_VoxelFarm_Pumpkin; meshBounds=(0.01, 0.01, 0.01); materials=palette.073[Universal Render Pipeline/Lit]
+
+MODEL Assets/ThirdParty/VoxelFarm/FBX/Environment/TVS_VoxelFarm_Soil.fbx
+  exists=True; rig=Generic; importAnimation=True; materialMode=ImportViaMaterialDescription
+  renderer=MeshRenderer/TVS_VoxelFarm_Soil; meshBounds=(0.01, 0.00, 0.01); materials=palette.072[Universal Render Pipeline/Lit]
+
+MODEL Assets/ThirdParty/VoxelFarm/FBX/Environment/TVS_VoxelFarm_StrawberryBush.fbx
+  exists=True; rig=Generic; importAnimation=True; materialMode=ImportViaMaterialDescription
+  renderer=MeshRenderer/TVS_VoxelFarm_StrawberryBush; meshBounds=(0.01, 0.01, 0.01); materials=palette.071[Universal Render Pipeline/Lit]
+
+MODEL Assets/ThirdParty/VoxelFarm/FBX/Environment/TVS_VoxelFarm_Tomato.fbx
+  exists=True; rig=Generic; importAnimation=True; materialMode=ImportViaMaterialDescription
+  renderer=MeshRenderer/TVS_VoxelFarm_Tomato; meshBounds=(0.01, 0.02, 0.01); materials=palette.070[Universal Render Pipeline/Lit]
+
+MODEL Assets/ThirdParty/VoxelFarm/FBX/Environment/TVS_VoxelFarm_Tree.fbx
+  exists=True; rig=Generic; importAnimation=True; materialMode=ImportViaMaterialDescription
+  renderer=MeshRenderer/TVS_VoxelFarm_Tree; meshBounds=(0.04, 0.05, 0.04); materials=palette.021[Universal Render Pipeline/Lit]
+
+MODEL Assets/ThirdParty/VoxelFarm/FBX/Environment/TVS_VoxelFarm_WaterTrough.fbx
+  exists=True; rig=Generic; importAnimation=True; materialMode=ImportViaMaterialDescription
+  renderer=MeshRenderer/TVS_VoxelFarm_WaterTrough; meshBounds=(0.02, 0.01, 0.01); materials=palette.067[Universal Render Pipeline/Lit]
+
+MODEL Assets/ThirdParty/VoxelFarm/FBX/Environment/TVS_VoxelFarm_Wheat.fbx
+  exists=True; rig=Generic; importAnimation=True; materialMode=ImportViaMaterialDescription
+  renderer=MeshRenderer/TVS_VoxelFarm_Wheat; meshBounds=(0.00, 0.03, 0.01); materials=palette.066[Universal Render Pipeline/Lit]
+
+MODEL Assets/ThirdParty/VoxelFarm/FBX/Environment/TVS_VoxelFarm_Windmill.fbx
+  exists=True; rig=Generic; importAnimation=True; materialMode=ImportViaMaterialDescription
+  renderer=MeshRenderer/TVS_VoxelFarm_Windmill; meshBounds=(0.07, 0.12, 0.06); materials=palette.065[Universal Render Pipeline/Lit]
+
+MODEL Assets/ThirdParty/VoxelFarm/FBX/Environment/TVS_VoxelFarm_YoungPlant.fbx
+  exists=True; rig=Generic; importAnimation=True; materialMode=ImportViaMaterialDescription
+  renderer=MeshRenderer/TVS_VoxelFarm_YoungPlant; meshBounds=(0.00, 0.01, 0.00); materials=palette.075[Universal Render Pipeline/Lit]
+
+MODEL Assets/ThirdParty/VoxelFarm/FBX/Props/TVS_VoxelFarm_PitchFork.fbx
+  exists=True; rig=Generic; importAnimation=True; materialMode=ImportViaMaterialDescription
+  renderer=MeshRenderer/TVS_VoxelFarm_PitchFork; meshBounds=(0.01, 0.02, 0.00); materials=palette.085[Universal Render Pipeline/Lit]
+
+MODEL Assets/ThirdParty/VoxelFarm/FBX/Props/TVS_VoxelFarm_Scythe.fbx
+  exists=True; rig=Generic; importAnimation=True; materialMode=ImportViaMaterialDescription
+  renderer=MeshRenderer/TVS_VoxelFarm_Scythe; meshBounds=(0.01, 0.02, 0.00); materials=palette.086[Universal Render Pipeline/Lit]
+
+MODEL Assets/ThirdParty/VoxelFarm/FBX/Props/TVS_VoxelFarm_Spade.fbx
+  exists=True; rig=Generic; importAnimation=True; materialMode=ImportViaMaterialDescription
+  renderer=MeshRenderer/TVS_VoxelFarm_Spade; meshBounds=(0.01, 0.02, 0.00); materials=palette.087[Universal Render Pipeline/Lit]
+
+SEPARATE ANIMAL ANIMATIONS
+CLIP Assets/ThirdParty/VoxelFarm/Animations/Animals/Bull_Idle_Anim.fbx :: Armature|ArmatureAction; length=3,29s; fps=24,0; boundPaths=23; skeletonPathMatch=True; unmatchedPaths=
+CLIP Assets/ThirdParty/VoxelFarm/Animations/Animals/Bull_Idle_Anim.fbx :: __preview__Armature|ArmatureAction; length=3,29s; fps=24,0; boundPaths=23; skeletonPathMatch=True; unmatchedPaths=
+CLIP Assets/ThirdParty/VoxelFarm/Animations/Animals/Chicken_Idle_Anim.fbx :: Armature|ArmatureAction; length=1,48s; fps=50,0; boundPaths=15; skeletonPathMatch=True; unmatchedPaths=
+CLIP Assets/ThirdParty/VoxelFarm/Animations/Animals/Chicken_Idle_Anim.fbx :: __preview__Armature|ArmatureAction; length=1,48s; fps=50,0; boundPaths=15; skeletonPathMatch=True; unmatchedPaths=
+CLIP Assets/ThirdParty/VoxelFarm/Animations/Animals/Chicken_Peck_Anim.fbx :: Armature|ArmatureAction; length=2,25s; fps=24,0; boundPaths=15; skeletonPathMatch=True; unmatchedPaths=
+CLIP Assets/ThirdParty/VoxelFarm/Animations/Animals/Chicken_Peck_Anim.fbx :: __preview__Armature|ArmatureAction; length=2,25s; fps=24,0; boundPaths=15; skeletonPathMatch=True; unmatchedPaths=
+CLIP Assets/ThirdParty/VoxelFarm/Animations/Animals/Chicken_Walk_Anim.fbx :: Armature|ArmatureAction; length=1,30s; fps=30,0; boundPaths=15; skeletonPathMatch=True; unmatchedPaths=
+CLIP Assets/ThirdParty/VoxelFarm/Animations/Animals/Chicken_Walk_Anim.fbx :: __preview__Armature|ArmatureAction; length=1,30s; fps=30,0; boundPaths=15; skeletonPathMatch=True; unmatchedPaths=
+CLIP Assets/ThirdParty/VoxelFarm/Animations/Animals/Cow_Idle_Anim.fbx :: Armature|ArmatureAction; length=2,46s; fps=24,0; boundPaths=23; skeletonPathMatch=True; unmatchedPaths=
+CLIP Assets/ThirdParty/VoxelFarm/Animations/Animals/Cow_Idle_Anim.fbx :: __preview__Armature|ArmatureAction; length=2,46s; fps=24,0; boundPaths=23; skeletonPathMatch=True; unmatchedPaths=
+CLIP Assets/ThirdParty/VoxelFarm/Animations/Animals/Cow_Walk_Anim.fbx :: Armature|ArmatureAction; length=4,96s; fps=24,0; boundPaths=23; skeletonPathMatch=True; unmatchedPaths=
+CLIP Assets/ThirdParty/VoxelFarm/Animations/Animals/Cow_Walk_Anim.fbx :: __preview__Armature|ArmatureAction; length=4,96s; fps=24,0; boundPaths=23; skeletonPathMatch=True; unmatchedPaths=
+CLIP Assets/ThirdParty/VoxelFarm/Animations/Animals/Duck_Idle_Anim.fbx :: Armature|ArmatureAction; length=2,47s; fps=30,0; boundPaths=15; skeletonPathMatch=True; unmatchedPaths=
+CLIP Assets/ThirdParty/VoxelFarm/Animations/Animals/Duck_Idle_Anim.fbx :: __preview__Armature|ArmatureAction; length=2,47s; fps=30,0; boundPaths=15; skeletonPathMatch=True; unmatchedPaths=
+CLIP Assets/ThirdParty/VoxelFarm/Animations/Animals/Duck_Walk_Anim.fbx :: __preview__Armature|ArmatureAction; length=1,30s; fps=30,0; boundPaths=15; skeletonPathMatch=True; unmatchedPaths=
+CLIP Assets/ThirdParty/VoxelFarm/Animations/Animals/Duck_Walk_Anim.fbx :: Armature|ArmatureAction; length=1,30s; fps=30,0; boundPaths=15; skeletonPathMatch=True; unmatchedPaths=
+CLIP Assets/ThirdParty/VoxelFarm/Animations/Animals/Pig_Idle_Anim.fbx :: Armature|ArmatureAction; length=4,54s; fps=24,0; boundPaths=17; skeletonPathMatch=True; unmatchedPaths=
+CLIP Assets/ThirdParty/VoxelFarm/Animations/Animals/Pig_Idle_Anim.fbx :: __preview__Armature|ArmatureAction; length=4,54s; fps=24,0; boundPaths=17; skeletonPathMatch=True; unmatchedPaths=
+CLIP Assets/ThirdParty/VoxelFarm/Animations/Animals/Pig_Walk_Anim.fbx :: Armature|ArmatureAction; length=2,46s; fps=24,0; boundPaths=17; skeletonPathMatch=True; unmatchedPaths=
+CLIP Assets/ThirdParty/VoxelFarm/Animations/Animals/Pig_Walk_Anim.fbx :: __preview__Armature|ArmatureAction; length=2,46s; fps=24,0; boundPaths=17; skeletonPathMatch=True; unmatchedPaths=
+CLIP Assets/ThirdParty/VoxelFarm/Animations/Animals/Sheep_Idle_Anim.fbx :: Armature|ArmatureAction; length=2,04s; fps=24,0; boundPaths=17; skeletonPathMatch=True; unmatchedPaths=
+CLIP Assets/ThirdParty/VoxelFarm/Animations/Animals/Sheep_Idle_Anim.fbx :: __preview__Armature|ArmatureAction; length=2,04s; fps=24,0; boundPaths=17; skeletonPathMatch=True; unmatchedPaths=
+CLIP Assets/ThirdParty/VoxelFarm/Animations/Animals/Sheep_Walk_Anim.fbx :: Armature|ArmatureAction; length=2,46s; fps=24,0; boundPaths=17; skeletonPathMatch=True; unmatchedPaths=
+CLIP Assets/ThirdParty/VoxelFarm/Animations/Animals/Sheep_Walk_Anim.fbx :: __preview__Armature|ArmatureAction; length=2,46s; fps=24,0; boundPaths=17; skeletonPathMatch=True; unmatchedPaths=
+
+ANIMAL MODEL FILES (expected list)
+FOUND TVS_VoxelFarm_Cow.fbx
+FOUND TVS_VoxelFarm_Chicken.fbx
+FOUND TVS_VoxelFarm_Pig.fbx
+FOUND TVS_VoxelFarm_Sheep.fbx
+FOUND TVS_VoxelFarm_Duck.fbx
+FOUND TVS_VoxelFarm_Goat.fbx
+FOUND TVS_VoxelFarm_Rooster.fbx
+FOUND TVS_VoxelFarm_Bull.fbx
+FOUND TVS_VoxelFarm_Mallard.fbx
+
+SCENE LAYOUT
+scene=Assets/MiniFazendinha/Scenes/FarmMain.unity; dirty=True
+SCENEOBJ 01_Terreno_e_Caminhos/Caminho_Principal; position=(-0.50, 0.01, 3.00); scale=(35.00, 0.02, 1.80); bounds=Center: (-0.50, 0.01, 3.00), Extents: (17.50, 0.01, 0.90)
+SCENEOBJ 01_Terreno_e_Caminhos/Caminho_Horta; position=(6.70, 0.01, -7.70); scale=(1.60, 0.02, 19.60); bounds=Center: (6.70, 0.01, -7.70), Extents: (0.80, 0.01, 9.80)
+SCENEOBJ 01_Terreno_e_Caminhos/Gramado_Pastagem; position=(13.50, 0.01, -6.50); scale=(8.70, 0.02, 14.70); bounds=Center: (13.50, 0.01, -6.50), Extents: (4.35, 0.01, 7.35)
+SCENEOBJ 02_Construcoes/Casa_Principal; position=(-10.50, 0.00, 11.02); scale=(1.00, 1.00, 1.00); bounds=Center: (-10.50, 3.12, 11.00), Extents: (4.08, 3.12, 3.58)
+SCENEOBJ 02_Construcoes/Celeiro; position=(7.00, 0.00, 11.00); scale=(1.00, 1.00, 1.00); bounds=Center: (7.00, 3.60, 11.00), Extents: (3.83, 3.60, 5.18)
+SCENEOBJ 04_Cercas/Cerca_Sul_0; position=(10.50, 0.02, -14.00); scale=(1.00, 1.00, 1.00); bounds=Center: (10.50, 0.63, -14.00), Extents: (1.51, 0.61, 0.08)
+SCENEOBJ 04_Cercas/Cerca_Norte_0; position=(10.50, 0.02, 1.00); scale=(1.00, 1.00, 1.00); bounds=Center: (10.50, 0.63, 1.00), Extents: (1.51, 0.61, 0.08)
+SCENEOBJ 04_Cercas/Cerca_Sul_1; position=(13.50, 0.02, -14.00); scale=(1.00, 1.00, 1.00); bounds=Center: (13.50, 0.63, -14.00), Extents: (1.51, 0.61, 0.08)
+SCENEOBJ 04_Cercas/Cerca_Norte_1; position=(13.50, 0.02, 1.00); scale=(1.00, 1.00, 1.00); bounds=Center: (13.50, 0.63, 1.00), Extents: (1.51, 0.61, 0.08)
+SCENEOBJ 04_Cercas/Cerca_Sul_2; position=(16.50, 0.02, -14.00); scale=(1.00, 1.00, 1.00); bounds=Center: (16.50, 0.63, -14.00), Extents: (1.51, 0.61, 0.08)
+SCENEOBJ 04_Cercas/Cerca_Norte_2; position=(16.50, 0.02, 1.00); scale=(1.00, 1.00, 1.00); bounds=Center: (16.50, 0.63, 1.00), Extents: (1.51, 0.61, 0.08)
+SCENEOBJ 04_Cercas/Cerca_Leste_0; position=(18.00, 0.02, -12.50); scale=(1.00, 1.00, 1.00); bounds=Center: (18.00, 0.63, -12.50), Extents: (0.08, 0.61, 1.51)
+SCENEOBJ 04_Cercas/Cerca_Oeste_0; position=(9.00, 0.02, -12.50); scale=(1.00, 1.00, 1.00); bounds=Center: (9.00, 0.63, -12.50), Extents: (0.08, 0.61, 1.51)
+SCENEOBJ 04_Cercas/Cerca_Leste_1; position=(18.00, 0.02, -9.50); scale=(1.00, 1.00, 1.00); bounds=Center: (18.00, 0.63, -9.50), Extents: (0.08, 0.61, 1.51)
+SCENEOBJ 04_Cercas/Cerca_Oeste_1; position=(9.00, 0.02, -9.50); scale=(1.00, 1.00, 1.00); bounds=Center: (9.00, 0.63, -9.50), Extents: (0.08, 0.61, 1.51)
+SCENEOBJ 04_Cercas/Cerca_Leste_2; position=(18.00, 0.02, -6.50); scale=(1.00, 1.00, 1.00); bounds=Center: (18.00, 0.63, -6.50), Extents: (0.08, 0.61, 1.51)
+SCENEOBJ 04_Cercas/Cerca_Oeste_2; position=(9.00, 0.02, -6.50); scale=(1.00, 1.00, 1.00); bounds=Center: (9.00, 0.63, -6.50), Extents: (0.08, 0.61, 1.51)
+SCENEOBJ 04_Cercas/Cerca_Leste_3; position=(18.00, 0.02, -3.50); scale=(1.00, 1.00, 1.00); bounds=Center: (18.00, 0.63, -3.50), Extents: (0.08, 0.61, 1.51)
+SCENEOBJ 04_Cercas/Cerca_Leste_4; position=(18.00, 0.02, -0.50); scale=(1.00, 1.00, 1.00); bounds=Center: (18.00, 0.63, -0.50), Extents: (0.08, 0.61, 1.51)
+SCENEOBJ 04_Cercas/Cerca_Oeste_4; position=(9.00, 0.02, -0.50); scale=(1.00, 1.00, 1.00); bounds=Center: (9.00, 0.63, -0.50), Extents: (0.08, 0.61, 1.51)
+SCENEOBJ 10_Camera/Main Camera; position=(-8.58, 19.86, -23.58); scale=(1.00, 1.00, 1.00); bounds=no collider

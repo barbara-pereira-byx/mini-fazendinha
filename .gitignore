@@ -32,3 +32,8 @@ Thumbs.db
 Assets/Pandazole_Lowpoly_Asset_Bundle/**
 !Assets/Pandazole_Lowpoly_Asset_Bundle/**/
 !Assets/Pandazole_Lowpoly_Asset_Bundle/**/*.meta
+
+# Voxel Farm package source is locally imported; keep only Unity GUID metadata until its license is verified.
+Assets/ThirdParty/VoxelFarm/**
+!Assets/ThirdParty/VoxelFarm/**/
+!Assets/ThirdParty/VoxelFarm/**/*.meta
