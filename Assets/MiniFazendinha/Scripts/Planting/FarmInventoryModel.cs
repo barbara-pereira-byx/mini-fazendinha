@@ -23,6 +23,11 @@ namespace MiniFazendinha.Planting
     {
         sealed class Stock { public InventoryItemDefinition item; public int quantity; }
         readonly Dictionary<string, Stock> stocks = new Dictionary<string, Stock>(StringComparer.Ordinal);
+        bool transferring;
+        public IEnumerable<InventoryItemDefinition> Items { get { foreach(var s in stocks.Values) yield return s.item; } }
+        public int Used { get { int n=0; foreach(var s in stocks.Values)n+=s.quantity; return n; } }
+        public int Capacity { get; private set; } = 2000;
+        public void SetCapacity(int value) { Capacity = Math.Max(value, Used); }
         public event Action Changed;
 
         public FarmInventoryModel(IEnumerable<InitialCropStock> initialCrops)
@@ -61,11 +66,21 @@ namespace MiniFazendinha.Planting
 
         public int Quantity(InventoryItemDefinition item) => Find(item, out var stock) ? stock.quantity : 0;
         public bool CanReceive(InventoryItemDefinition item, int amount) =>
-            amount > 0 && Find(item, out var stock) && stock.quantity <= int.MaxValue - amount;
+            !transferring && amount > 0 && amount <= Capacity-Used && Find(item, out var stock) && stock.quantity <= int.MaxValue - amount;
+
+        public bool TryTransfer(InventoryItemDefinition item, int amount, Func<bool> receive)
+        {
+            if(transferring || amount<=0 || receive==null || !Find(item,out var stock) || stock.quantity<amount)return false;
+            transferring=true;stock.quantity-=amount;
+            try { if(!receive()){stock.quantity+=amount;return false;} }
+            catch {stock.quantity+=amount;throw;}
+            finally {transferring=false;}
+            Changed?.Invoke();return true;
+        }
 
         public bool TrySpend(InventoryItemDefinition item)
         {
-            if (!Find(item, out var stock) || stock.quantity <= 0) return false;
+            if (transferring || !Find(item, out var stock) || stock.quantity <= 0) return false;
             stock.quantity--;
             Changed?.Invoke();
             return true;

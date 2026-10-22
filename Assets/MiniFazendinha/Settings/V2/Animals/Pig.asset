@@ -16,9 +16,11 @@ MonoBehaviour:
   displayName: Porco
   visualPrefab: {fileID: 826463921399299279, guid: 324695c9d8ed58a4ba25163710e17d76, type: 3}
   animatorController: {fileID: 9100000, guid: 2d41a23aa8a8dd54bbd637f661edbcbe, type: 2}
-  product: {fileID: 0}
-  productYield: 0
-  productionSeconds: 40
+  feedItem: {fileID: 11400000, guid: f47db3607d2a4d749b81afa7f901c75c, type: 2}
+  waterItem: {fileID: 11400000, guid: 4407fd974342ec34d9a39d56eefe05ac, type: 2}
+  product: {fileID: 11400000, guid: 689260255c3ff9049a66aab02ddde140, type: 2}
+  productYield: 1
+  productionSeconds: 150
   walkSpeed: 0.72
   bodyRadius: 0.5
   separationRadius: 1.15
@@ -32,3 +34,11 @@ MonoBehaviour:
   idleState: Idle
   walkState: Walk
   eatingState: Idle
+  nutritionDuration: 1800
+  hydrationDuration: 1800
+  careInterval: 30
+  careGain: 0.1
+  healthyYieldMultiplier: 1
+  intermediateYieldMultiplier: 0.75
+  attentionYieldMultiplier: 0.5
+  sickYieldMultiplier: 0.25

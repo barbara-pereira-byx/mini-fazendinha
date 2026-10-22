@@ -1,0 +1,32 @@
+Real individual and pen UI callbacks, shared production controller
+PASS Chicken has actual collectable product
+PASS Chicken individual credits exact quantity
+PASS Chicken repeat cannot duplicate
+PASS Chicken has actual collectable product
+PASS Chicken pen credits exact quantity
+PASS Chicken repeat cannot duplicate
+PASS Duck has actual collectable product
+PASS Duck individual credits exact quantity
+PASS Duck repeat cannot duplicate
+PASS Duck has actual collectable product
+PASS Duck pen credits exact quantity
+PASS Duck repeat cannot duplicate
+PASS Cow has actual collectable product
+PASS Cow individual credits exact quantity
+PASS Cow repeat cannot duplicate
+PASS Cow has actual collectable product
+PASS Cow pen credits exact quantity
+PASS Cow repeat cannot duplicate
+PASS Sheep has actual collectable product
+PASS Sheep individual credits exact quantity
+PASS Sheep repeat cannot duplicate
+PASS Sheep has actual collectable product
+PASS Sheep pen credits exact quantity
+PASS Sheep repeat cannot duplicate
+PASS Pig has actual collectable product
+PASS Pig individual credits exact quantity
+PASS Pig repeat cannot duplicate
+PASS Pig has actual collectable product
+PASS Pig pen credits exact quantity
+PASS Pig repeat cannot duplicate
+COMPLETED

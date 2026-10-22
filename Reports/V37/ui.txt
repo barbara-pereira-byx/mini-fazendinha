@@ -1,0 +1,22 @@
+Existing UI components; warehouse-sized pen manager
+PASS cows matches warehouse dimensions
+PASS cows all essential sections fit without scrolling
+PASS cows exactly one gate action
+PASS cows resident portraits select only linked animals
+PASS pigs matches warehouse dimensions
+PASS pigs all essential sections fit without scrolling
+PASS pigs exactly one gate action
+PASS pigs resident portraits select only linked animals
+PASS sheep matches warehouse dimensions
+PASS sheep all essential sections fit without scrolling
+PASS sheep exactly one gate action
+PASS sheep resident portraits select only linked animals
+PASS chickens matches warehouse dimensions
+PASS chickens all essential sections fit without scrolling
+PASS chickens exactly one gate action
+PASS chickens resident portraits select only linked animals
+PASS ducks matches warehouse dimensions
+PASS ducks all essential sections fit without scrolling
+PASS ducks exactly one gate action
+PASS ducks resident portraits select only linked animals
+COMPLETED

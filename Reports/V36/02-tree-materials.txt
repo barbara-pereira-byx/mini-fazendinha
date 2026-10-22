@@ -1,0 +1,3 @@
+AppleTree: Assets/MiniFazendinha/Materials/Trees/AppleTree.mat -> Assets/ThirdParty/VoxelFarm/Textures/Environment/TVS_VoxelFarm_AppleTree_Texture.png
+LemonTree: Assets/MiniFazendinha/Materials/Trees/LemonTree.mat -> Assets/ThirdParty/VoxelFarm/Textures/Environment/TVS_VoxelFarm_LemonTree_Texture.png
+OrangeTree: Assets/MiniFazendinha/Materials/Trees/OrangeTree.mat -> Assets/ThirdParty/VoxelFarm/Textures/Environment/TVS_VoxelFarm_OrangeTree_Texture.png

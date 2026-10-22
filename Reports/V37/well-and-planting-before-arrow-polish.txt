@@ -1,0 +1,15 @@
+04-pointer-planting — actual queued Input System events
+PASS: Real building click opens all-item warehouse manager
+PASS: Full warehouse scroll never changes camera zoom
+PASS: Full warehouse reaches final item
+PASS: Warehouse X closes real panel
+PASS: Real well click opens collection panel
+PASS: Real collect button adds water and starts recharge
+PASS: Real plot click opens planting menu
+PASS: Exactly three crop cards on first page
+PASS: Arrow changes page without accidental planting (page=1, state=Empty)
+PASS: Paginated crop click plants exactly one unit
+PASS: Plant drag begins
+PASS: Drag planting affects both fields once
+PASS: Real sickle click harvests configured yield exactly once
+COMPLETED

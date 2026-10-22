@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MiniFazendinha.FruitTrees.FruitTreeDefinition
   identifier: orange-tree
   displayName: Laranjeira
-  modelPrefab: {fileID: 919132149155446097, guid: 494c2be0d08212e4d96f7abff2ec7bb2, type: 3}
+  modelPrefab: {fileID: 8167676411928128068, guid: 4f59414046584f647a9733f0b3e578c6, type: 3}
   fruit: {fileID: 11400000, guid: a0166279165173a48a2fd1f8978518ee, type: 2}
-  growthSeconds: 50
-  productionSeconds: 38
+  growthSeconds: 60
+  productionSeconds: 90
   yieldAmount: 3
   matureScale: 1
   spacingRadius: 1.3

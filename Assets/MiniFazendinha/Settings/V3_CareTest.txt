@@ -1,0 +1,1 @@
+waterFirst=True;waterStock=10;waterSecond=False;cornAdded=12;cornStockAfter=0;correctEat=True;wrongEat=False;waterAdded=10;waterStockAfter=0

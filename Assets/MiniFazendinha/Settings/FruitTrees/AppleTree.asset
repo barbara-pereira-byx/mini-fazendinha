@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MiniFazendinha.FruitTrees.FruitTreeDefinition
   identifier: apple-tree
   displayName: Macieira
-  modelPrefab: {fileID: 919132149155446097, guid: 264792b0ad4060645b40b013983da8f0, type: 3}
+  modelPrefab: {fileID: 8999515106344295597, guid: 1ea6448cf99b0b54d8407c7cd2c2f069, type: 3}
   fruit: {fileID: 11400000, guid: 0a563bcce7d04ad4980f6126214a081e, type: 2}
-  growthSeconds: 45
-  productionSeconds: 34
+  growthSeconds: 60
+  productionSeconds: 90
   yieldAmount: 3
   matureScale: 1
   spacingRadius: 1.3

@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MiniFazendinha.Planting.InventoryItemDefinition
   identifier: Lemon
   displayName: "lim\xE3o"
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: 224e76ddd0c637742b94ec8611c910ca, type: 3}

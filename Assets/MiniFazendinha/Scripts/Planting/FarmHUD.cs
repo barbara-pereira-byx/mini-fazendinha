@@ -71,17 +71,18 @@ namespace MiniFazendinha.Planting
             productsLabel.text=products.ToString();
             bool selected=interactor.Mode!=FarmInteractionMode.None;activeToolBadge.gameObject.SetActive(selected);
             activeToolLabel.text=interactor.Mode==FarmInteractionMode.Harvest?"Colher":interactor.SelectedCrop!=null?interactor.SelectedCrop.DisplayName:"";
-            int cropIndex=Array.IndexOf(interactor.Crops,interactor.SelectedCrop);activeToolIcon.sprite=interactor.Mode==FarmInteractionMode.Harvest?sickleIcon:cropIndex>=0&&cropIndex<cropIcons.Length?cropIcons[cropIndex]:null;
+            int cropIndex=Array.IndexOf(interactor.Crops,interactor.SelectedCrop);activeToolIcon.sprite=interactor.Mode==FarmInteractionMode.Harvest?sickleIcon:interactor.SelectedCrop!=null?interactor.SelectedCrop.Icon:null;
             if(interactor.ContextMenuOpen)warehouse.HideImmediately();
             contextMenu.Refresh();
             if(harvestButton!=null){harvestLabel.text="Foice\nColher";Style(harvestButton,harvestLabel,interactor.Mode==FarmInteractionMode.Harvest);}
         }
         public void ToggleWarehouse()
         {
-            bool open=!warehouse.IsOpen;interactor.CloseContextMenu();warehouse.SetOpen(open);
+            FindAnyObjectByType<MiniFazendinha.Animals.FarmAnimalContextUI>()?.CloseManagement();bool open=!warehouse.IsOpen;interactor.CloseContextMenu();warehouse.SetOpen(open);
         }
         public void CloseMenus(bool cancelTool=true)
         {
+            if(cancelTool)FindAnyObjectByType<MiniFazendinha.FruitTrees.FarmTreePlacementController>()?.Cancel();
             warehouse.SetOpen(false);if(cancelTool)interactor.CancelTool();else interactor.CloseContextMenu();
         }
         public void SelectSeed(CropDefinition crop,FarmPlot origin)

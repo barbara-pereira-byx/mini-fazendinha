@@ -1,0 +1,9 @@
+Input cleanup lifecycle regression
+PASS Normal/idempotent dispose: physical mouse enabled
+PASS Normal/idempotent dispose: physical mouse current
+PASS Normal/idempotent dispose: no orphan test mouse
+PASS Original input settings restored
+PASS Assembly reload: physical mouse enabled
+PASS Assembly reload: physical mouse current
+PASS Assembly reload: no orphan test mouse
+COMPLETED

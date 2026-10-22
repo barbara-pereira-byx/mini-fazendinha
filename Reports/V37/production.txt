@@ -1,0 +1,27 @@
+Production boundaries using the real animal controller
+PASS Chicken period=60
+PASS Chicken no product one second before cycle; UI clock agrees
+PASS Chicken exact cycle yields 1
+PASS Chicken zero/negative time cannot duplicate
+PASS Chicken wellbeing changes yield, not period
+PASS Cow period=120
+PASS Cow no product one second before cycle; UI clock agrees
+PASS Cow exact cycle yields 2
+PASS Cow zero/negative time cannot duplicate
+PASS Cow wellbeing changes yield, not period
+PASS Duck period=90
+PASS Duck no product one second before cycle; UI clock agrees
+PASS Duck exact cycle yields 1
+PASS Duck zero/negative time cannot duplicate
+PASS Duck wellbeing changes yield, not period
+PASS Pig period=150
+PASS Pig no product one second before cycle; UI clock agrees
+PASS Pig exact cycle yields 1
+PASS Pig zero/negative time cannot duplicate
+PASS Pig wellbeing changes yield, not period
+PASS Sheep period=180
+PASS Sheep no product one second before cycle; UI clock agrees
+PASS Sheep exact cycle yields 2
+PASS Sheep zero/negative time cannot duplicate
+PASS Sheep wellbeing changes yield, not period
+COMPLETED

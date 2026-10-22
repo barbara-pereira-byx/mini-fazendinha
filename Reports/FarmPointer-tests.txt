@@ -1,0 +1,13 @@
+Queued Input System pointer checks
+PASS: Actual well click opens correct panel
+PASS: Water ready before collection click
+PASS: Actual collect button transfers water
+PASS: Actual animal click opens its panel
+PASS: Actual pen sign click opens correct management panel
+PASS: Actual warehouse toggle opens icon grid
+PASS: Actual mouse wheel scrolls inventory grid
+PASS: Actual warehouse X closes catalog
+PASS: Actual empty plot click opens seed menu
+PASS: Actual next page button changes crops
+PASS: Actual paginated crop button plants origin
+COMPLETED

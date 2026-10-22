@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -97,8 +97,7 @@ namespace MiniFazendinha.Planting
         public void CancelDrag() {IsDragging=false;visited.Clear();}
         public bool IsOverUI(Vector2 screenPoint)
         {
-            if(EventSystem.current==null)return false;
-            uiHits.Clear();EventSystem.current.RaycastAll(new PointerEventData(EventSystem.current){position=screenPoint},uiHits);return uiHits.Count>0;
+            return MiniFazendinha.UI.FarmInputPriority.IsOverUI(screenPoint);
         }
         bool IsPlayable(Vector2 point)
         {

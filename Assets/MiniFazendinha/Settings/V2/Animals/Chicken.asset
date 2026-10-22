@@ -16,9 +16,11 @@ MonoBehaviour:
   displayName: Galinha
   visualPrefab: {fileID: 1828292505832119840, guid: c1675e0dfcc8b3044aa5ce6899e85aff, type: 3}
   animatorController: {fileID: 9100000, guid: 0b3a6757b18a358418a2f4f095fc5170, type: 2}
+  feedItem: {fileID: 11400000, guid: 59334938a6c255d4e952491b525a19d4, type: 2}
+  waterItem: {fileID: 11400000, guid: 4407fd974342ec34d9a39d56eefe05ac, type: 2}
   product: {fileID: 11400000, guid: 72defa4fad7dcbe4ba3444706affa39b, type: 2}
   productYield: 1
-  productionSeconds: 28
+  productionSeconds: 60
   walkSpeed: 0.9
   bodyRadius: 0.4
   separationRadius: 0.92
@@ -32,3 +34,11 @@ MonoBehaviour:
   idleState: Idle
   walkState: Walk
   eatingState: Eating
+  nutritionDuration: 1800
+  hydrationDuration: 1800
+  careInterval: 30
+  careGain: 0.1
+  healthyYieldMultiplier: 1
+  intermediateYieldMultiplier: 0.75
+  attentionYieldMultiplier: 0.5
+  sickYieldMultiplier: 0.25

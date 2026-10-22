@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MiniFazendinha.Planting.InventoryItemDefinition
   identifier: Orange
   displayName: laranja
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: 4102c8b0ef8d70e4f922c22b30704cb5, type: 3}

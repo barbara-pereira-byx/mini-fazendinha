@@ -16,9 +16,11 @@ MonoBehaviour:
   displayName: Ovelha
   visualPrefab: {fileID: 6273222186072014222, guid: 0e607c40d8c9f3843bb402ca135953c0, type: 3}
   animatorController: {fileID: 9100000, guid: 134f9edb5b18a1d429e00570fe0f8ecc, type: 2}
+  feedItem: {fileID: 11400000, guid: b5c0b90f55e181d43a65016558d76635, type: 2}
+  waterItem: {fileID: 11400000, guid: 4407fd974342ec34d9a39d56eefe05ac, type: 2}
   product: {fileID: 11400000, guid: 5e765ea38e81f4a40998d834fe7c369f, type: 2}
   productYield: 2
-  productionSeconds: 60
+  productionSeconds: 180
   walkSpeed: 0.7
   bodyRadius: 0.6
   separationRadius: 1.38
@@ -32,3 +34,11 @@ MonoBehaviour:
   idleState: Idle
   walkState: Walk
   eatingState: Idle
+  nutritionDuration: 1800
+  hydrationDuration: 1800
+  careInterval: 30
+  careGain: 0.1
+  healthyYieldMultiplier: 1
+  intermediateYieldMultiplier: 0.75
+  attentionYieldMultiplier: 0.5
+  sickYieldMultiplier: 0.25

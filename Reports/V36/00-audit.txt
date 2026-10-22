@@ -1,0 +1,24 @@
+Scene: Assets/MiniFazendinha/Scenes/FarmMain.unity
+Compile error: False
+Galinha_02 home=chickens radius=0,4 rendered=(0.36, 0.52, 0.68)
+Ovelha_02 home=sheep radius=0,6 rendered=(0.80, 0.92, 1.35)
+Porco_01 home=pigs radius=0,5 rendered=(0.62, 0.72, 1.40)
+Porco_02 home=pigs radius=0,5 rendered=(0.62, 0.72, 1.40)
+Pato_01 home=ducks radius=0,38 rendered=(0.25, 0.48, 0.49)
+Ovelha_01 home=sheep radius=0,6 rendered=(0.80, 0.92, 1.35)
+Vaca_02 home=cows radius=0,75 rendered=(0.68, 1.25, 2.24)
+Galinha_03 home=chickens radius=0,4 rendered=(0.36, 0.52, 0.68)
+Vaca_01 home=cows radius=0,75 rendered=(0.68, 1.25, 2.24)
+Galinha_01 home=chickens radius=0,4 rendered=(0.36, 0.52, 0.68)
+Canvas 12_Interface_Plantio ScreenSpaceOverlay scaler=(1440.00, 900.00)
+Tree AppleTree prefab=Assets/ThirdParty/VoxelFarm/FBX/Environment/TVS_VoxelFarm_AppleTree.fbx
+  TVS_VoxelFarm_AppleTree: palette.084 / Universal Render Pipeline/Lit texture=
+Tree LemonTree prefab=Assets/ThirdParty/VoxelFarm/FBX/Environment/TVS_VoxelFarm_LemonTree.fbx
+  TVS_VoxelFarm_LemonTree: palette.078 / Universal Render Pipeline/Lit texture=
+Tree OrangeTree prefab=Assets/ThirdParty/VoxelFarm/FBX/Environment/TVS_VoxelFarm_OrangeTree.fbx
+  TVS_VoxelFarm_OrangeTree: palette.077 / Universal Render Pipeline/Lit texture=
+Building Acesso_Casa (-10.50, 0.01, 5.80)
+Building Acesso_Celeiro (7.00, 0.01, 4.50)
+Building Casa_Principal (-10.50, 0.00, 11.02)
+Building Celeiro (7.00, 0.00, 11.00)
+Building Caixote_Celeiro (12.20, -0.01, 8.00)

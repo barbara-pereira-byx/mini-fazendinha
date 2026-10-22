@@ -1,0 +1,4 @@
+current=Mouse:/Mouse
+routing=PointersAndKeyboardsRespectGameViewFocus
+Keyboard enabled=True native=True
+Mouse enabled=True native=True

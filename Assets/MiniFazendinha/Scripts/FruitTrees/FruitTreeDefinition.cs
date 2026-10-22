@@ -10,8 +10,8 @@ namespace MiniFazendinha.FruitTrees
         [SerializeField] string displayName;
         [SerializeField] GameObject modelPrefab;
         [SerializeField] InventoryItemDefinition fruit;
-        [SerializeField,Min(5)] float growthSeconds=45;
-        [SerializeField,Min(5)] float productionSeconds=30;
+        [SerializeField,Min(5)] float growthSeconds=60;
+        [SerializeField,Min(5)] float productionSeconds=90;
         [SerializeField,Min(1)] int yieldAmount=3;
         [SerializeField,Min(.1f)] float matureScale=1;
         [SerializeField,Min(.25f)] float spacingRadius=1.2f;

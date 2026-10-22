@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MiniFazendinha.Planting.InventoryItemDefinition
   identifier: wool
   displayName: "L\xE3"
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: 96793ebe78403784685a4ea19ccf67ba, type: 3}

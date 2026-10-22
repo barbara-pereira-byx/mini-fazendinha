@@ -1,0 +1,5 @@
+System.InvalidOperationException: This cannot be used during play mode.
+  at (wrapper managed-to-native) UnityEditor.SceneManagement.EditorSceneManager.MarkSceneDirty_Injected(UnityEngine.SceneManagement.Scene&)
+  at UnityEditor.SceneManagement.EditorSceneManager.MarkSceneDirty (UnityEngine.SceneManagement.Scene scene) [0x00000] in <10f329ca493444f3928e8ce715a27e16>:0 
+  at MiniFazendinha.EditorTools.FarmV3PenSetup.BuildImpl () [0x0017b] in C:\Users\Túlio\My project\Assets\MiniFazendinha\Scripts\Editor\FarmV3PenSetup.cs:61 
+  at MiniFazendinha.EditorTools.FarmV3PenSetup.Build () [0x00000] in C:\Users\Túlio\My project\Assets\MiniFazendinha\Scripts\Editor\FarmV3PenSetup.cs:32 

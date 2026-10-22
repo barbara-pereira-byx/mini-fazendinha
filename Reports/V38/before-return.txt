@@ -1,0 +1,15 @@
+Galinhas e galos gate=False passage=
+Galinha 3 position=(15.70, 0.08, -11.36) inside=True confined=True returning=False exiting=False dest=(15.62, 0.08, -11.30) has=False routeIndex=3 yieldFor=
+Galinha 2 position=(15.17, 0.08, -12.33) inside=True confined=True returning=False exiting=False dest=(17.12, 0.08, -11.19) has=False routeIndex=0 yieldFor=
+Galinha 1 position=(16.56, 0.08, -12.51) inside=True confined=True returning=False exiting=False dest=(16.16, 0.08, -12.63) has=True routeIndex=0 yieldFor=
+Patos gate=True passage=
+Pato 1 position=(16.34, 0.08, -1.09) inside=True confined=True returning=False exiting=False dest=(16.41, 0.08, -1.05) has=False routeIndex=3 yieldFor=
+Porcos gate=True passage=
+Porco 1 position=(15.64, 0.08, -6.39) inside=True confined=True returning=False exiting=False dest=(16.03, 0.08, -6.34) has=True routeIndex=0 yieldFor=Porco_02 (MiniFazendinha.Animals.FarmAnimalController)
+Porco 2 position=(17.30, 0.08, -6.65) inside=True confined=True returning=False exiting=False dest=(17.35, 0.08, -6.57) has=False routeIndex=3 yieldFor=
+Ovelhas gate=False passage=
+Ovelha 1 position=(9.93, 0.08, -6.18) inside=True confined=True returning=False exiting=False dest=(10.73, 0.08, -6.08) has=False routeIndex=3 yieldFor=Ovelha_02 (MiniFazendinha.Animals.FarmAnimalController)
+Ovelha 2 position=(10.98, 0.08, -7.39) inside=True confined=True returning=False exiting=False dest=(11.29, 0.08, -7.50) has=True routeIndex=3 yieldFor=
+Vacas gate=False passage=
+Vaca 1 position=(10.23, 0.08, -12.45) inside=True confined=True returning=False exiting=False dest=(10.32, 0.08, -12.48) has=False routeIndex=1 yieldFor=Vaca_02 (MiniFazendinha.Animals.FarmAnimalController)
+Vaca 2 position=(11.74, 0.08, -11.36) inside=True confined=True returning=False exiting=False dest=(11.74, 0.08, -11.28) has=False routeIndex=3 yieldFor=

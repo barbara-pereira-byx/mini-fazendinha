@@ -35,11 +35,13 @@ namespace MiniFazendinha
             Vector2 pointer = mouse.position.ReadValue();
             if(plotInteractor==null)plotInteractor=Object.FindAnyObjectByType<FarmPlotInteractor>();
             bool inView=view.pixelRect.Contains(pointer);
-            bool overUI=plotInteractor!=null && plotInteractor.IsOverUI(pointer);
+            bool overUI=MiniFazendinha.UI.FarmInputPriority.IsOverUI(pointer);
+            bool wheelUI=MiniFazendinha.UI.FarmInputPriority.CapturesScroll(pointer);
+            if(wheelUI){smoothingZoom=false;zoomTarget=view.orthographicSize;}
             if(mouse.leftButton.wasPressedThisFrame)LeftGestureWasPan=false;
             if(mouse.rightButton.wasPressedThisFrame && inView && !overUI)
             {leftPan=false;dragging=true;pressPointer=previousPointer=pointer;}
-            else if(mouse.leftButton.wasPressedThisFrame && inView && !overUI &&
+            else if(mouse.leftButton.wasPressedThisFrame && inView && !overUI && Object.FindAnyObjectByType<MiniFazendinha.FruitTrees.FarmTreePlacementController>()?.IsPlacing!=true &&
                 (plotInteractor==null || plotInteractor.Mode==FarmInteractionMode.None || plotInteractor.PlotAt(pointer)==null))
             {leftPan=true;dragging=true;pressPointer=previousPointer=pointer;}
             bool held=leftPan?mouse.leftButton.isPressed:mouse.rightButton.isPressed;
@@ -55,7 +57,7 @@ namespace MiniFazendinha
             }
             if(!held)dragging=false;
             float scroll = mouse.scroll.ReadValue().y;
-            if(Mathf.Abs(scroll)>0.001f && inView)
+            if(Mathf.Abs(scroll)>0.001f && inView && !wheelUI)
             {if(!smoothingZoom)zoomTarget=view.orthographicSize;zoomTarget=Mathf.Clamp(zoomTarget-Mathf.Clamp(ScrollSteps(scroll),-4f,4f)*zoomSpeed,minZoom,maxZoom);zoomPointer=pointer;smoothingZoom=true;}
             if(smoothingZoom)
             {

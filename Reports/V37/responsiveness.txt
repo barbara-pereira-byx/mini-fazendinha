@@ -1,0 +1,5 @@
+PASS pen has no scrolling, well button label and panel bounds at (1920, 1080)
+PASS pen has no scrolling, well button label and panel bounds at (1600, 900)
+PASS pen has no scrolling, well button label and panel bounds at (1366, 768)
+PASS 40px arrow buttons without tooltips; three crops per page
+COMPLETED

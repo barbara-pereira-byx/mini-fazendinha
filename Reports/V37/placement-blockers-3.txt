@@ -1,0 +1,10 @@
+(0.00, 0.03, 12.00) False Caminho ou cerca protegidos
+Terreno_Verde_40x40 ymax=0 shelter= plot= tree=
+Terra_Base ymax=-0,205 shelter= plot= tree=
+(-1.00, 0.03, 13.00) False Caminho ou cerca protegidos
+Terreno_Verde_40x40 ymax=0 shelter= plot= tree=
+Terra_Base ymax=-0,205 shelter= plot= tree=
+(12.00, 0.03, 0.00) False Caminho ou cerca protegidos
+Gramado_Pastagem ymax=0,024 shelter= plot= tree=
+Terreno_Verde_40x40 ymax=0 shelter= plot= tree=
+Terra_Base ymax=-0,205 shelter= plot= tree=

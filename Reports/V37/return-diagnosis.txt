@@ -1,0 +1,6 @@
+Vaca 1 pos=(10.48, 0.08, -12.38) radius=0,75 bounds=Center: (10.80, 0.10, -11.50), Extents: (1.80, 0.05, 2.15) entrance=(11.45, 0.08, -11.50) gate=(12.60, 0.08, -11.50) destination=(9.91, 0.08, -10.26) has=False returning=False
+candidate=(9.91, 0.08, -12.74) valid=False
+candidate=(11.69, 0.08, -12.74) valid=False
+candidate=(9.91, 0.08, -10.26) valid=False
+candidate=(11.69, 0.08, -10.26) valid=False
+Vaca 2 pos=(12.69, 0.08, -11.51) radius=0,75 bounds=Center: (10.80, 0.10, -11.50), Extents: (1.80, 0.05, 2.15) entrance=(11.45, 0.08, -11.50) gate=(12.60, 0.08, -11.50) destination=(11.45, 0.08, -11.50) has=False returning=True

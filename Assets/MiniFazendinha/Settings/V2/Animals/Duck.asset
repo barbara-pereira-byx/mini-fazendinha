@@ -16,9 +16,11 @@ MonoBehaviour:
   displayName: Pato
   visualPrefab: {fileID: 5228452249538409115, guid: bc01cf4f1dc043149a5d387eadaa3415, type: 3}
   animatorController: {fileID: 9100000, guid: 04b1bde322422ab40bf40a88b379c2f9, type: 2}
-  product: {fileID: 0}
-  productYield: 0
-  productionSeconds: 33
+  feedItem: {fileID: 11400000, guid: 59334938a6c255d4e952491b525a19d4, type: 2}
+  waterItem: {fileID: 11400000, guid: 4407fd974342ec34d9a39d56eefe05ac, type: 2}
+  product: {fileID: 11400000, guid: fa4af8c0242c62d468c0e455bac62db3, type: 2}
+  productYield: 1
+  productionSeconds: 90
   walkSpeed: 0.65
   bodyRadius: 0.38
   separationRadius: 0.87399995
@@ -32,3 +34,11 @@ MonoBehaviour:
   idleState: Idle
   walkState: Walk
   eatingState: Idle
+  nutritionDuration: 1800
+  hydrationDuration: 1800
+  careInterval: 30
+  careGain: 0.1
+  healthyYieldMultiplier: 1
+  intermediateYieldMultiplier: 0.75
+  attentionYieldMultiplier: 0.5
+  sickYieldMultiplier: 0.25

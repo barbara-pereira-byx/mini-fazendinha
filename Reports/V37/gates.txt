@@ -1,0 +1,6 @@
+PASS cows closed leaf visible/colliding; open leaf hidden/nonblocking
+PASS sheep closed leaf visible/colliding; open leaf hidden/nonblocking
+PASS pigs closed leaf visible/colliding; open leaf hidden/nonblocking
+PASS chickens closed leaf visible/colliding; open leaf hidden/nonblocking
+PASS ducks closed leaf visible/colliding; open leaf hidden/nonblocking
+COMPLETED

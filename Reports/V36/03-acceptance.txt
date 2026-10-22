@@ -1,0 +1,42 @@
+V3.6 actual Play Mode models and UI callbacks
+PASS Every warehouse item has an illustrated icon
+PASS Storage enforces configured capacity
+PASS Cultivos sidebar contains crops only
+PASS All sidebar cards are plantable crops
+PASS Pig analytical clock simulation 30s food=98,333% water=98,333%
+PASS Pig analytical clock simulation 60s food=96,667% water=96,667%
+PASS Pig analytical clock simulation 300s food=83,333% water=83,333%
+PASS Pig analytical clock simulation 1800s food=0,000% water=0,000%
+PASS Sheep analytical clock simulation 30s food=98,333% water=98,333%
+PASS Sheep analytical clock simulation 60s food=96,667% water=96,667%
+PASS Sheep analytical clock simulation 300s food=83,333% water=83,333%
+PASS Sheep analytical clock simulation 1800s food=0,000% water=0,000%
+PASS Chicken analytical clock simulation 30s food=98,333% water=98,333%
+PASS Chicken analytical clock simulation 60s food=96,667% water=96,667%
+PASS Chicken analytical clock simulation 300s food=83,333% water=83,333%
+PASS Chicken analytical clock simulation 1800s food=0,000% water=0,000%
+PASS Cow analytical clock simulation 30s food=98,333% water=98,333%
+PASS Cow analytical clock simulation 60s food=96,667% water=96,667%
+PASS Cow analytical clock simulation 300s food=83,333% water=83,333%
+PASS Cow analytical clock simulation 1800s food=0,000% water=0,000%
+PASS Duck analytical clock simulation 30s food=98,333% water=98,333%
+PASS Duck analytical clock simulation 60s food=96,667% water=96,667%
+PASS Duck analytical clock simulation 300s food=83,333% water=83,333%
+PASS Duck analytical clock simulation 1800s food=0,000% water=0,000%
+PASS Quantity popup transfers exactly five units
+PASS Cancel has no stock effect
+PASS Reentrant callback cannot duplicate a refill
+PASS Consuming final crop requires explicit second confirmation
+PASS Explicit final-crop confirmation transfers exactly one
+PASS Animal name validation
+PASS Rename preserves animal identifier
+PASS Pen rename preserves identifier
+PASS Production tier 1 with fractional carry: 8
+PASS Production tier 0,75 with fractional carry: 6
+PASS Production tier 0,5 with fractional carry: 4
+PASS Production tier 0,25 with fractional carry: 2
+PASS Gate closes when passage is clear
+PASS Closed gate refuses release
+PASS Gate reopens
+PASS Closing animal card returns to pen manager
+COMPLETED (callback tests; movement and pointer tests reported separately)

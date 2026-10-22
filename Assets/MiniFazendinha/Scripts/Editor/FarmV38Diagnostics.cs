@@ -1,0 +1,4 @@
+namespace MiniFazendinha.EditorTools {public static class FarmV38Diagnostics {[UnityEditor.MenuItem("MiniFazendinha/V3.8/Diagnose blocked routes")]public static void Diagnose(){
+var log=new System.Text.StringBuilder();foreach(var s in UnityEngine.Object.FindObjectsByType<MiniFazendinha.Animals.AnimalShelter>())foreach(var a in s.Residents){if(!a.IsExitingHome&&!a.IsReturningHome)continue;log.AppendLine("Blocked "+a.DisplayName+" at "+a.transform.position+" dest "+a.GetComponent<MiniFazendinha.Animals.FarmAnimalNavigation>().Destination);foreach(var b in MiniFazendinha.Animals.FarmAnimalRegistry.All){if(a==b||UnityEngine.Vector3.Distance(a.transform.position,b.transform.position)>4)continue;log.AppendLine("Yield "+b.DisplayName+" -> "+b.MakeRoomFor(a));}}System.IO.File.WriteAllText("Reports/V38/yield-diagnosis.txt",log.ToString());
+
+}}}

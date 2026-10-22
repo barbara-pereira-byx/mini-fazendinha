@@ -1,0 +1,81 @@
+﻿        public void ShowShelter(AnimalShelter shelter)
+        {
+            if(selectedShelter!=shelter){selectedShelter=shelter;shelterPage=0;}
+            parentShelter=null;Begin(shelter.DisplayName,760,650);
+            Icon(root,Sprite(shelter.PermittedSpecies.Identifier),22,18,46);
+            root.GetComponentsInChildren<TMP_Text>().First().rectTransform.anchoredPosition=new Vector2(82,-20);
+            var capacity=Text(root,"",82,61,360,26,16);
+            Button(root,"✎","Renomear curral",root.sizeDelta.x-108,58,42,()=>Rename(shelter.DisplayName,shelter.Rename,()=>ShowShelter(shelter)));
+            var gate=Button(root,shelter.GateOpen?"▥":"▱",shelter.GateOpen?"Fechar porteira":"Abrir porteira",22,100,60,()=>
+            {
+                bool opening=!shelter.GateOpen;shelter.SetGate(opening);
+                if(shelter.GateOpen==opening){if(opening)shelter.ReleaseAll();}else Notice("Aguarde a passagem ficar livre");
+                ShowShelter(shelter);
+            });
+            Button(root,"♪","Chamar moradores",92,100,60,()=>{if(!shelter.GateOpen){Notice("Abra a porteira antes de chamar");return;}shelter.RecollectAll();Notice("Chamando os moradores");});
+            var gateStatus=Text(root,"",170,110,440,26,16,true);
+            float width=root.sizeDelta.x-40;
+            content=Scroll(root,20,160,width,root.sizeDelta.y-180,out var scroll);
+            var updates=new System.Collections.Generic.List<Action>();string signature="";
+            void Populate()
+            {
+                ClearContent();updates.Clear();
+                var residents=shelter.Residents.Where(a=>a!=null).ToArray();
+                signature=shelter.Capacity+"|"+string.Join("|",residents.Select(a=>a.AnimalId+":"+a.ProductsAvailable));
+                int cells=Mathf.Max(shelter.Capacity,residents.Length),pages=Mathf.Max(1,Mathf.CeilToInt(cells/6f));shelterPage=Mathf.Clamp(shelterPage,0,pages-1);
+                Text(content,"Moradores",8,3,320,26,18,true);
+                if(pages>1)
+                {
+                    var previous=Button(content,"◀","Página anterior de moradores",width-150,0,36,()=>{shelterPage--;Populate();});previous.interactable=shelterPage>0;
+                    Text(content,(shelterPage+1)+" / "+pages,width-108,7,56,25,14);
+                    var next=Button(content,"▶","Próxima página de moradores",width-50,0,36,()=>{shelterPage++;Populate();});next.interactable=shelterPage<pages-1;
+                }
+                float cellWidth=(width-40)/6;
+                for(int slot=0;slot<6;slot++)
+                {
+                    int index=shelterPage*6+slot;if(index>=cells)continue;
+                    var card=Box(content,"Morador",cellWidth-6,102,Color.white);At(card,8+slot*cellWidth,37);
+                    if(index>=residents.Length){var empty=Text(card,"+",0,29,cellWidth-6,40,28);empty.alignment=TextAlignmentOptions.Center;continue;}
+                    var animal=residents[index];Icon(card,Sprite(animal.Definition.Identifier),(cellWidth-70)/2,3,64);
+                    var label=Text(card,animal.DisplayName,5,69,cellWidth-16,23,13,true);label.alignment=TextAlignmentOptions.Center;
+                    var fill=Box(card,"Felicidade",1,4,Green);At(fill,6,95);
+                    var attention=Text(card,"!",cellWidth-26,4,18,22,17,true);
+                    updates.Add(()=>{fill.sizeDelta=new Vector2((cellWidth-18)*animal.Happiness,4);attention.gameObject.SetActive(animal.Health!=AnimalHealthState.Healthy);});
+                    card.gameObject.AddComponent<FarmTooltip>().Value=animal.DisplayName+" • "+animal.HealthLabel;
+                    card.gameObject.AddComponent<Button>().onClick.AddListener(()=>ShowAnimal(animal,shelter));
+                }
+                if(residents.Length==0)Text(content,"Sem moradores",8,164,width-20,40,16);
+                else
+                {
+                    float column=(width-30)/2;
+                    updates.Add(LiveBar(content,"Felicidade",()=>residents.Average(a=>a.Happiness),8,158,column,"ActionHeart"));
+                    updates.Add(LiveBar(content,"Alimentação",()=>residents.Average(a=>a.FeedingLevel),column+20,158,column,"ActionFeed"));
+                    updates.Add(LiveBar(content,"Água",()=>residents.Average(a=>a.HydrationLevel),8,202,column,"Water"));
+                    updates.Add(LiveBar(content,"Saúde",()=>residents.Average(a=>a.Health==AnimalHealthState.Healthy?1f:a.Health==AnimalHealthState.Attention?.5f:.25f),column+20,202,column,"ActionHealth"));
+                }
+                Text(content,"Recursos",8,245,width-20,25,18,true);
+                var foodCard=Box(content,"Alimento",(width-30)/2,65,Color.white);At(foodCard,8,277);Icon(foodCard,shelter.Food.AcceptedItem.Icon,10,9,46);
+                Text(foodCard,shelter.Food.AcceptedItem.DisplayName,66,7,240,23,15,true);var food=Text(foodCard,"",66,33,240,25,14);updates.Add(()=>food.text=shelter.Food.Units+" / "+shelter.Food.Capacity+" no comedouro");
+                var waterCard=Box(content,"Água",(width-30)/2,65,Color.white);At(waterCard,(width-30)/2+20,277);Icon(waterCard,shelter.Water.AcceptedItem.Icon,10,9,46);
+                Text(waterCard,"Água",66,7,240,23,15,true);var water=Text(waterCard,"",66,33,240,25,14);updates.Add(()=>water.text=shelter.Water.Units+" / "+shelter.Water.Capacity+" no bebedouro");
+                Text(content,"Produção",8,356,width-20,25,18,true);
+                var product=shelter.PermittedSpecies.Product;
+                if(product==null)Text(content,"Sem produto configurado",8,395,width-20,40,15);
+                else
+                {
+                    var card=Box(content,"Produção disponível",width-20,64,Color.white);At(card,8,389);Icon(card,product.Icon,12,7,48);
+                    var amount=Text(card,"",76,7,width-210,25,17,true);var time=Text(card,"",76,34,width-210,23,14);
+                    var collect=Button(card,"↓","Coletar "+product.DisplayName,width-110,12,70,()=>{int n=0;foreach(var a in shelter.Residents)if(a!=null)n+=a.CollectProducts();Notice("+"+n+" "+product.DisplayName,Camera.main.WorldToScreenPoint(shelter.transform.position),product.Icon);});
+                    updates.Add(()=>{int n=shelter.ProductsAvailable;amount.text=n+" "+product.DisplayName;time.text=n>0?"Pronto para coletar":residents.Length==0?"Sem moradores":"Próximo ciclo em "+Mathf.CeilToInt(residents.Min(a=>a.SecondsToNextProduct))+" s";collect.interactable=n>0;});
+                }
+                content.sizeDelta=new Vector2(width,462);foreach(var update in updates)update();
+            }
+            Populate();
+            refresh=()=>
+            {
+                capacity.text=shelter.ResidentCount+" / "+shelter.Capacity+" moradores";
+                gateStatus.text=shelter.Residents.Any(a=>a!=null&&a.IsReturningHome)?"Animais retornando":shelter.GateOpen?"Porteira aberta":"Porteira fechada";
+                string current=shelter.Capacity+"|"+string.Join("|",shelter.Residents.Where(a=>a!=null).Select(a=>a.AnimalId+":"+a.ProductsAvailable));
+                if(current!=signature)Populate();foreach(var update in updates)update();
+            };refresh();
+        }

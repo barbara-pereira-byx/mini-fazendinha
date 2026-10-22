@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MiniFazendinha.Planting.InventoryItemDefinition
   identifier: milk
   displayName: Leite
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: a986c8c842ce4ff4e8158c16ec96f3bb, type: 3}

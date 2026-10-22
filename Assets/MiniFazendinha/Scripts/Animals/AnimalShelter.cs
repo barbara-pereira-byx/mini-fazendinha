@@ -7,68 +7,86 @@ namespace MiniFazendinha.Animals
     [DisallowMultipleComponent]
     public sealed class AnimalShelter : MonoBehaviour
     {
-        [SerializeField] string shelterId = "barn-main";
+        [SerializeField] string shelterId="barn-main";
+        [SerializeField] string displayName="Curral";
+        [SerializeField] AnimalDefinition permittedSpecies;
+        [SerializeField, Min(1)] int capacity=6;
+        [SerializeField] FeedingPoint food, water;
         [SerializeField] Collider roamingArea;
-        [SerializeField] Vector3 gatePoint = new Vector3(9f, 0.03f, -3.5f);
-        [SerializeField] Vector3 pathPoint = new Vector3(8f, 0.03f, 3f);
-        [SerializeField] Vector3 entrancePoint = new Vector3(7f, 0.03f, 5.45f);
-        [SerializeField, Min(0.2f)] float boundaryInset = 0.85f;
+        [SerializeField] Vector3 gatePoint, pathPoint, entrancePoint;
+        [SerializeField] Bounds farmArea=new Bounds(new Vector3(10,0,-2),new Vector3(16,.1f,30));
+        [SerializeField, Min(.2f)] float boundaryInset=.35f;
         [SerializeField] GameObject productReadyMarker;
-        readonly List<FarmAnimalController> residents = new List<FarmAnimalController>();
-        public string ShelterId => shelterId;
-        public Vector3 GatePoint => gatePoint;
-        public Vector3 PathPoint => pathPoint;
-        public Vector3 EntrancePoint => entrancePoint;
-        public Bounds RoamingBounds => roamingArea == null ? new Bounds(transform.position, new Vector3(8f, 0.1f, 14f)) : roamingArea.bounds;
-        public IReadOnlyList<FarmAnimalController> Residents => residents;
-        public int ResidentCount => residents.Count;
-        public int ProductsAvailable { get { int total=0;foreach(var a in residents)if(a!=null)total+=a.ProductsAvailable;return total; } }
-
-        void LateUpdate() { if(productReadyMarker!=null) productReadyMarker.SetActive(ProductsAvailable>0); }
-        public int ResidentIndex(FarmAnimalController animal) => residents.IndexOf(animal);
-
-        public void Register(FarmAnimalController animal)
+        [SerializeField] bool gateOpen=true;
+        [SerializeField] Transform gateVisual;
+        bool releasing; FarmAnimalController passage;
+        static readonly HashSet<AnimalShelter> activeShelters=new HashSet<AnimalShelter>();
+        void OnEnable()=>activeShelters.Add(this);
+        void OnDisable(){activeShelters.Remove(this);passage=null;}
+        public bool TryPassage(FarmAnimalController a)
         {
-            if (animal != null && !residents.Contains(animal)) residents.Add(animal);
+            if(!gateOpen||passage!=null&&passage!=a)return false;
+            // Opposite pens share a narrow approach. Reserve that corridor as one passage.
+            foreach(var shelter in activeShelters)
+                if(shelter!=this&&shelter.passage!=null&&Vector3.Distance(pathPoint,shelter.pathPoint)<a.Definition.BodyRadius+shelter.passage.Definition.BodyRadius+.3f)return false;
+            passage=a;return true;
         }
-
-        public void RecollectAll()
+        public void ReleasePassage(FarmAnimalController a){if(passage==a)passage=null;}
+        public bool GateOpen=>gateOpen;
+        public bool Rename(string value){value=value?.Trim();if(string.IsNullOrEmpty(value)||value.Length>24)return false;displayName=value;return true;}
+        public void SetGate(bool value)
         {
-            foreach (var animal in residents)
-                if (animal != null && !animal.IsInsideShelter) animal.ReturnToShelter(this);
-        }
-
-        public void ReleaseAll()
-        {
-            foreach (var animal in residents)
-                if (animal != null && animal.IsInsideShelter) animal.ReleaseFromShelter(this);
-        }
-
-        public Vector3 ReleasePoint(int index)
-        {
-            Vector3 inside = (transform.position - gatePoint).normalized;
-            if (inside.sqrMagnitude < 0.01f) inside = Vector3.right;
-            float lane = (index % 5) * 0.55f;
-            float row = (index / 5) * 0.6f;
-            Vector3 point = gatePoint + inside * (1.1f + lane) + Vector3.forward * row;
-            var bounds = RoamingBounds;
-            point.x = Mathf.Clamp(point.x, bounds.min.x + boundaryInset, bounds.max.x - boundaryInset);
-            point.z = Mathf.Clamp(point.z, bounds.min.z + boundaryInset, bounds.max.z - boundaryInset);
-            point.y = bounds.min.y + 0.03f;
-            return point;
-        }
-
-        void OnDrawGizmosSelected()
-        {
-            Gizmos.color = new Color(1f, 0.75f, 0.2f, 0.9f);
-            Gizmos.DrawSphere(gatePoint, 0.18f);
-            Gizmos.color = new Color(0.2f, 0.85f, 0.5f, 0.9f);
-            Gizmos.DrawSphere(entrancePoint, 0.18f);
-            if (roamingArea != null)
+            if(!value){if(passage!=null)return;foreach(var a in residents)if(a!=null&&Vector3.Distance(a.transform.position,gatePoint)<a.Definition.BodyRadius+.35f)return;}
+            gateOpen=value;
+            if(gateVisual!=null)
             {
-                Gizmos.color = new Color(0.2f, 0.7f, 0.3f, 0.4f);
-                Gizmos.DrawWireCube(roamingArea.bounds.center, roamingArea.bounds.size);
+                gateVisual.localRotation=Quaternion.identity;
+                foreach(var renderer in gateVisual.GetComponentsInChildren<Renderer>(true))renderer.enabled=!value;
+                foreach(var collider in gateVisual.GetComponentsInChildren<Collider>(true))collider.enabled=!value;
+            }
+            if(!value)releasing=false;
+        }        readonly List<FarmAnimalController> residents=new List<FarmAnimalController>();
+        public string ShelterId=>shelterId;
+        public string DisplayName=>displayName;
+        public AnimalDefinition PermittedSpecies=>permittedSpecies;
+        public int Capacity=>capacity;
+        public FeedingPoint Food=>food;
+        public FeedingPoint Water=>water;
+        public Vector3 GatePoint=>gatePoint;
+        public Vector3 PathPoint=>pathPoint;
+        public Vector3 EntrancePoint=>entrancePoint;
+        public Vector3 DeparturePoint(FarmAnimalController a)=>pathPoint+new Vector3(0,0,(ResidentIndex(a)%2==0?1:-1)*1.85f);
+        public Bounds FarmBounds=>farmArea;
+        public Bounds RoamingBounds=>roamingArea==null?new Bounds(transform.position,new Vector3(4,.1f,4)):roamingArea.bounds;
+        public IReadOnlyList<FarmAnimalController> Residents=>residents;
+        public int ResidentCount=>residents.Count;
+        public int ProductsAvailable {get{int n=0;foreach(var a in residents)if(a!=null)n+=a.ProductsAvailable;return n;}}
+        void Start(){SetGate(gateOpen);}
+        void LateUpdate(){if(productReadyMarker!=null)productReadyMarker.SetActive(ProductsAvailable>0);}
+        public int ResidentIndex(FarmAnimalController animal)=>residents.IndexOf(animal);
+        public bool Accepts(FarmAnimalController animal)=>animal!=null&&animal.Definition==permittedSpecies&&(residents.Contains(animal)||residents.Count<capacity);
+        public bool Register(FarmAnimalController animal)
+        {
+            if(!Accepts(animal)||animal.Home!=this)return false;
+            if(!residents.Contains(animal))residents.Add(animal);
+            return true;
+        }
+        public void Unregister(FarmAnimalController animal)=>residents.Remove(animal);
+        public void ClearEntranceFor(FarmAnimalController arriving)
+        {
+            foreach(var resident in FarmAnimalRegistry.All)
+            {
+                if(resident==null||resident==arriving)continue;
+                float clearance=resident.Definition.BodyRadius+arriving.Definition.BodyRadius+.5f;
+                var target=arriving.GetComponent<FarmAnimalNavigation>().Destination;
+                if(Vector3.Distance(resident.transform.position,target)<clearance||Vector3.Distance(resident.transform.position,entrancePoint)<clearance||Vector3.Distance(resident.transform.position,gatePoint)<clearance||Vector3.Distance(resident.transform.position,pathPoint)<clearance)resident.MakeRoomFor(arriving);
             }
         }
+        public void RecollectAll(){if(!gateOpen)return;releasing=false;foreach(var a in residents)if(a!=null)a.ReturnToShelter(this);}
+        public void ReleaseAll(){if(gateOpen)releasing=true;}
+        void Update(){if(!releasing)return;foreach(var a in residents)if(a!=null&&a.IsExitingHome)return;FarmAnimalController candidate=null;float distance=float.PositiveInfinity;foreach(var a in residents)if(a!=null&&a.IsConfined){float d=Vector3.Distance(a.transform.position,gatePoint);if(d<distance){distance=d;candidate=a;}}if(candidate!=null){candidate.ReleaseFromShelter(this);return;}releasing=false;}
+        public Vector3 ReleasePoint(int index)=>pathPoint;
+        public bool Contains(Vector3 p,float inset=0)
+        {var b=RoamingBounds;return p.x>=b.min.x+inset&&p.x<=b.max.x-inset&&p.z>=b.min.z+inset&&p.z<=b.max.z-inset;}
     }
 }

@@ -1,0 +1,24 @@
+Actual Input System clicks for all three tree definitions
+PASS Three trees from real placement test remain in scene
+PASS LemonTree complete growth and first fruit cycle
+PASS LemonTree actual canopy click opens tree panel
+PASS LemonTree basket button credits exact fruit amount
+PASS LemonTree remains planted after harvest
+PASS LemonTree repeated harvest is refused
+PASS LemonTree next cycle not ready early
+PASS LemonTree produces again without regrowing
+PASS AppleTree complete growth and first fruit cycle
+PASS AppleTree actual canopy click opens tree panel
+PASS AppleTree basket button credits exact fruit amount
+PASS AppleTree remains planted after harvest
+PASS AppleTree repeated harvest is refused
+PASS AppleTree next cycle not ready early
+PASS AppleTree produces again without regrowing
+PASS OrangeTree complete growth and first fruit cycle
+PASS OrangeTree actual canopy click opens tree panel
+PASS OrangeTree basket button credits exact fruit amount
+PASS OrangeTree remains planted after harvest
+PASS OrangeTree repeated harvest is refused
+PASS OrangeTree next cycle not ready early
+PASS OrangeTree produces again without regrowing
+COMPLETED

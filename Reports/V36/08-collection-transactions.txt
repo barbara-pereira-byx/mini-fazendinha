@@ -1,0 +1,3 @@
+PASS animal collection: 4 credited exactly once; nested and repeated calls returned zero.
+PASS well collection: 10 water credited exactly once; nested and repeated calls refused.
+COMPLETED

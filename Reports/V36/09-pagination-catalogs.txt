@@ -1,0 +1,7 @@
+PASS 1 crops => 1 pages, bounds clamped, 1 cards on last page
+PASS 2 crops => 1 pages, bounds clamped, 2 cards on last page
+PASS 3 crops => 1 pages, bounds clamped, 3 cards on last page
+PASS 4 crops => 2 pages, bounds clamped, 1 cards on last page
+PASS 9 crops => 3 pages, bounds clamped, 3 cards on last page
+PASS 10 crops => 4 pages, bounds clamped, 1 cards on last page
+COMPLETED

@@ -1,0 +1,11 @@
+05-navigation — actual queued Input System events
+PASS: Two cows registered before movement test
+Vaca 1 at (12.62, 0.08, -11.51) state=Saindo pelo portão inside=False
+Vaca 2 at (13.50, 0.08, -14.34) state=Passeando inside=False
+PASS: Both cows walk out through the real gate
+PASS: Animals move physically without teleport recovery
+Return Vaca 1 at (9.98, 0.08, -12.43) Descansando
+Return Vaca 2 at (11.54, 0.08, -11.50) Descansando
+PASS: Bell returns resident cows and keeps them confined
+PASS: Two-cow clearance maintained, minimum=1,517297
+COMPLETED

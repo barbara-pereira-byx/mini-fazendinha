@@ -1,0 +1,9 @@
+01-scroll — actual queued Input System events
+PASS: Scrollable viewport captures wheel
+PASS: UI scroll changes camera size by exactly zero
+PASS: Wheel moves list responsively
+PASS: Last item can be reached without overscroll
+PASS: Top boundary is clamped
+PASS: Free scenery does not capture wheel
+PASS: Outside scroll still zooms camera
+COMPLETED

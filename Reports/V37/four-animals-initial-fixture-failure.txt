@@ -1,0 +1,7 @@
+06-four-animals — actual queued Input System events
+PASS: Four compatible residents registered without changing existing identifiers
+FAIL: Four walking/resting animals preserve clearance, minimum=0,5655429
+System.Exception: Four walking/resting animals preserve clearance, minimum=0,5655429
+  at MiniFazendinha.EditorTools.FarmV36Tests.Check (System.Boolean ok, System.String message) [0x0003e] in C:\Users\Túlio\My project\Assets\MiniFazendinha\Scripts\Editor\FarmV36Tests.cs:27 
+  at MiniFazendinha.EditorTools.FarmV36Tests+<FourRoutine>d__25.MoveNext () [0x00257] in C:\Users\Túlio\My project\Assets\MiniFazendinha\Scripts\Editor\FarmV36Tests.cs:84 
+  at MiniFazendinha.EditorTools.FarmV36Tests.Tick () [0x00056] in C:\Users\Túlio\My project\Assets\MiniFazendinha\Scripts\Editor\FarmV36Tests.cs:46 

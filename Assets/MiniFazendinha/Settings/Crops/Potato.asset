@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MiniFazendinha.Planting.CropDefinition
   identifier: batata
   displayName: Batata
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: 146ab0080f61a924c98e50b9e954cf4e, type: 3}
   growthSeconds: 22
   yieldAmount: 3
   accentColor: {r: 0.76, g: 0.57, b: 0.31, a: 1}

@@ -1,0 +1,2 @@
+Existing fruit trees in saved scene: 0
+Tree source prefabs are project-owned; vendor FBXs retain import scale in visual child only.

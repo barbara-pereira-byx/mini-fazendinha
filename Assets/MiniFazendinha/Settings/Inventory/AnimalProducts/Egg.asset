@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MiniFazendinha.Planting.InventoryItemDefinition
   identifier: egg
   displayName: Ovos
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: 632e74cf56783e84eaa69bd6f44b723f, type: 3}

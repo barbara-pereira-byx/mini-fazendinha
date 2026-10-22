@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MiniFazendinha.Planting.CropDefinition
   identifier: abobora
   displayName: "Ab\xF3bora"
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: 1cae62f506ab2b5499c0a1451571dab6, type: 3}
   growthSeconds: 32
   yieldAmount: 3
   accentColor: {r: 1, g: 0.43, b: 0.12, a: 1}

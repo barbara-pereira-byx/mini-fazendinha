@@ -1,0 +1,35 @@
+PASS Well popup is compact 300x206
+PASS Well collection button horizontally centered
+PASS Well uses textual label
+PASS Well water available for collection test
+PASS Well transfer exact and recharge active
+PASS Repeated well click cannot duplicate
+PASS Actual planted fruit tree exists
+PASS Tree popup shares well dimensions
+PASS Tree button centered
+PASS Tree collection label textual
+PASS Tree collection exact and tree preserved
+PASS Repeated tree click cannot duplicate
+PASS Chicken individual collection is textual
+PASS Chicken pen collection is textual
+PASS Duck individual collection is textual
+PASS Duck pen collection is textual
+PASS Cow individual collection is textual
+PASS Cow pen collection is textual
+PASS Sheep individual collection is textual
+PASS Sheep pen collection is textual
+PASS Pig individual collection is textual
+PASS Pig pen collection is textual
+PASS Pig uses bacon item and icon
+PASS Chicken individual collection is textual
+PASS Chicken pen collection is textual
+PASS Cow individual collection is textual
+PASS Cow pen collection is textual
+PASS Chicken individual collection is textual
+PASS Chicken pen collection is textual
+PASS Pig individual collection is textual
+PASS Pig pen collection is textual
+PASS Pig uses bacon item and icon
+PASS Sheep individual collection is textual
+PASS Sheep pen collection is textual
+COMPLETED

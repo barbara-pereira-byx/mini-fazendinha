@@ -1,0 +1,21 @@
+﻿{
+  "success": true,
+  "command": "command script",
+  "data": {
+    "command": "script",
+    "parameters": {},
+    "result": {
+      "status": "completed",
+      "failed": false,
+      "errors": [],
+      "compilationFailed": false
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7801,
+      "projectPath": "C:\\Users\\Túlio\\My project"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

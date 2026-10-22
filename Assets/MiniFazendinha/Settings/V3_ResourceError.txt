@@ -1,0 +1,8 @@
+UnityEngine.MissingComponentException: There is no 'BoxCollider' attached to the "Comedouro_Milho" game object, but a script is trying to access it.
+You probably need to add a BoxCollider to the game object "Comedouro_Milho". Or your script needs to check if the component is attached before using it.
+  at UnityEngine.Object+MarshalledUnityObject.TryThrowEditorNullExceptionObject (UnityEngine.Object unityObj, System.String parameterName) [0x000b4] in <2a0aacfdb6844320ae79174c32157248>:0 
+  at UnityEngine.Bindings.ThrowHelper.ThrowNullReferenceException (System.Object obj) [0x0000a] in <2a0aacfdb6844320ae79174c32157248>:0 
+  at UnityEngine.BoxCollider.set_center (UnityEngine.Vector3 value) [0x00006] in <f6cb8990ed04495383a15502bbdae224>:0 
+  at MiniFazendinha.EditorTools.FarmV3ResourceSetup.FindOrCreatePoint (UnityEngine.Transform root, System.String name, MiniFazendinha.Animals.FeedingPointKind kind, MiniFazendinha.Planting.InventoryItemDefinition item, System.String modelPath, UnityEngine.Vector3 position) [0x0010f] in C:\Users\Túlio\My project\Assets\MiniFazendinha\Scripts\Editor\FarmV3ResourceSetup.cs:121 
+  at MiniFazendinha.EditorTools.FarmV3ResourceSetup.ConfigureImpl () [0x001ce] in C:\Users\Túlio\My project\Assets\MiniFazendinha\Scripts\Editor\FarmV3ResourceSetup.cs:71 
+  at MiniFazendinha.EditorTools.FarmV3ResourceSetup.Configure () [0x00000] in C:\Users\Túlio\My project\Assets\MiniFazendinha\Scripts\Editor\FarmV3ResourceSetup.cs:24 

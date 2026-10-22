@@ -1,0 +1,2 @@
+PASS Bacon replaces Truffle, preserving asset GUID and scene inventory reference
+PASS Pig common production period=150, yield=1

@@ -1,0 +1,4 @@
+ground=Terreno_Verde_40x40 (UnityEngine.BoxCollider)
+Terreno_Verde_40x40 root=MiniFazendinha bounds=Center: (0.00, -0.12, 0.00), Extents: (20.00, 0.12, 20.00) trigger=False
+Terra_Base root=MiniFazendinha bounds=Center: (0.00, -0.48, 0.00), Extents: (20.00, 0.28, 20.00) trigger=False
+Canteiro_01 root=MiniFazendinha bounds=Center: (-14.70, 0.30, -13.60), Extents: (2.50, 0.30, 2.50) trigger=False

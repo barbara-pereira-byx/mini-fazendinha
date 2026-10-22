@@ -1,0 +1,64 @@
+Farm polish — actual Play Mode checks
+PASS: Player frames advance
+PASS: Five identified species pens
+PASS: All animals registered in compatible home with capacity
+PASS: Wrong pen rejects animal and cannot steal home
+PASS: Pen panel lists residents and resources
+PASS: Animal panel has status, happiness, health and hydration
+PASS: Care raises happiness
+PASS: Care cooldown prevents repeated instant gain
+PASS: Well collection adds real water stock
+PASS: Well blocks immediate repeat collection
+PASS: Water trough spends exact inventory amount
+PASS: Water consumption reduces trough units
+PASS: Species feeder uses configured crop: Porcos
+PASS: Species feeder uses configured crop: Galinhas e galos
+PASS: Species feeder uses configured crop: Patos
+PASS: Species feeder uses configured crop: Ovelhas
+PASS: Species feeder uses configured crop: Vacas
+PASS: Well panel displays stock and recharge
+PASS: Warehouse displays all inventory icons (including water/products/fruits)
+PASS: Plant menu includes all nine crops over three pages
+PASS: Visible planting page has crop icons: 1
+PASS: Visible planting page has crop icons: 2
+PASS: Visible planting page has crop icons: 3
+PASS: Last planting page button plants origin plot
+PASS: Plant spends stock: Cenoura
+PASS: Growth and harvest: Cenoura
+PASS: Plant spends stock: Milho
+PASS: Growth and harvest: Milho
+PASS: Plant spends stock: Trigo
+PASS: Growth and harvest: Trigo
+PASS: Plant spends stock: Batata
+PASS: Growth and harvest: Batata
+PASS: Plant spends stock: Abóbora
+PASS: Growth and harvest: Abóbora
+PASS: Plant spends stock: Tomate
+PASS: Growth and harvest: Tomate
+PASS: Plant spends stock: Morango
+PASS: Growth and harvest: Morango
+PASS: Plant spends stock: Mirtilo
+PASS: Growth and harvest: Mirtilo
+PASS: Plant spends stock: Amora
+PASS: Growth and harvest: Amora
+PASS: Camera pan changes focus
+PASS: Camera zoom changes orthographic size
+PASS: Drag begins on a valid empty plot
+PASS: Drag plants crossed plots once
+PASS: Walks out through gate: Porcos
+PASS: Wanders outside: Porcos
+PASS: Walks home and stays in correct pen: Porcos
+PASS: Walks out through gate: Galinhas e galos
+PASS: Wanders outside: Galinhas e galos
+PASS: Walks home and stays in correct pen: Galinhas e galos
+PASS: Walks out through gate: Patos
+PASS: Wanders outside: Patos
+PASS: Walks home and stays in correct pen: Patos
+PASS: Walks out through gate: Ovelhas
+PASS: Wanders outside: Ovelhas
+PASS: Walks home and stays in correct pen: Ovelhas
+PASS: Walks out through gate: Vacas
+PASS: Wanders outside: Vacas
+PASS: Walks home and stays in correct pen: Vacas
+PASS: Well regenerates stock after configured real cooldown
+COMPLETED

@@ -1,0 +1,62 @@
+Queued Input System clicks on the real bell; actual runtime movement
+PASS Porcos exit underway before recall
+Interrupted exit: Porco 1 pos=(15.72, 0.08, -7.17) confined=True returning=False
+Interrupted exit: Porco 2 pos=(17.34, 0.08, -6.15) confined=True returning=False
+PASS Porcos bell cancels exit and returns/confines all residents
+PASS Vacas exit underway before recall
+Interrupted exit: Vaca 1 pos=(9.95, 0.08, -11.49) confined=True returning=False
+Interrupted exit: Vaca 2 pos=(11.69, 0.08, -12.42) confined=True returning=False
+PASS Vacas bell cancels exit and returns/confines all residents
+PASS Galinhas e galos exit underway before recall
+Interrupted exit: Galinha 3 pos=(15.38, 0.08, -10.93) confined=True returning=False
+Interrupted exit: Galinha 2 pos=(17.43, 0.08, -11.92) confined=True returning=False
+Interrupted exit: Galinha 1 pos=(15.63, 0.08, -12.18) confined=True returning=False
+PASS Galinhas e galos bell cancels exit and returns/confines all residents
+PASS Ovelhas exit underway before recall
+Interrupted exit: Ovelha 1 pos=(9.90, 0.08, -7.46) confined=True returning=False
+Interrupted exit: Ovelha 2 pos=(11.65, 0.08, -6.31) confined=True returning=False
+PASS Ovelhas bell cancels exit and returns/confines all residents
+PASS Patos exit underway before recall
+Interrupted exit: Pato 1 pos=(14.98, 0.08, -1.04) confined=True returning=False
+PASS Patos bell cancels exit and returns/confines all residents
+Exit stress: Porcos fully outside=0 / 2
+Porco 1 pos=(17.29, 0.08, -7.66) exit=False returning=False dest=(17.31, 0.08, -7.74)
+Porco 2 pos=(13.59, 0.08, -6.50) exit=True returning=False dest=(13.50, 0.08, -8.35)
+PASS Porcos has animals to recall from outside/exit
+Exit stress: Vacas fully outside=2 / 2
+Vaca 1 pos=(13.50, 0.08, -10.36) exit=False returning=False dest=(13.50, 0.08, -12.74)
+Vaca 2 pos=(14.56, 0.08, -15.61) exit=False returning=False dest=(14.56, 0.08, -15.70)
+PASS Vacas has animals to recall from outside/exit
+Exit stress: Galinhas e galos fully outside=0 / 3
+Galinha 3 pos=(16.88, 0.08, -12.81) exit=False returning=False dest=(16.96, 0.08, -12.84)
+Galinha 2 pos=(17.17, 0.08, -12.02) exit=False returning=False dest=(17.21, 0.08, -12.09)
+Galinha 1 pos=(13.59, 0.08, -11.51) exit=True returning=False dest=(13.50, 0.08, -9.65)
+PASS Galinhas e galos has animals to recall from outside/exit
+Exit stress: Ovelhas fully outside=2 / 2
+Ovelha 1 pos=(9.77, 0.08, -0.77) exit=False returning=False dest=(9.70, 0.08, -0.71)
+Ovelha 2 pos=(13.50, 0.08, -7.78) exit=False returning=False dest=(12.08, 0.08, -6.36)
+PASS Ovelhas has animals to recall from outside/exit
+Exit stress: Patos fully outside=1 / 1
+Pato 1 pos=(12.26, 0.08, -3.31) exit=False returning=False dest=(12.27, 0.08, -3.40)
+PASS Patos has animals to recall from outside/exit
+From roaming: Porco 1 pos=(15.70, 0.08, -7.26) confined=True returning=False
+From roaming: Porco 2 pos=(17.26, 0.08, -7.59) confined=True returning=False
+PASS Porcos bell returns roaming residents through real entrance
+From roaming: Vaca 1 pos=(10.00, 0.08, -12.47) confined=True returning=False
+From roaming: Vaca 2 pos=(11.54, 0.08, -11.50) confined=True returning=False
+PASS Vacas bell returns roaming residents through real entrance
+From roaming: Galinha 3 pos=(17.21, 0.08, -11.94) confined=True returning=False
+From roaming: Galinha 2 pos=(16.08, 0.08, -10.85) confined=True returning=False
+From roaming: Galinha 1 pos=(14.96, 0.08, -12.81) confined=True returning=False
+PASS Galinhas e galos bell returns roaming residents through real entrance
+From roaming: Ovelha 1 pos=(11.54, 0.08, -6.50) confined=True returning=False
+From roaming: Ovelha 2 pos=(9.80, 0.08, -7.56) confined=True returning=False
+PASS Ovelhas bell returns roaming residents through real entrance
+From roaming: Pato 1 pos=(16.00, 0.08, -1.13) confined=True returning=False
+PASS Patos bell returns roaming residents through real entrance
+PASS Porcos residents remain confined after recall
+PASS Vacas residents remain confined after recall
+PASS Galinhas e galos residents remain confined after recall
+PASS Ovelhas residents remain confined after recall
+PASS Patos residents remain confined after recall
+COMPLETED

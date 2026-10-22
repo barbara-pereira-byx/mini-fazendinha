@@ -18,6 +18,8 @@ namespace MiniFazendinha.EditorTools
                 var context=canvas.GetComponent<FarmContextMenu>();context.Refresh();context.Reposition();cam.Render();RenderTexture.active=target;texture.ReadPixels(new Rect(0,0,width,height),0,0);texture.Apply();Directory.CreateDirectory("Screenshots/ContextUX");File.WriteAllBytes("Screenshots/ContextUX/"+name+".png",texture.EncodeToPNG());
                 if(canvas.GetComponent<FarmWarehousePanel>().IsOpen)AssertInside(canvas.GetComponent<FarmWarehousePanel>().Panel,(RectTransform)canvas.transform,"Warehouse",true);
                 if(context.IsOpen)AssertInside(context.Panel,(RectTransform)canvas.transform,"Context",true);
+                var management=UnityEngine.Object.FindAnyObjectByType<MiniFazendinha.Animals.FarmAnimalContextUI>()?.Management;
+                if(management!=null&&management.IsOpen)AssertInside(management.Panel,(RectTransform)canvas.transform,"Management",true);
             }
             finally{RenderTexture.active=oldActive;cam.targetTexture=oldTarget;cam.ResetAspect();canvas.renderMode=oldMode;canvas.worldCamera=oldCamera;canvas.planeDistance=oldPlane;Canvas.ForceUpdateCanvases();target.Release();UnityEngine.Object.DestroyImmediate(target);UnityEngine.Object.DestroyImmediate(texture);}
         }

@@ -37,3 +37,8 @@ Assets/Pandazole_Lowpoly_Asset_Bundle/**
 Assets/ThirdParty/VoxelFarm/**
 !Assets/ThirdParty/VoxelFarm/**/
 !Assets/ThirdParty/VoxelFarm/**/*.meta
+
+# Local investigation helpers; runtime/editor test sources live under Assets.
+Reports/**/*.cs
+Reports/**/*.py
+Reports/**/*.cjs

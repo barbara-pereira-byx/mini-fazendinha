@@ -1,0 +1,9 @@
+06-four-animals — actual queued Input System events
+Fourth fixture starts in a verified free position: (16.00, 0.08, -11.65)
+PASS: Four compatible residents registered without changing existing identifiers
+PASS: Four walking/resting animals preserve clearance, minimum=0,8330818
+PASS: Actual active-time food decline over 30,03 seconds: 0,999104 -> 0,982421
+PASS: Actual active-time hydration matches configured duration
+PASS: A station admits one animal at a time
+PASS: Next waiting animal can reserve station
+COMPLETED

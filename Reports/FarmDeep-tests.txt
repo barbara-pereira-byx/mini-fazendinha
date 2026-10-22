@@ -1,0 +1,12 @@
+Additional Play Mode checks; explicit hunger and production fixtures
+PASS: Animator targets visual skeleton; code controls root position
+PASS: Animation state time advances
+PASS: Actual bone pose changes between frames
+PASS: Animal walks to feeder, consumes stock and gains feeding level
+PASS: Animal walks to trough, drinks and gains hydration
+PASS: Fed and hydrated production credits real inventory (near-deadline fixture)
+PASS: Repeated collection cannot duplicate product
+PASS: Basic illness state is exposed
+PASS: All ten animals can leave their own gates together
+PASS: All ten animals return to their own species pens
+COMPLETED

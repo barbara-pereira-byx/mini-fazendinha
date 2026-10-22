@@ -1,0 +1,20 @@
+Vaca_02: Animator on Visual, bindings 230 / 230
+Pato_01: Animator on Visual, bindings 150 / 150
+Ovelha_02: Animator on Visual, bindings 170 / 170
+Galinha_03: Animator on Visual, bindings 150 / 150
+Porco_01: Animator on Visual, bindings 170 / 170
+Galinha_02: Animator on Visual, bindings 150 / 150
+Ovelha_01: Animator on Visual, bindings 170 / 170
+Porco_02: Animator on Visual, bindings 170 / 170
+Vaca_01: Animator on Visual, bindings 230 / 230
+Galinha_01: Animator on Visual, bindings 150 / 150
+Comedouro_chickens: original size (0.85, 0.38, 0.30)
+Bebedouro_pigs: original size (0.85, 0.38, 0.30)
+Bebedouro_sheep: original size (0.85, 0.38, 0.30)
+Comedouro_ducks: original size (0.85, 0.38, 0.30)
+Bebedouro_ducks: original size (0.85, 0.38, 0.30)
+Comedouro_sheep: original size (0.85, 0.38, 0.30)
+Comedouro_cows: original size (0.85, 0.38, 0.30)
+Bebedouro_chickens: original size (0.85, 0.38, 0.30)
+Comedouro_pigs: original size (0.85, 0.38, 0.30)
+Bebedouro_cows: original size (0.85, 0.38, 0.30)

@@ -1,0 +1,26 @@
+Actual Input System clicks for all three tree definitions
+PASS AppleTree has a valid ground location without a plot
+PASS Building blocks placement
+PASS Pen blocks placement
+PASS AppleTree preview follows pointer
+PASS AppleTree actual click creates one tree
+PASS AppleTree gameplay root has unit scale
+PASS AppleTree collider uses world metres
+PASS AppleTree cannot overlap existing tree
+PASS LemonTree has a valid ground location without a plot
+PASS Building blocks placement
+PASS Pen blocks placement
+PASS LemonTree preview follows pointer
+PASS LemonTree actual click creates one tree
+PASS LemonTree gameplay root has unit scale
+PASS LemonTree collider uses world metres
+PASS LemonTree cannot overlap existing tree
+PASS OrangeTree has a valid ground location without a plot
+PASS Building blocks placement
+PASS Pen blocks placement
+PASS OrangeTree preview follows pointer
+PASS OrangeTree actual click creates one tree
+PASS OrangeTree gameplay root has unit scale
+PASS OrangeTree collider uses world metres
+PASS OrangeTree cannot overlap existing tree
+COMPLETED

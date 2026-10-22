@@ -16,9 +16,11 @@ MonoBehaviour:
   displayName: Vaca
   visualPrefab: {fileID: 723837098908310491, guid: e9442b8968f5883409c075fd0ddf3f6c, type: 3}
   animatorController: {fileID: 9100000, guid: 9b6359c706fbb054f88100f9f4108f24, type: 2}
+  feedItem: {fileID: 11400000, guid: b5c0b90f55e181d43a65016558d76635, type: 2}
+  waterItem: {fileID: 11400000, guid: 4407fd974342ec34d9a39d56eefe05ac, type: 2}
   product: {fileID: 11400000, guid: aeedd40d054210446b7e6b0da9babbc6, type: 2}
   productYield: 2
-  productionSeconds: 45
+  productionSeconds: 120
   walkSpeed: 0.68
   bodyRadius: 0.75
   separationRadius: 1.7249999
@@ -32,3 +34,11 @@ MonoBehaviour:
   idleState: Idle
   walkState: Walk
   eatingState: Idle
+  nutritionDuration: 1800
+  hydrationDuration: 1800
+  careInterval: 30
+  careGain: 0.1
+  healthyYieldMultiplier: 1
+  intermediateYieldMultiplier: 0.75
+  attentionYieldMultiplier: 0.5
+  sickYieldMultiplier: 0.25

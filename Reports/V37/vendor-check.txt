@@ -1,0 +1,1 @@
+﻿PASS: 0 vendor files changed against pre-V3.6 SHA-256 baseline.

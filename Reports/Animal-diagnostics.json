@@ -1,0 +1,102 @@
+[
+  {
+    "name": "Galinha_03",
+    "StateLabel": "Descansando",
+    "IsConfined": true,
+    "position": "(15.39, 0.08, -12.95)",
+    "dest": "(15.41, 0.08, -13.03)",
+    "hasPath": false,
+    "route": null,
+    "routeIndex": 3
+  },
+  {
+    "name": "Pato_01",
+    "StateLabel": "Descansando",
+    "IsConfined": true,
+    "position": "(16.84, 0.08, -1.87)",
+    "dest": "(16.78, 0.08, -1.94)",
+    "hasPath": false,
+    "route": null,
+    "routeIndex": 3
+  },
+  {
+    "name": "Vaca_01",
+    "StateLabel": "Passeando",
+    "IsConfined": true,
+    "position": "(10.58, 0.08, -11.28)",
+    "dest": "(9.61, 0.08, -11.34)",
+    "hasPath": true,
+    "route": null,
+    "routeIndex": 3
+  },
+  {
+    "name": "Ovelha_01",
+    "StateLabel": "Descansando",
+    "IsConfined": true,
+    "position": "(11.75, 0.08, -6.01)",
+    "dest": "(11.83, 0.08, -5.97)",
+    "hasPath": false,
+    "route": null,
+    "routeIndex": 3
+  },
+  {
+    "name": "Porco_01",
+    "StateLabel": "Passeando",
+    "IsConfined": true,
+    "position": "(15.83, 0.08, -6.07)",
+    "dest": "(17.05, 0.08, -6.20)",
+    "hasPath": true,
+    "route": null,
+    "routeIndex": 3
+  },
+  {
+    "name": "Galinha_02",
+    "StateLabel": "Descansando",
+    "IsConfined": true,
+    "position": "(16.59, 0.08, -12.06)",
+    "dest": "(16.55, 0.08, -12.14)",
+    "hasPath": false,
+    "route": null,
+    "routeIndex": 2
+  },
+  {
+    "name": "Vaca_02",
+    "StateLabel": "Passeando",
+    "IsConfined": true,
+    "position": "(11.65, 0.08, -11.46)",
+    "dest": "(11.52, 0.08, -12.42)",
+    "hasPath": true,
+    "route": null,
+    "routeIndex": 3
+  },
+  {
+    "name": "Galinha_01",
+    "StateLabel": "Descansando",
+    "IsConfined": true,
+    "position": "(15.36, 0.08, -12.21)",
+    "dest": "(15.29, 0.08, -12.27)",
+    "hasPath": false,
+    "route": null,
+    "routeIndex": 3
+  },
+  {
+    "name": "Porco_02",
+    "StateLabel": "Passeando",
+    "IsConfined": true,
+    "position": "(16.34, 0.08, -6.34)",
+    "dest": "(15.35, 0.08, -6.20)",
+    "hasPath": true,
+    "route": null,
+    "routeIndex": 2
+  },
+  {
+    "name": "Ovelha_02",
+    "StateLabel": "Descansando",
+    "IsConfined": true,
+    "position": "(10.36, 0.08, -6.61)",
+    "dest": "(10.41, 0.08, -6.69)",
+    "hasPath": false,
+    "route": null,
+    "routeIndex": 3
+  }
+]

@@ -1,286 +1,192 @@
 using System;
 using UnityEngine;
 using MiniFazendinha.Planting;
-
 namespace MiniFazendinha.Animals
 {
+    public enum AnimalHealthState { Healthy, Attention, Sick }
     [DisallowMultipleComponent, RequireComponent(typeof(FarmAnimalNavigation))]
     public sealed class FarmAnimalController : MonoBehaviour
     {
         [SerializeField] AnimalDefinition definition;
-        [SerializeField] string animalId;
-        [SerializeField] string displayName;
+        [SerializeField] string animalId,displayName;
         [SerializeField] AnimalShelter home;
         [SerializeField] FarmInventory inventory;
         [SerializeField] Animator animator;
         [SerializeField] Transform visualRoot;
         [SerializeField] GameObject productReadyMarker;
-        [SerializeField] FeedingPoint[] feedingPoints = Array.Empty<FeedingPoint>();
-        Collider[] interactionColliders = Array.Empty<Collider>();
-
-        readonly AnimalStateMachine stateMachine = new AnimalStateMachine();
+        [SerializeField] FeedingPoint[] feedingPoints=Array.Empty<FeedingPoint>();
+        [SerializeField,Range(0,1)] float happiness=.7f;
+        [SerializeField] bool sick;
         FarmAnimalNavigation navigation;
+        FarmAnimalState state=FarmAnimalState.Idle;
         FeedingPoint careGoal;
-        double idleUntil;
-        double eatingUntil;
-        double fedUntil;
-        double productionProgress;
-        int productsAvailable;
-        Vector3[] returnRoute;
-        int returnIndex;
-        bool started;
-
-        public AnimalDefinition Definition => definition;
-        public string AnimalId => animalId;
-        public string DisplayName => string.IsNullOrWhiteSpace(displayName) ? definition == null ? "Animal" : definition.DisplayName : displayName;
-        public AnimalShelter Home => home;
-        public FarmAnimalState State => stateMachine.State;
-        public bool IsInsideShelter => State == FarmAnimalState.InsideShelter;
-        public int ProductsAvailable => productsAvailable;
-        public float ProductionProgress => definition == null ? 0f : Mathf.Clamp01((float)(productionProgress / definition.ProductionSeconds));
-        public float SecondsToNextProduct => definition == null ? 0f : Mathf.Max(0f, (float)(definition.ProductionSeconds - productionProgress));
-        public float FeedingLevel => Mathf.Clamp01((float)((fedUntil - Time.timeAsDouble) / (definition == null ? 1f : definition.FedForSeconds)));
-        public string StateLabel => State switch
-        {
-            FarmAnimalState.Idle => "Descansando",
-            FarmAnimalState.Wander => "Passeando",
-            FarmAnimalState.Eating => "Comendo",
-            FarmAnimalState.Resting => "Descansando",
-            FarmAnimalState.ReturningHome => "Voltando ao abrigo",
-            FarmAnimalState.InsideShelter => "Recolhido",
-            _ => "Ativo"
-        };
-
-        void OnEnable() { FarmAnimalRegistry.Register(this); }
-        void OnDisable() { FarmAnimalRegistry.Unregister(this); }
-
-        void Awake()
-        {
-            navigation = GetComponent<FarmAnimalNavigation>();
-            if (animator == null) animator = GetComponentInChildren<Animator>(true);
-            interactionColliders = GetComponentsInChildren<Collider>(true);
-            if (visualRoot == null && transform.childCount > 0) visualRoot = transform.GetChild(0);
-        }
-
+        double idleUntil,fedUntil,hydratedUntil,productionProgress,careReadyAt,blockedSince,yieldRetryAt; FarmAnimalController yieldFor;
+        int productsAvailable,routeIndex; double fractionalYield; bool collecting;
+        [NonSerialized] Vector3[] route;
+        bool confined=true,returning,started,pendingReturn;
+        string lastClip;
+        public AnimalDefinition Definition=>definition;
+        public string AnimalId=>animalId;
+        public bool Rename(string value){value=value?.Trim();if(string.IsNullOrEmpty(value)||value.Length>24)return false;displayName=value;return true;}
+        // Extension point for a future resource-backed treatment service. No random sickness or death.
+        public bool Treat(){if(!sick)return false;sick=false;return true;}
+        public string DisplayName=>string.IsNullOrWhiteSpace(displayName)?definition==null?"Animal":definition.DisplayName:displayName;
+        public AnimalShelter Home=>home;
+        public FarmAnimalState State=>state;
+        public bool IsInsideShelter=>home!=null&&home.Contains(transform.position);
+        public bool IsConfined=>confined;
+        public bool IsReturningHome=>pendingReturn||route!=null&&route.Length>0&&returning;
+        public bool IsExitingHome=>route!=null&&route.Length>0&&!returning;
+        public int ProductsAvailable=>productsAvailable;
+        public float Happiness=>happiness;
+        public float ProductionEfficiency=>Health==AnimalHealthState.Sick?definition.SickYieldMultiplier:Health==AnimalHealthState.Attention?definition.AttentionYieldMultiplier:happiness>=.7f&&FeedingLevel>=.4f&&HydrationLevel>=.4f?definition.HealthyYieldMultiplier:definition.IntermediateYieldMultiplier;
+        public AnimalHealthState Health=>sick?AnimalHealthState.Sick:FeedingLevel<=.2f||HydrationLevel<=.2f?AnimalHealthState.Attention:AnimalHealthState.Healthy;
+        public string HealthLabel=>Health==AnimalHealthState.Sick?"Doente":Health==AnimalHealthState.Attention?"Atenção: alimento / água":"Saudável";
+        public float ProductionProgress=>definition==null?0:Mathf.Clamp01((float)(productionProgress/definition.ProductionSeconds));
+        public float SecondsToNextProduct=>definition==null?0:Mathf.Max(0,(float)(definition.ProductionSeconds-productionProgress));
+        public float FeedingLevel=>Mathf.Clamp01((float)((fedUntil-Time.timeAsDouble)/(definition==null?1:definition.FedForSeconds)));
+        public float HydrationLevel=>Mathf.Clamp01((float)((hydratedUntil-Time.timeAsDouble)/(definition==null?1:definition.HydrationDuration)));
+        public string StateLabel=>route!=null&&route.Length>0?(returning?"Voltando ao curral":"Saindo pelo portão"):state==FarmAnimalState.Wander?"Passeando":state==FarmAnimalState.Eating?(careGoal!=null&&careGoal.Kind==FeedingPointKind.Water?"Bebendo":"Comendo"):"Descansando";
+        void OnEnable(){FarmAnimalRegistry.Register(this);if(started&&home!=null)home.Register(this);}
+        void OnDisable(){if(careGoal!=null)careGoal.Release(this);FarmAnimalRegistry.Unregister(this);if(home!=null){home.Unregister(this);home.ReleasePassage(this);}}
+        void Awake(){navigation=GetComponent<FarmAnimalNavigation>();if(animator==null)animator=GetComponentInChildren<Animator>(true);}
         void Start()
         {
-            if (definition == null || !definition.IsValid)
-            {
-                Debug.LogError("Farm animal has an invalid definition.", this);
-                enabled = false;
-                return;
-            }
-            if (home != null)
-            {
-                home.Register(this);
-                navigation.Configure(home.RoamingBounds, 0.85f, definition.BodyRadius);
-            }
-            if (inventory == null) inventory = FindAnyObjectByType<FarmInventory>();
-            if (animator != null && definition.AnimatorController != null)
-                animator.runtimeAnimatorController = definition.AnimatorController;
-            idleUntil = Time.timeAsDouble + UnityEngine.Random.Range(0.4f, 2.5f);
-            ChangeState(FarmAnimalState.Idle);
-            started = true;
+            if(definition==null||!definition.IsValid||home==null||!home.Register(this))
+            {Debug.LogError("Animal sem definição / curral compatível ou capacidade disponível.",this);enabled=false;return;}
+            productionProgress=0;fractionalYield=0;productsAvailable=0;route=null;confined=true;navigation.Configure(home.FarmBounds,.35f,definition.BodyRadius);navigation.Confined=true;
+            if(inventory==null)inventory=FindAnyObjectByType<FarmInventory>();
+            if(animator!=null){if(definition.AnimatorController!=null)animator.runtimeAnimatorController=definition.AnimatorController;animator.applyRootMotion=false;animator.cullingMode=AnimatorCullingMode.AlwaysAnimate;}
+            fedUntil=Time.timeAsDouble+definition.FedForSeconds;hydratedUntil=Time.timeAsDouble+definition.HydrationDuration;
+            idleUntil=Time.timeAsDouble+UnityEngine.Random.Range(.3f,2f);started=true;ChangeState(FarmAnimalState.Idle);
         }
-
         void Update()
         {
-            if (!started) return;
-            Produce(Time.deltaTime);
-            if (IsInsideShelter) { UpdateMarker(); return; }
-            if (State == FarmAnimalState.ReturningHome)
+            if(!started)return;
+            float targetHappiness=Mathf.Clamp01((FeedingLevel+HydrationLevel)*.4f+(sick?0:.2f));happiness=Mathf.MoveTowards(happiness,targetHappiness,Time.deltaTime/600f);Produce(Time.timeScale>0?Time.unscaledDeltaTime:0);UpdateMarker();
+            if(yieldFor!=null&&(yieldFor.IsReturningHome||yieldFor.IsExitingHome))
             {
-                AdvanceReturn();
-                UpdateMarker();
-                return;
+                // A moving neighbour can invalidate a yielding route too; retry it rather than deadlock.
+                if(!navigation.HasDestination&&Vector3.Distance(transform.position,navigation.Destination)>.12f&&Time.timeAsDouble>=yieldRetryAt)
+                {var arriving=yieldFor;yieldFor=null;MakeRoomFor(arriving);yieldFor=arriving;yieldRetryAt=Time.timeAsDouble+1;}
+                navigation.Advance(definition.WalkSpeed,Time.deltaTime,definition.SeparationRadius,FarmAnimalRegistry.All);UpdateAnimation();return;
             }
-            if (State == FarmAnimalState.Eating)
+            if(pendingReturn){ReturnToShelter(home);UpdateAnimation();return;}
+            if(route!=null&&route.Length>0){AdvanceRoute();UpdateAnimation();return;}
+            if(state==FarmAnimalState.Eating||state==FarmAnimalState.Resting)
+            {if(Time.timeAsDouble>=idleUntil){if(careGoal!=null)careGoal.Release(this);careGoal=null;ChangeState(FarmAnimalState.Idle);idleUntil=Time.timeAsDouble+.5f;}UpdateAnimation();return;}
+            if(state==FarmAnimalState.Wander)
             {
-                if (Time.timeAsDouble >= eatingUntil)
-                {
-                    careGoal = null;
-                    idleUntil = Time.timeAsDouble + UnityEngine.Random.Range(1f, 3f);
-                    ChangeState(FarmAnimalState.Idle);
-                }
-                UpdateMarker();
-                return;
+                if(navigation.Advance(definition.WalkSpeed,Time.deltaTime,definition.SeparationRadius,FarmAnimalRegistry.All))
+                {if(careGoal!=null)BeginEating();else{idleUntil=Time.timeAsDouble+UnityEngine.Random.Range(definition.IdleSecondsMin,definition.IdleSecondsMax);ChangeState(FarmAnimalState.Idle);}}
+                else if(!navigation.HasDestination){if(careGoal!=null)careGoal.Release(this);careGoal=null;idleUntil=Time.timeAsDouble+1;ChangeState(FarmAnimalState.Idle);}
             }
-            if (State == FarmAnimalState.Resting)
+            else if(Time.timeAsDouble>=idleUntil)
             {
-                if (Time.timeAsDouble >= idleUntil)
-                {
-                    idleUntil = Time.timeAsDouble + UnityEngine.Random.Range(1f, 3f);
-                    ChangeState(FarmAnimalState.Idle);
-                }
-                UpdateMarker();
-                return;
+                if((FeedingLevel<.4f||HydrationLevel<.4f)&&TryChooseCarePoint()){}
+                else if(navigation.ChooseWanderPoint())ChangeState(FarmAnimalState.Wander);
+                else idleUntil=Time.timeAsDouble+2;
             }
-            if (State == FarmAnimalState.Wander)
-            {
-                var others = FarmAnimalRegistry.All;
-                bool arrived = navigation.Advance(definition.WalkSpeed, Time.deltaTime, definition.SeparationRadius, others);
-                if (arrived)
-                {
-                    if (careGoal != null) BeginEating();
-                    else
-                    {
-                        idleUntil = Time.timeAsDouble + UnityEngine.Random.Range(definition.IdleSecondsMin, definition.IdleSecondsMax);
-                        ChangeState(UnityEngine.Random.value < 0.18f ? FarmAnimalState.Resting : FarmAnimalState.Idle);
-                    }
-                }
-                else if (!navigation.HasDestination)
-                {
-                    careGoal = null;
-                    idleUntil = Time.timeAsDouble + 1.2f;
-                    ChangeState(FarmAnimalState.Idle);
-                }
-                UpdateMarker();
-                return;
-            }
-            if (Time.timeAsDouble >= idleUntil) ChooseNextActivity();
-            UpdateMarker();
+            UpdateAnimation();
         }
-
-        void ChooseNextActivity()
-        {
-            if (UnityEngine.Random.value < definition.CareChance && TryChooseCarePoint()) return;
-            if (UnityEngine.Random.value < definition.RestChance)
-            {
-                idleUntil = Time.timeAsDouble + UnityEngine.Random.Range(3f, 6f);
-                ChangeState(FarmAnimalState.Resting);
-                return;
-            }
-            if (navigation.ChooseWanderPoint())
-                ChangeState(FarmAnimalState.Wander);
-            else idleUntil = Time.timeAsDouble + 2f;
-        }
-
         bool TryChooseCarePoint()
         {
-            if (feedingPoints == null || feedingPoints.Length == 0) return false;
-            FeedingPoint best = null;
-            float bestDistance = float.PositiveInfinity;
-            foreach (var point in feedingPoints)
+            foreach(var p in feedingPoints)
             {
-                if (point == null || point.Units <= 0) continue;
-                float distance = (point.AnimalStandPoint - transform.position).sqrMagnitude;
-                if (distance < bestDistance) { bestDistance = distance; best = point; }
+                if(p==null||p.Units==0)continue;
+                if(p.Kind==FeedingPointKind.Food?(FeedingLevel>.4f||p.AcceptedItem!=definition.FeedItem):(HydrationLevel>.4f||p.AcceptedItem!=definition.WaterItem))continue;
+                if(!p.TryReserve(this))continue;
+                if(navigation.TrySetDestination(p.AnimalStandPoint)){careGoal=p;ChangeState(FarmAnimalState.Wander);return true;}p.Release(this);
             }
-            if (best == null) return false;
-            careGoal = best;
-            navigation.SetDestination(best.AnimalStandPoint);
-            ChangeState(FarmAnimalState.Wander);
-            return true;
+            return false;
         }
-
         void BeginEating()
         {
-            if (careGoal == null || !careGoal.TryConsume())
+            if(careGoal!=null&&careGoal.TryConsume(careGoal.Kind==FeedingPointKind.Food?definition.FeedItem:definition.WaterItem))
+            {if(careGoal.Kind==FeedingPointKind.Food)fedUntil=Time.timeAsDouble+definition.FedForSeconds;else hydratedUntil=Time.timeAsDouble+definition.HydrationDuration;idleUntil=Time.timeAsDouble+3;ChangeState(FarmAnimalState.Eating);}
+            else{if(careGoal!=null)careGoal.Release(this);careGoal=null;idleUntil=Time.timeAsDouble+1;ChangeState(FarmAnimalState.Idle);}
+        }
+        public bool Care()
+        {if(Time.timeAsDouble<careReadyAt)return false;happiness=Mathf.Clamp01(happiness+definition.CareGain);careReadyAt=Time.timeAsDouble+definition.CareInterval;return true;}
+        public bool Feed()
+        {if(definition==null||inventory==null||FeedingLevel>.9f||!inventory.TrySpend(definition.FeedItem))return false;fedUntil=Time.timeAsDouble+definition.FedForSeconds;return true;}
+        void Produce(float dt)
+        {
+            if(definition.Product==null||definition.ProductYield<=0||dt<=0||float.IsNaN(dt)||float.IsInfinity(dt))return;
+            productionProgress+=dt;
+            double period=definition.ProductionSeconds;
+            while(productionProgress+1e-7>=period)
             {
-                careGoal = null;
-                idleUntil = Time.timeAsDouble + 1.5f;
-                ChangeState(FarmAnimalState.Idle);
-                return;
+                productionProgress=Math.Max(0,productionProgress-period);
+                fractionalYield+=definition.ProductYield*Mathf.Clamp01(ProductionEfficiency);
+                int produced=(int)Math.Floor(fractionalYield+1e-7);fractionalYield-=produced;
+                productsAvailable=Mathf.Min(productsAvailable+produced,99);
             }
-            if (careGoal.Kind == FeedingPointKind.Food) fedUntil = Time.timeAsDouble + definition.FedForSeconds;
-            eatingUntil = Time.timeAsDouble + UnityEngine.Random.Range(2.5f, 4f);
-            ChangeState(FarmAnimalState.Eating);
-        }
-
-        void Produce(float deltaTime)
+        }        public int CollectProducts()
+        {if(collecting||productsAvailable<=0||inventory==null||definition.Product==null)return 0;collecting=true;int n=productsAvailable;productsAvailable=0;try{if(!inventory.TryAdd(definition.Product,n)){productsAvailable=n;return 0;}UpdateMarker();return n;}finally{collecting=false;}}        public void ReturnToShelter(AnimalShelter shelter)
         {
-            if (definition.Product == null || definition.ProductYield <= 0) return;
-            float rate = Time.timeAsDouble < fedUntil ? definition.FedProductionMultiplier : 0.42f;
-            productionProgress += deltaTime * rate;
-            if (productionProgress < definition.ProductionSeconds) return;
-            productionProgress -= definition.ProductionSeconds;
-            productsAvailable = Mathf.Min(productsAvailable + definition.ProductYield, 99);
+            if(shelter==null||shelter!=home||!shelter.Accepts(this)||(!shelter.GateOpen&&!IsInsideShelter))return;
+            yieldFor=null;
+            if(home.Contains(transform.position,definition.BodyRadius+.05f))
+            {pendingReturn=false;returning=false;home.ReleasePassage(this);if(careGoal!=null)careGoal.Release(this);careGoal=null;route=null;confined=true;navigation.Confined=true;navigation.ClearDestination();idleUntil=Time.timeAsDouble+.5;ChangeState(FarmAnimalState.Idle);return;}
+            if(careGoal!=null)careGoal.Release(this);careGoal=null;
+            confined=false;navigation.Confined=false;returning=true;
+            if(!home.TryPassage(this)){pendingReturn=true;route=null;navigation.ClearDestination();return;}
+            pendingReturn=false;
+            route=home.Contains(transform.position)?new[]{home.EntrancePoint}:new[]{home.PathPoint,home.GatePoint,home.EntrancePoint};
+            routeIndex=0;blockedSince=Time.timeAsDouble;navigation.SetDestination(route[0]);ChangeState(FarmAnimalState.ReturningHome);
         }
-
-        public int CollectProducts()
-        {
-            if (productsAvailable <= 0 || definition.Product == null || inventory == null) return 0;
-            int amount = productsAvailable;
-            if (!inventory.TryAdd(definition.Product, amount)) return 0;
-            productsAvailable = 0;
-            UpdateMarker();
-            return amount;
-        }
-
-        public void ReturnToShelter(AnimalShelter shelter)
-        {
-            if (shelter == null || IsInsideShelter || State == FarmAnimalState.ReturningHome) return;
-            home = shelter;
-            returnRoute = new[] { shelter.GatePoint, shelter.PathPoint, shelter.EntrancePoint };
-            returnIndex = 0;
-            navigation.SetDestination(returnRoute[returnIndex]);
-            ChangeState(FarmAnimalState.ReturningHome);
-        }
-
-        void AdvanceReturn()
-        {
-            if (home == null || returnRoute == null || returnRoute.Length == 0) return;
-            if (!navigation.Advance(definition.WalkSpeed, Time.deltaTime, definition.SeparationRadius,
-                    FindObjectsByType<FarmAnimalController>(FindObjectsSortMode.None), true)) return;
-            returnIndex++;
-            if (returnIndex < returnRoute.Length)
-            {
-                navigation.SetDestination(returnRoute[returnIndex]);
-                return;
-            }
-            home.Register(this);
-            if (visualRoot != null) visualRoot.gameObject.SetActive(false);
-            SetInteractionColliders(false);
-            navigation.ClearDestination();
-            ChangeState(FarmAnimalState.InsideShelter);
-        }
-
         public void ReleaseFromShelter(AnimalShelter shelter)
         {
-            if (shelter == null || !IsInsideShelter) return;
-            home = shelter;
-            int index = shelter.ResidentIndex(this);
-            transform.position = shelter.ReleasePoint(index);
-            if (visualRoot != null) visualRoot.gameObject.SetActive(true);
-            SetInteractionColliders(true);
-            navigation.Configure(shelter.RoamingBounds, 0.85f, definition.BodyRadius);
-            idleUntil = Time.timeAsDouble + UnityEngine.Random.Range(0.2f, 2f);
-            ChangeState(FarmAnimalState.Idle);
-            UpdateMarker();
+            if(shelter==null||shelter!=home||!shelter.GateOpen||!confined||route!=null)return;
+            if(careGoal!=null)careGoal.Release(this);careGoal=null;if(!home.TryPassage(this))return;pendingReturn=false;returning=false;navigation.Confined=false;
+            route=new[]{home.GatePoint,home.PathPoint,home.DeparturePoint(this)};routeIndex=0;blockedSince=Time.timeAsDouble;navigation.SetDestination(route[0]);ChangeState(FarmAnimalState.Wander);
         }
-
-        public void Assign(AnimalDefinition species, string id, string name, AnimalShelter shelter,
-            FarmInventory farmInventory, Animator anim, Transform visual, GameObject readyMarker, FeedingPoint[] carePoints)
+        public bool MakeRoomFor(FarmAnimalController arriving)
         {
-            definition = species;
-            animalId = id;
-            displayName = name;
-            home = shelter;
-            inventory = farmInventory;
-            animator = anim;
-            visualRoot = visual;
-            productReadyMarker = readyMarker;
-            feedingPoints = carePoints ?? Array.Empty<FeedingPoint>();
-        }
-
-        void ChangeState(FarmAnimalState state)
+            if(arriving==null||arriving==this||IsInsideShelter&&arriving.Home!=home||route!=null&&route.Length>0||yieldFor!=null&&(yieldFor.IsReturningHome||yieldFor.IsExitingHome))return false;
+            var candidates=new System.Collections.Generic.List<Vector3>();
+            if(IsInsideShelter)
+            {
+                var bounds=home.RoamingBounds;float inset=definition.BodyRadius+.16f;
+                for(float x=bounds.min.x+inset;x<=bounds.max.x-inset;x+=.25f)for(float z=bounds.min.z+inset;z<=bounds.max.z-inset;z+=.25f)candidates.Add(new Vector3(x,transform.position.y,z));
+            }
+            else
+            {
+                for(float radius=1;radius<=3;radius+=.5f)for(int i=0;i<16;i++){float angle=i*Mathf.PI/8;candidates.Add(transform.position+new Vector3(Mathf.Cos(angle),0,Mathf.Sin(angle))*radius);}
+            }
+            candidates.Sort((a,b)=>Vector3.Distance(b,home.GatePoint).CompareTo(Vector3.Distance(a,home.GatePoint)));
+            foreach(var point in candidates)
+            {
+                float clearance=definition.BodyRadius+arriving.Definition.BodyRadius+.15f;
+                if(Vector3.Distance(point,arriving.GetComponent<FarmAnimalNavigation>().Destination)<clearance||Vector3.Distance(point,transform.position)<.25f||Vector3.Distance(point,arriving.Home.EntrancePoint)<clearance||Vector3.Distance(point,arriving.Home.GatePoint)<clearance||Vector3.Distance(point,arriving.Home.PathPoint)<clearance)continue;
+                if(!navigation.TrySetDestination(point))continue;
+                if(careGoal!=null)careGoal.Release(this);careGoal=null;yieldFor=arriving;ChangeState(FarmAnimalState.Wander);return true;
+            }
+            return false;
+        }        void AdvanceRoute()
         {
-            if (!stateMachine.ChangeTo(state)) return;
-            if (animator == null || definition == null) return;
-            string clip = state == FarmAnimalState.Wander || state == FarmAnimalState.ReturningHome
-                ? definition.WalkState
-                : state == FarmAnimalState.Eating ? definition.EatingState : definition.IdleState;
-            animator.CrossFadeInFixedTime(clip, 0.2f);
+            if(navigation.Advance(definition.WalkSpeed,Time.deltaTime,definition.SeparationRadius,FarmAnimalRegistry.All))
+            {
+                routeIndex++;blockedSince=Time.timeAsDouble;
+                if(routeIndex<route.Length){navigation.SetDestination(route[routeIndex]);return;}
+                home.ReleasePassage(this);confined=returning;navigation.Confined=confined;route=null;idleUntil=Time.timeAsDouble+1;ChangeState(FarmAnimalState.Idle);return;
+            }
+            // Retry a blocked route without ignoring fences or relocating the animal.
+            if(!navigation.HasDestination||Time.timeAsDouble-blockedSince>5)
+            {home.ClearEntranceFor(this);navigation.SetDestination(route[routeIndex]);blockedSince=Time.timeAsDouble;}
         }
-
-        void SetInteractionColliders(bool enabledState)
+        public void Assign(AnimalDefinition species,string id,string name,AnimalShelter shelter,FarmInventory farmInventory,Animator anim,Transform visual,GameObject readyMarker,FeedingPoint[] carePoints)
+        {definition=species;animalId=id;displayName=name;home=shelter;inventory=farmInventory;animator=anim;visualRoot=visual;productReadyMarker=readyMarker;feedingPoints=carePoints??Array.Empty<FeedingPoint>();}
+        void ChangeState(FarmAnimalState next){state=next;UpdateAnimation();}
+        void UpdateAnimation()
         {
-            foreach (var collider in interactionColliders) if (collider != null) collider.enabled = enabledState;
+            if(animator==null||definition==null||animator.runtimeAnimatorController==null)return;
+            bool moving=navigation!=null&&navigation.CurrentSpeed>.03f;
+            string clip=moving?definition.WalkState:state==FarmAnimalState.Eating?definition.EatingState:definition.IdleState;
+            if(lastClip==clip)return;
+            if(animator.HasState(0,Animator.StringToHash(clip))){animator.CrossFadeInFixedTime(clip,.25f);lastClip=clip;}
         }
-
-        void UpdateMarker()
-        {
-            if (productReadyMarker != null) productReadyMarker.SetActive(productsAvailable > 0);
-        }
+        void UpdateMarker(){if(productReadyMarker!=null)productReadyMarker.SetActive(productsAvailable>0);}
     }
 }

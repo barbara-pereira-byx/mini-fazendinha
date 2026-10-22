@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MiniFazendinha.Planting.CropDefinition
   identifier: tomate
   displayName: Tomate
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: 919fae6ec3ff7494baacd1344d95c473, type: 3}
   growthSeconds: 24
   yieldAmount: 3
   accentColor: {r: 0.86, g: 0.2, b: 0.16, a: 1}

@@ -1,0 +1,18 @@
+farmMin=(-19.00, -19.00)
+farmMax=(19.00, 19.00)
+groundY=0,03
+selected=AppleTree (MiniFazendinha.FruitTrees.FruitTreeDefinition)
+(-16.00, 0.03, 16.00) valid=False reason=Área ocupada
+Arvore_01 Center: (-17.59, 1.17, 16.49), Extents: (0.51, 1.17, 0.55)
+Tree_02_p2_Spring Center: (-17.50, 2.12, 16.50), Extents: (0.98, 1.55, 0.95)
+Terreno_Verde_40x40 Center: (0.00, -0.12, 0.00), Extents: (20.00, 0.12, 20.00)
+Terra_Base Center: (0.00, -0.48, 0.00), Extents: (20.00, 0.28, 20.00)
+(16.00, 0.03, 16.00) valid=False reason=Área ocupada
+Tree_02_p2_Spring Center: (15.51, 2.12, 16.49), Extents: (0.97, 1.55, 0.94)
+Arvore_05 Center: (15.57, 1.17, 16.50), Extents: (0.51, 1.17, 0.56)
+Terreno_Verde_40x40 Center: (0.00, -0.12, 0.00), Extents: (20.00, 0.12, 20.00)
+Terra_Base Center: (0.00, -0.48, 0.00), Extents: (20.00, 0.28, 20.00)
+(0.00, 0.03, 16.00) valid=False reason=Área ocupada
+Tree_02_p2_Spring Center: (1.02, 2.12, 17.51), Extents: (0.98, 1.55, 0.94)
+Terreno_Verde_40x40 Center: (0.00, -0.12, 0.00), Extents: (20.00, 0.12, 20.00)
+Terra_Base Center: (0.00, -0.48, 0.00), Extents: (20.00, 0.28, 20.00)

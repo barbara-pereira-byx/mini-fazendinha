@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MiniFazendinha.FruitTrees.FruitTreeDefinition
   identifier: lemon-tree
   displayName: Limoeiro
-  modelPrefab: {fileID: 919132149155446097, guid: 2182e2d145b36004b930d1a70e55090e, type: 3}
+  modelPrefab: {fileID: 6441160734567189439, guid: ec0dd9a6c6461e247916a120d31ed96a, type: 3}
   fruit: {fileID: 11400000, guid: 0761387f306e57c42982caaa80154be0, type: 2}
-  growthSeconds: 48
-  productionSeconds: 36
+  growthSeconds: 60
+  productionSeconds: 90
   yieldAmount: 3
   matureScale: 1
   spacingRadius: 1.3

@@ -1,0 +1,7 @@
+focusedWindow=none
+settings=
+routing=PointersAndKeyboardsRespectGameViewFocus background=ResetAndDisableNonBackgroundDevices
+currentMouse=Mouse:/V36Tests
+1 name=Keyboard layout=Keyboard enabled=True native=True description=Keyboard (RawInput)
+2 name=Mouse layout=Mouse enabled=False native=True description=Mouse (RawInput)
+19 name=V36Tests layout=Mouse enabled=True native=False description=<Empty Device Description>

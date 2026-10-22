@@ -1,0 +1,5 @@
+PASS management, animal and refill bounds at 1920x1080
+PASS management, animal and refill bounds at 1600x900
+PASS management, animal and refill bounds at 1366x768
+PASS orchard selection preserves placement and textured preview
+COMPLETED

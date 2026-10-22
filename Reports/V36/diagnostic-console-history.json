@@ -1,0 +1,240 @@
+﻿{
+  "success": true,
+  "command": "command console",
+  "data": {
+    "command": "console",
+    "parameters": {
+      "tail": "30",
+      "level": "error"
+    },
+    "result": {
+      "entries": [
+        {
+          "seq": 169503,
+          "timestampUtc": "2026-10-22T16:51:20.957756Z",
+          "level": "error",
+          "logType": "Error",
+          "message": "Releasing render texture that is set as Camera.targetTexture!",
+          "stackTrace": "UnityEngine.Object:DestroyImmediate (UnityEngine.Object)\nMiniFazendinha.EditorTools.FarmV36Setup:Portrait (MiniFazendinha.Animals.AnimalDefinition) (at Assets/MiniFazendinha/Scripts/Editor/FarmV36Setup.cs:48)\nMiniFazendinha.EditorTools.FarmV36Setup:Apply () (at Assets/MiniFazendinha/Scripts/Editor/FarmV36Setup.cs:37)\nUnityEditor.EditorApplication:ExecuteMenuItem (string)\nUnity.Pipeline.Editor.Commands.MenuItemCommand:InvokeMenu (string) (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Editor/Commands/MenuItemCommand.cs:75)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nUnity.Pipeline.Commands.DefaultCommandQueue:InvokeDirect (Unity.Pipeline.Commands.CommandContext,Unity.Pipeline.Commands.CommandInfo,object[]) (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Runtime/CommandExecution/CommandQueue/DefaultCommandQueue.cs:487)\nUnity.Pipeline.Commands.DefaultCommandQueue/<>c__DisplayClass19_0:<Invoke>b__1 () (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Runtime/CommandExecution/CommandQueue/DefaultCommandQueue.cs:409)\nUnity.Pipeline.Threading.Dispatcher/WorkItem`1<object>:ExecuteCore () (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Runtime/Common/Dispatcher.cs:342)\nUnity.Pipeline.Threading.Dispatcher/WorkItem:Execute () (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Runtime/Common/Dispatcher.cs:285)\nUnity.Pipeline.Threading.Dispatcher:ProcessWorkQueue (int) (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Runtime/Common/Dispatcher.cs:251)\nUnity.Pipeline.Threading.Dispatcher:ProcessWorkQueue () (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Runtime/Common/Dispatcher.cs:266)\nUnityEditor.EditorApplication:Internal_CallUpdateFunctions ()\n",
+          "seeded": false
+        },
+        {
+          "seq": 169504,
+          "timestampUtc": "2026-10-22T16:51:21.1826116Z",
+          "level": "error",
+          "logType": "Error",
+          "message": "Releasing render texture that is set as Camera.targetTexture!",
+          "stackTrace": "UnityEngine.Object:DestroyImmediate (UnityEngine.Object)\nMiniFazendinha.EditorTools.FarmV36Setup:Portrait (MiniFazendinha.Animals.AnimalDefinition) (at Assets/MiniFazendinha/Scripts/Editor/FarmV36Setup.cs:48)\nMiniFazendinha.EditorTools.FarmV36Setup:Apply () (at Assets/MiniFazendinha/Scripts/Editor/FarmV36Setup.cs:37)\nUnityEditor.EditorApplication:ExecuteMenuItem (string)\nUnity.Pipeline.Editor.Commands.MenuItemCommand:InvokeMenu (string) (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Editor/Commands/MenuItemCommand.cs:75)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nUnity.Pipeline.Commands.DefaultCommandQueue:InvokeDirect (Unity.Pipeline.Commands.CommandContext,Unity.Pipeline.Commands.CommandInfo,object[]) (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Runtime/CommandExecution/CommandQueue/DefaultCommandQueue.cs:487)\nUnity.Pipeline.Commands.DefaultCommandQueue/<>c__DisplayClass19_0:<Invoke>b__1 () (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Runtime/CommandExecution/CommandQueue/DefaultCommandQueue.cs:409)\nUnity.Pipeline.Threading.Dispatcher/WorkItem`1<object>:ExecuteCore () (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Runtime/Common/Dispatcher.cs:342)\nUnity.Pipeline.Threading.Dispatcher/WorkItem:Execute () (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Runtime/Common/Dispatcher.cs:285)\nUnity.Pipeline.Threading.Dispatcher:ProcessWorkQueue (int) (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Runtime/Common/Dispatcher.cs:251)\nUnity.Pipeline.Threading.Dispatcher:ProcessWorkQueue () (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Runtime/Common/Dispatcher.cs:266)\nUnityEditor.EditorApplication:Internal_CallUpdateFunctions ()\n",
+          "seeded": false
+        },
+        {
+          "seq": 169505,
+          "timestampUtc": "2026-10-22T16:51:21.4073096Z",
+          "level": "error",
+          "logType": "Error",
+          "message": "Releasing render texture that is set as Camera.targetTexture!",
+          "stackTrace": "UnityEngine.Object:DestroyImmediate (UnityEngine.Object)\nMiniFazendinha.EditorTools.FarmV36Setup:Portrait (MiniFazendinha.Animals.AnimalDefinition) (at Assets/MiniFazendinha/Scripts/Editor/FarmV36Setup.cs:48)\nMiniFazendinha.EditorTools.FarmV36Setup:Apply () (at Assets/MiniFazendinha/Scripts/Editor/FarmV36Setup.cs:37)\nUnityEditor.EditorApplication:ExecuteMenuItem (string)\nUnity.Pipeline.Editor.Commands.MenuItemCommand:InvokeMenu (string) (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Editor/Commands/MenuItemCommand.cs:75)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nUnity.Pipeline.Commands.DefaultCommandQueue:InvokeDirect (Unity.Pipeline.Commands.CommandContext,Unity.Pipeline.Commands.CommandInfo,object[]) (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Runtime/CommandExecution/CommandQueue/DefaultCommandQueue.cs:487)\nUnity.Pipeline.Commands.DefaultCommandQueue/<>c__DisplayClass19_0:<Invoke>b__1 () (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Runtime/CommandExecution/CommandQueue/DefaultCommandQueue.cs:409)\nUnity.Pipeline.Threading.Dispatcher/WorkItem`1<object>:ExecuteCore () (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Runtime/Common/Dispatcher.cs:342)\nUnity.Pipeline.Threading.Dispatcher/WorkItem:Execute () (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Runtime/Common/Dispatcher.cs:285)\nUnity.Pipeline.Threading.Dispatcher:ProcessWorkQueue (int) (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Runtime/Common/Dispatcher.cs:251)\nUnity.Pipeline.Threading.Dispatcher:ProcessWorkQueue () (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Runtime/Common/Dispatcher.cs:266)\nUnityEditor.EditorApplication:Internal_CallUpdateFunctions ()\n",
+          "seeded": false
+        },
+        {
+          "seq": 169506,
+          "timestampUtc": "2026-10-22T16:51:21.6295102Z",
+          "level": "error",
+          "logType": "Error",
+          "message": "Releasing render texture that is set as Camera.targetTexture!",
+          "stackTrace": "UnityEngine.Object:DestroyImmediate (UnityEngine.Object)\nMiniFazendinha.EditorTools.FarmV36Setup:Portrait (MiniFazendinha.Animals.AnimalDefinition) (at Assets/MiniFazendinha/Scripts/Editor/FarmV36Setup.cs:48)\nMiniFazendinha.EditorTools.FarmV36Setup:Apply () (at Assets/MiniFazendinha/Scripts/Editor/FarmV36Setup.cs:37)\nUnityEditor.EditorApplication:ExecuteMenuItem (string)\nUnity.Pipeline.Editor.Commands.MenuItemCommand:InvokeMenu (string) (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Editor/Commands/MenuItemCommand.cs:75)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nUnity.Pipeline.Commands.DefaultCommandQueue:InvokeDirect (Unity.Pipeline.Commands.CommandContext,Unity.Pipeline.Commands.CommandInfo,object[]) (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Runtime/CommandExecution/CommandQueue/DefaultCommandQueue.cs:487)\nUnity.Pipeline.Commands.DefaultCommandQueue/<>c__DisplayClass19_0:<Invoke>b__1 () (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Runtime/CommandExecution/CommandQueue/DefaultCommandQueue.cs:409)\nUnity.Pipeline.Threading.Dispatcher/WorkItem`1<object>:ExecuteCore () (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Runtime/Common/Dispatcher.cs:342)\nUnity.Pipeline.Threading.Dispatcher/WorkItem:Execute () (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Runtime/Common/Dispatcher.cs:285)\nUnity.Pipeline.Threading.Dispatcher:ProcessWorkQueue (int) (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Runtime/Common/Dispatcher.cs:251)\nUnity.Pipeline.Threading.Dispatcher:ProcessWorkQueue () (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Runtime/Common/Dispatcher.cs:266)\nUnityEditor.EditorApplication:Internal_CallUpdateFunctions ()\n",
+          "seeded": false
+        },
+        {
+          "seq": 169507,
+          "timestampUtc": "2026-10-22T16:51:21.8910932Z",
+          "level": "error",
+          "logType": "Error",
+          "message": "Releasing render texture that is set as Camera.targetTexture!",
+          "stackTrace": "UnityEngine.Object:DestroyImmediate (UnityEngine.Object)\nMiniFazendinha.EditorTools.FarmV36Setup:Portrait (MiniFazendinha.Animals.AnimalDefinition) (at Assets/MiniFazendinha/Scripts/Editor/FarmV36Setup.cs:48)\nMiniFazendinha.EditorTools.FarmV36Setup:Apply () (at Assets/MiniFazendinha/Scripts/Editor/FarmV36Setup.cs:37)\nUnityEditor.EditorApplication:ExecuteMenuItem (string)\nUnity.Pipeline.Editor.Commands.MenuItemCommand:InvokeMenu (string) (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Editor/Commands/MenuItemCommand.cs:75)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nUnity.Pipeline.Commands.DefaultCommandQueue:InvokeDirect (Unity.Pipeline.Commands.CommandContext,Unity.Pipeline.Commands.CommandInfo,object[]) (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Runtime/CommandExecution/CommandQueue/DefaultCommandQueue.cs:487)\nUnity.Pipeline.Commands.DefaultCommandQueue/<>c__DisplayClass19_0:<Invoke>b__1 () (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Runtime/CommandExecution/CommandQueue/DefaultCommandQueue.cs:409)\nUnity.Pipeline.Threading.Dispatcher/WorkItem`1<object>:ExecuteCore () (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Runtime/Common/Dispatcher.cs:342)\nUnity.Pipeline.Threading.Dispatcher/WorkItem:Execute () (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Runtime/Common/Dispatcher.cs:285)\nUnity.Pipeline.Threading.Dispatcher:ProcessWorkQueue (int) (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Runtime/Common/Dispatcher.cs:251)\nUnity.Pipeline.Threading.Dispatcher:ProcessWorkQueue () (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Runtime/Common/Dispatcher.cs:266)\nUnityEditor.EditorApplication:Internal_CallUpdateFunctions ()\n",
+          "seeded": false
+        },
+        {
+          "seq": 169561,
+          "timestampUtc": "2026-10-22T17:00:56.6026583Z",
+          "level": "error",
+          "logType": "Error",
+          "message": "Releasing render texture that is set as Camera.targetTexture!",
+          "stackTrace": "UnityEngine.Object:DestroyImmediate (UnityEngine.Object)\nMiniFazendinha.EditorTools.FarmV36Setup:Portrait (MiniFazendinha.Animals.AnimalDefinition) (at Assets/MiniFazendinha/Scripts/Editor/FarmV36Setup.cs:52)\nMiniFazendinha.EditorTools.FarmV36Setup:Apply () (at Assets/MiniFazendinha/Scripts/Editor/FarmV36Setup.cs:41)\nUnityEditor.EditorApplication:ExecuteMenuItem (string)\nUnity.Pipeline.Editor.Commands.MenuItemCommand:InvokeMenu (string) (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Editor/Commands/MenuItemCommand.cs:75)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nUnity.Pipeline.Commands.DefaultCommandQueue:InvokeDirect (Unity.Pipeline.Commands.CommandContext,Unity.Pipeline.Commands.CommandInfo,object[]) (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Runtime/CommandExecution/CommandQueue/DefaultCommandQueue.cs:487)\nUnity.Pipeline.Commands.DefaultCommandQueue/<>c__DisplayClass19_0:<Invoke>b__1 () (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Runtime/CommandExecution/CommandQueue/DefaultCommandQueue.cs:409)\nUnity.Pipeline.Threading.Dispatcher/WorkItem`1<object>:ExecuteCore () (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Runtime/Common/Dispatcher.cs:342)\nUnity.Pipeline.Threading.Dispatcher/WorkItem:Execute () (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Runtime/Common/Dispatcher.cs:285)\nUnity.Pipeline.Threading.Dispatcher:ProcessWorkQueue (int) (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Runtime/Common/Dispatcher.cs:251)\nUnity.Pipeline.Threading.Dispatcher:ProcessWorkQueue () (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Runtime/Common/Dispatcher.cs:266)\nUnityEditor.EditorApplication:Internal_CallUpdateFunctions ()\n",
+          "seeded": false
+        },
+        {
+          "seq": 169562,
+          "timestampUtc": "2026-10-22T17:00:56.815208Z",
+          "level": "error",
+          "logType": "Error",
+          "message": "Releasing render texture that is set as Camera.targetTexture!",
+          "stackTrace": "UnityEngine.Object:DestroyImmediate (UnityEngine.Object)\nMiniFazendinha.EditorTools.FarmV36Setup:Portrait (MiniFazendinha.Animals.AnimalDefinition) (at Assets/MiniFazendinha/Scripts/Editor/FarmV36Setup.cs:52)\nMiniFazendinha.EditorTools.FarmV36Setup:Apply () (at Assets/MiniFazendinha/Scripts/Editor/FarmV36Setup.cs:41)\nUnityEditor.EditorApplication:ExecuteMenuItem (string)\nUnity.Pipeline.Editor.Commands.MenuItemCommand:InvokeMenu (string) (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Editor/Commands/MenuItemCommand.cs:75)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nUnity.Pipeline.Commands.DefaultCommandQueue:InvokeDirect (Unity.Pipeline.Commands.CommandContext,Unity.Pipeline.Commands.CommandInfo,object[]) (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Runtime/CommandExecution/CommandQueue/DefaultCommandQueue.cs:487)\nUnity.Pipeline.Commands.DefaultCommandQueue/<>c__DisplayClass19_0:<Invoke>b__1 () (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Runtime/CommandExecution/CommandQueue/DefaultCommandQueue.cs:409)\nUnity.Pipeline.Threading.Dispatcher/WorkItem`1<object>:ExecuteCore () (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Runtime/Common/Dispatcher.cs:342)\nUnity.Pipeline.Threading.Dispatcher/WorkItem:Execute () (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Runtime/Common/Dispatcher.cs:285)\nUnity.Pipeline.Threading.Dispatcher:ProcessWorkQueue (int) (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Runtime/Common/Dispatcher.cs:251)\nUnity.Pipeline.Threading.Dispatcher:ProcessWorkQueue () (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Runtime/Common/Dispatcher.cs:266)\nUnityEditor.EditorApplication:Internal_CallUpdateFunctions ()\n",
+          "seeded": false
+        },
+        {
+          "seq": 169563,
+          "timestampUtc": "2026-10-22T17:00:56.9632844Z",
+          "level": "error",
+          "logType": "Error",
+          "message": "Releasing render texture that is set as Camera.targetTexture!",
+          "stackTrace": "UnityEngine.Object:DestroyImmediate (UnityEngine.Object)\nMiniFazendinha.EditorTools.FarmV36Setup:Portrait (MiniFazendinha.Animals.AnimalDefinition) (at Assets/MiniFazendinha/Scripts/Editor/FarmV36Setup.cs:52)\nMiniFazendinha.EditorTools.FarmV36Setup:Apply () (at Assets/MiniFazendinha/Scripts/Editor/FarmV36Setup.cs:41)\nUnityEditor.EditorApplication:ExecuteMenuItem (string)\nUnity.Pipeline.Editor.Commands.MenuItemCommand:InvokeMenu (string) (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Editor/Commands/MenuItemCommand.cs:75)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nUnity.Pipeline.Commands.DefaultCommandQueue:InvokeDirect (Unity.Pipeline.Commands.CommandContext,Unity.Pipeline.Commands.CommandInfo,object[]) (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Runtime/CommandExecution/CommandQueue/DefaultCommandQueue.cs:487)\nUnity.Pipeline.Commands.DefaultCommandQueue/<>c__DisplayClass19_0:<Invoke>b__1 () (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Runtime/CommandExecution/CommandQueue/DefaultCommandQueue.cs:409)\nUnity.Pipeline.Threading.Dispatcher/WorkItem`1<object>:ExecuteCore () (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Runtime/Common/Dispatcher.cs:342)\nUnity.Pipeline.Threading.Dispatcher/WorkItem:Execute () (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Runtime/Common/Dispatcher.cs:285)\nUnity.Pipeline.Threading.Dispatcher:ProcessWorkQueue (int) (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Runtime/Common/Dispatcher.cs:251)\nUnity.Pipeline.Threading.Dispatcher:ProcessWorkQueue () (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Runtime/Common/Dispatcher.cs:266)\nUnityEditor.EditorApplication:Internal_CallUpdateFunctions ()\n",
+          "seeded": false
+        },
+        {
+          "seq": 169564,
+          "timestampUtc": "2026-10-22T17:00:57.113103Z",
+          "level": "error",
+          "logType": "Error",
+          "message": "Releasing render texture that is set as Camera.targetTexture!",
+          "stackTrace": "UnityEngine.Object:DestroyImmediate (UnityEngine.Object)\nMiniFazendinha.EditorTools.FarmV36Setup:Portrait (MiniFazendinha.Animals.AnimalDefinition) (at Assets/MiniFazendinha/Scripts/Editor/FarmV36Setup.cs:52)\nMiniFazendinha.EditorTools.FarmV36Setup:Apply () (at Assets/MiniFazendinha/Scripts/Editor/FarmV36Setup.cs:41)\nUnityEditor.EditorApplication:ExecuteMenuItem (string)\nUnity.Pipeline.Editor.Commands.MenuItemCommand:InvokeMenu (string) (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Editor/Commands/MenuItemCommand.cs:75)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nUnity.Pipeline.Commands.DefaultCommandQueue:InvokeDirect (Unity.Pipeline.Commands.CommandContext,Unity.Pipeline.Commands.CommandInfo,object[]) (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Runtime/CommandExecution/CommandQueue/DefaultCommandQueue.cs:487)\nUnity.Pipeline.Commands.DefaultCommandQueue/<>c__DisplayClass19_0:<Invoke>b__1 () (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Runtime/CommandExecution/CommandQueue/DefaultCommandQueue.cs:409)\nUnity.Pipeline.Threading.Dispatcher/WorkItem`1<object>:ExecuteCore () (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Runtime/Common/Dispatcher.cs:342)\nUnity.Pipeline.Threading.Dispatcher/WorkItem:Execute () (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Runtime/Common/Dispatcher.cs:285)\nUnity.Pipeline.Threading.Dispatcher:ProcessWorkQueue (int) (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Runtime/Common/Dispatcher.cs:251)\nUnity.Pipeline.Threading.Dispatcher:ProcessWorkQueue () (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Runtime/Common/Dispatcher.cs:266)\nUnityEditor.EditorApplication:Internal_CallUpdateFunctions ()\n",
+          "seeded": false
+        },
+        {
+          "seq": 169565,
+          "timestampUtc": "2026-10-22T17:00:57.2543358Z",
+          "level": "error",
+          "logType": "Error",
+          "message": "Releasing render texture that is set as Camera.targetTexture!",
+          "stackTrace": "UnityEngine.Object:DestroyImmediate (UnityEngine.Object)\nMiniFazendinha.EditorTools.FarmV36Setup:Portrait (MiniFazendinha.Animals.AnimalDefinition) (at Assets/MiniFazendinha/Scripts/Editor/FarmV36Setup.cs:52)\nMiniFazendinha.EditorTools.FarmV36Setup:Apply () (at Assets/MiniFazendinha/Scripts/Editor/FarmV36Setup.cs:41)\nUnityEditor.EditorApplication:ExecuteMenuItem (string)\nUnity.Pipeline.Editor.Commands.MenuItemCommand:InvokeMenu (string) (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Editor/Commands/MenuItemCommand.cs:75)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nUnity.Pipeline.Commands.DefaultCommandQueue:InvokeDirect (Unity.Pipeline.Commands.CommandContext,Unity.Pipeline.Commands.CommandInfo,object[]) (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Runtime/CommandExecution/CommandQueue/DefaultCommandQueue.cs:487)\nUnity.Pipeline.Commands.DefaultCommandQueue/<>c__DisplayClass19_0:<Invoke>b__1 () (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Runtime/CommandExecution/CommandQueue/DefaultCommandQueue.cs:409)\nUnity.Pipeline.Threading.Dispatcher/WorkItem`1<object>:ExecuteCore () (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Runtime/Common/Dispatcher.cs:342)\nUnity.Pipeline.Threading.Dispatcher/WorkItem:Execute () (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Runtime/Common/Dispatcher.cs:285)\nUnity.Pipeline.Threading.Dispatcher:ProcessWorkQueue (int) (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Runtime/Common/Dispatcher.cs:251)\nUnity.Pipeline.Threading.Dispatcher:ProcessWorkQueue () (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Runtime/Common/Dispatcher.cs:266)\nUnityEditor.EditorApplication:Internal_CallUpdateFunctions ()\n",
+          "seeded": false
+        },
+        {
+          "seq": 169582,
+          "timestampUtc": "2026-10-22T17:05:21.7104303Z",
+          "level": "error",
+          "logType": "Error",
+          "message": "Releasing render texture that is set as Camera.targetTexture!",
+          "stackTrace": "UnityEngine.Object:DestroyImmediate (UnityEngine.Object)\nMiniFazendinha.EditorTools.FarmV36Setup:Portrait (MiniFazendinha.Animals.AnimalDefinition) (at Assets/MiniFazendinha/Scripts/Editor/FarmV36Setup.cs:53)\nMiniFazendinha.EditorTools.FarmV36Setup:Apply () (at Assets/MiniFazendinha/Scripts/Editor/FarmV36Setup.cs:42)\nUnityEditor.EditorApplication:ExecuteMenuItem (string)\nUnity.Pipeline.Editor.Commands.MenuItemCommand:InvokeMenu (string) (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Editor/Commands/MenuItemCommand.cs:75)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nUnity.Pipeline.Commands.DefaultCommandQueue:InvokeDirect (Unity.Pipeline.Commands.CommandContext,Unity.Pipeline.Commands.CommandInfo,object[]) (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Runtime/CommandExecution/CommandQueue/DefaultCommandQueue.cs:487)\nUnity.Pipeline.Commands.DefaultCommandQueue/<>c__DisplayClass19_0:<Invoke>b__1 () (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Runtime/CommandExecution/CommandQueue/DefaultCommandQueue.cs:409)\nUnity.Pipeline.Threading.Dispatcher/WorkItem`1<object>:ExecuteCore () (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Runtime/Common/Dispatcher.cs:342)\nUnity.Pipeline.Threading.Dispatcher/WorkItem:Execute () (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Runtime/Common/Dispatcher.cs:285)\nUnity.Pipeline.Threading.Dispatcher:ProcessWorkQueue (int) (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Runtime/Common/Dispatcher.cs:251)\nUnity.Pipeline.Threading.Dispatcher:ProcessWorkQueue () (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Runtime/Common/Dispatcher.cs:266)\nUnityEditor.EditorApplication:Internal_CallUpdateFunctions ()\n",
+          "seeded": false
+        },
+        {
+          "seq": 169583,
+          "timestampUtc": "2026-10-22T17:05:21.8292394Z",
+          "level": "error",
+          "logType": "Error",
+          "message": "Releasing render texture that is set as Camera.targetTexture!",
+          "stackTrace": "UnityEngine.Object:DestroyImmediate (UnityEngine.Object)\nMiniFazendinha.EditorTools.FarmV36Setup:Portrait (MiniFazendinha.Animals.AnimalDefinition) (at Assets/MiniFazendinha/Scripts/Editor/FarmV36Setup.cs:53)\nMiniFazendinha.EditorTools.FarmV36Setup:Apply () (at Assets/MiniFazendinha/Scripts/Editor/FarmV36Setup.cs:42)\nUnityEditor.EditorApplication:ExecuteMenuItem (string)\nUnity.Pipeline.Editor.Commands.MenuItemCommand:InvokeMenu (string) (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Editor/Commands/MenuItemCommand.cs:75)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nUnity.Pipeline.Commands.DefaultCommandQueue:InvokeDirect (Unity.Pipeline.Commands.CommandContext,Unity.Pipeline.Commands.CommandInfo,object[]) (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Runtime/CommandExecution/CommandQueue/DefaultCommandQueue.cs:487)\nUnity.Pipeline.Commands.DefaultCommandQueue/<>c__DisplayClass19_0:<Invoke>b__1 () (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Runtime/CommandExecution/CommandQueue/DefaultCommandQueue.cs:409)\nUnity.Pipeline.Threading.Dispatcher/WorkItem`1<object>:ExecuteCore () (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Runtime/Common/Dispatcher.cs:342)\nUnity.Pipeline.Threading.Dispatcher/WorkItem:Execute () (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Runtime/Common/Dispatcher.cs:285)\nUnity.Pipeline.Threading.Dispatcher:ProcessWorkQueue (int) (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Runtime/Common/Dispatcher.cs:251)\nUnity.Pipeline.Threading.Dispatcher:ProcessWorkQueue () (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Runtime/Common/Dispatcher.cs:266)\nUnityEditor.EditorApplication:Internal_CallUpdateFunctions ()\n",
+          "seeded": false
+        },
+        {
+          "seq": 169584,
+          "timestampUtc": "2026-10-22T17:05:21.9235996Z",
+          "level": "error",
+          "logType": "Error",
+          "message": "Releasing render texture that is set as Camera.targetTexture!",
+          "stackTrace": "UnityEngine.Object:DestroyImmediate (UnityEngine.Object)\nMiniFazendinha.EditorTools.FarmV36Setup:Portrait (MiniFazendinha.Animals.AnimalDefinition) (at Assets/MiniFazendinha/Scripts/Editor/FarmV36Setup.cs:53)\nMiniFazendinha.EditorTools.FarmV36Setup:Apply () (at Assets/MiniFazendinha/Scripts/Editor/FarmV36Setup.cs:42)\nUnityEditor.EditorApplication:ExecuteMenuItem (string)\nUnity.Pipeline.Editor.Commands.MenuItemCommand:InvokeMenu (string) (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Editor/Commands/MenuItemCommand.cs:75)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nUnity.Pipeline.Commands.DefaultCommandQueue:InvokeDirect (Unity.Pipeline.Commands.CommandContext,Unity.Pipeline.Commands.CommandInfo,object[]) (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Runtime/CommandExecution/CommandQueue/DefaultCommandQueue.cs:487)\nUnity.Pipeline.Commands.DefaultCommandQueue/<>c__DisplayClass19_0:<Invoke>b__1 () (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Runtime/CommandExecution/CommandQueue/DefaultCommandQueue.cs:409)\nUnity.Pipeline.Threading.Dispatcher/WorkItem`1<object>:ExecuteCore () (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Runtime/Common/Dispatcher.cs:342)\nUnity.Pipeline.Threading.Dispatcher/WorkItem:Execute () (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Runtime/Common/Dispatcher.cs:285)\nUnity.Pipeline.Threading.Dispatcher:ProcessWorkQueue (int) (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Runtime/Common/Dispatcher.cs:251)\nUnity.Pipeline.Threading.Dispatcher:ProcessWorkQueue () (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Runtime/Common/Dispatcher.cs:266)\nUnityEditor.EditorApplication:Internal_CallUpdateFunctions ()\n",
+          "seeded": false
+        },
+        {
+          "seq": 169585,
+          "timestampUtc": "2026-10-22T17:05:22.012079Z",
+          "level": "error",
+          "logType": "Error",
+          "message": "Releasing render texture that is set as Camera.targetTexture!",
+          "stackTrace": "UnityEngine.Object:DestroyImmediate (UnityEngine.Object)\nMiniFazendinha.EditorTools.FarmV36Setup:Portrait (MiniFazendinha.Animals.AnimalDefinition) (at Assets/MiniFazendinha/Scripts/Editor/FarmV36Setup.cs:53)\nMiniFazendinha.EditorTools.FarmV36Setup:Apply () (at Assets/MiniFazendinha/Scripts/Editor/FarmV36Setup.cs:42)\nUnityEditor.EditorApplication:ExecuteMenuItem (string)\nUnity.Pipeline.Editor.Commands.MenuItemCommand:InvokeMenu (string) (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Editor/Commands/MenuItemCommand.cs:75)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nUnity.Pipeline.Commands.DefaultCommandQueue:InvokeDirect (Unity.Pipeline.Commands.CommandContext,Unity.Pipeline.Commands.CommandInfo,object[]) (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Runtime/CommandExecution/CommandQueue/DefaultCommandQueue.cs:487)\nUnity.Pipeline.Commands.DefaultCommandQueue/<>c__DisplayClass19_0:<Invoke>b__1 () (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Runtime/CommandExecution/CommandQueue/DefaultCommandQueue.cs:409)\nUnity.Pipeline.Threading.Dispatcher/WorkItem`1<object>:ExecuteCore () (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Runtime/Common/Dispatcher.cs:342)\nUnity.Pipeline.Threading.Dispatcher/WorkItem:Execute () (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Runtime/Common/Dispatcher.cs:285)\nUnity.Pipeline.Threading.Dispatcher:ProcessWorkQueue (int) (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Runtime/Common/Dispatcher.cs:251)\nUnity.Pipeline.Threading.Dispatcher:ProcessWorkQueue () (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Runtime/Common/Dispatcher.cs:266)\nUnityEditor.EditorApplication:Internal_CallUpdateFunctions ()\n",
+          "seeded": false
+        },
+        {
+          "seq": 169586,
+          "timestampUtc": "2026-10-22T17:05:22.1002903Z",
+          "level": "error",
+          "logType": "Error",
+          "message": "Releasing render texture that is set as Camera.targetTexture!",
+          "stackTrace": "UnityEngine.Object:DestroyImmediate (UnityEngine.Object)\nMiniFazendinha.EditorTools.FarmV36Setup:Portrait (MiniFazendinha.Animals.AnimalDefinition) (at Assets/MiniFazendinha/Scripts/Editor/FarmV36Setup.cs:53)\nMiniFazendinha.EditorTools.FarmV36Setup:Apply () (at Assets/MiniFazendinha/Scripts/Editor/FarmV36Setup.cs:42)\nUnityEditor.EditorApplication:ExecuteMenuItem (string)\nUnity.Pipeline.Editor.Commands.MenuItemCommand:InvokeMenu (string) (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Editor/Commands/MenuItemCommand.cs:75)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nUnity.Pipeline.Commands.DefaultCommandQueue:InvokeDirect (Unity.Pipeline.Commands.CommandContext,Unity.Pipeline.Commands.CommandInfo,object[]) (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Runtime/CommandExecution/CommandQueue/DefaultCommandQueue.cs:487)\nUnity.Pipeline.Commands.DefaultCommandQueue/<>c__DisplayClass19_0:<Invoke>b__1 () (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Runtime/CommandExecution/CommandQueue/DefaultCommandQueue.cs:409)\nUnity.Pipeline.Threading.Dispatcher/WorkItem`1<object>:ExecuteCore () (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Runtime/Common/Dispatcher.cs:342)\nUnity.Pipeline.Threading.Dispatcher/WorkItem:Execute () (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Runtime/Common/Dispatcher.cs:285)\nUnity.Pipeline.Threading.Dispatcher:ProcessWorkQueue (int) (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Runtime/Common/Dispatcher.cs:251)\nUnity.Pipeline.Threading.Dispatcher:ProcessWorkQueue () (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Runtime/Common/Dispatcher.cs:266)\nUnityEditor.EditorApplication:Internal_CallUpdateFunctions ()\n",
+          "seeded": false
+        },
+        {
+          "seq": 169602,
+          "timestampUtc": "2026-10-22T17:10:52.5909904Z",
+          "level": "error",
+          "logType": "Exception",
+          "message": "Exception: Edit Mode required",
+          "stackTrace": "MiniFazendinha.EditorTools.FarmV36Setup.Apply () (at Assets/MiniFazendinha/Scripts/Editor/FarmV36Setup.cs:47)\nUnityEditor.EditorApplication:ExecuteMenuItem(String)\nUnity.Pipeline.Editor.Commands.MenuItemCommand:InvokeMenu(String) (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Editor/Commands/MenuItemCommand.cs:75)\nSystem.Reflection.MethodBase:Invoke(Object, Object[])\nUnity.Pipeline.Commands.DefaultCommandQueue:InvokeDirect(CommandContext, CommandInfo, Object[]) (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Runtime/CommandExecution/CommandQueue/DefaultCommandQueue.cs:487)\nUnity.Pipeline.Commands.<>c__DisplayClass19_0:<Invoke>b__1() (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Runtime/CommandExecution/CommandQueue/DefaultCommandQueue.cs:409)\nUnity.Pipeline.Threading.WorkItem`1:ExecuteCore() (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Runtime/Common/Dispatcher.cs:342)\nUnity.Pipeline.Threading.WorkItem:Execute() (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Runtime/Common/Dispatcher.cs:285)\nUnity.Pipeline.Threading.Dispatcher:ProcessWorkQueue(Int32) (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Runtime/Common/Dispatcher.cs:251)\nUnity.Pipeline.Threading.Dispatcher:ProcessWorkQueue() (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Runtime/Common/Dispatcher.cs:266)\nUnityEditor.EditorApplication:Internal_CallUpdateFunctions()\n",
+          "seeded": false
+        },
+        {
+          "seq": 169604,
+          "timestampUtc": "2026-10-22T17:11:16.1477491Z",
+          "level": "error",
+          "logType": "Error",
+          "message": "ExecuteCommandByName: No command named 'console get_logs' is available. Run 'unity command' to list the commands this instance exposes.",
+          "stackTrace": "UnityEngine.Debug:LogError (object)\nUnity.Pipeline.BasePipelineServer:CommandNotFound (Unity.Pipeline.BasePipelineServer/RawCommandMiss) (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Runtime/Common/BasePipelineServer.cs:3034)\nUnity.Pipeline.BasePipelineServer:ResolveRawCommand (System.Collections.Generic.IReadOnlyList`1<string>,Unity.Pipeline.Commands.CommandIndex) (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Runtime/Common/BasePipelineServer.cs:2971)\nUnity.Pipeline.Commands.DefaultCommandExecutor:Bind (Unity.Pipeline.Commands.CommandRequest,Newtonsoft.Json.Linq.JObject&) (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Runtime/CommandExecution/CommandExecutor/DefaultCommandExecutor.cs:61)\nUnity.Pipeline.Commands.DefaultCommandExecutor:Execute (Unity.Pipeline.Commands.CommandRequest) (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Runtime/CommandExecution/CommandExecutor/DefaultCommandExecutor.cs:27)\nUnity.Pipeline.BasePipelineServer/<HandleExecRequest>d__148:MoveNext () (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Runtime/Common/BasePipelineServer.cs:2462)\nSystem.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<int>:SetResult (int)\nUnity.Pipeline.MaxLengthStream/<ReadAsync>d__6:MoveNext () (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Runtime/Common/MaxLengthStream.cs:46)\nSystem.Threading._ThreadPoolWaitCallback:PerformWaitCallback ()\n",
+          "seeded": false
+        },
+        {
+          "seq": 169605,
+          "timestampUtc": "2026-10-22T17:12:27.1323371Z",
+          "level": "error",
+          "logType": "Error",
+          "message": "Releasing render texture that is set as Camera.targetTexture!",
+          "stackTrace": "UnityEngine.Object:DestroyImmediate (UnityEngine.Object)\nMiniFazendinha.EditorTools.FarmV36Setup:Portrait (MiniFazendinha.Animals.AnimalDefinition) (at Assets/MiniFazendinha/Scripts/Editor/FarmV36Setup.cs:53)\nMiniFazendinha.EditorTools.FarmV36Setup:Apply () (at Assets/MiniFazendinha/Scripts/Editor/FarmV36Setup.cs:42)\nUnityEditor.EditorApplication:ExecuteMenuItem (string)\nUnity.Pipeline.Editor.Commands.MenuItemCommand:InvokeMenu (string) (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Editor/Commands/MenuItemCommand.cs:75)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nUnity.Pipeline.Commands.DefaultCommandQueue:InvokeDirect (Unity.Pipeline.Commands.CommandContext,Unity.Pipeline.Commands.CommandInfo,object[]) (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Runtime/CommandExecution/CommandQueue/DefaultCommandQueue.cs:487)\nUnity.Pipeline.Commands.DefaultCommandQueue/<>c__DisplayClass19_0:<Invoke>b__1 () (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Runtime/CommandExecution/CommandQueue/DefaultCommandQueue.cs:409)\nUnity.Pipeline.Threading.Dispatcher/WorkItem`1<object>:ExecuteCore () (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Runtime/Common/Dispatcher.cs:342)\nUnity.Pipeline.Threading.Dispatcher/WorkItem:Execute () (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Runtime/Common/Dispatcher.cs:285)\nUnity.Pipeline.Threading.Dispatcher:ProcessWorkQueue (int) (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Runtime/Common/Dispatcher.cs:251)\nUnity.Pipeline.Threading.Dispatcher:ProcessWorkQueue () (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Runtime/Common/Dispatcher.cs:266)\nUnityEditor.EditorApplication:Internal_CallUpdateFunctions ()\n",
+          "seeded": false
+        },
+        {
+          "seq": 169606,
+          "timestampUtc": "2026-10-22T17:12:27.3102633Z",
+          "level": "error",
+          "logType": "Error",
+          "message": "Releasing render texture that is set as Camera.targetTexture!",
+          "stackTrace": "UnityEngine.Object:DestroyImmediate (UnityEngine.Object)\nMiniFazendinha.EditorTools.FarmV36Setup:Portrait (MiniFazendinha.Animals.AnimalDefinition) (at Assets/MiniFazendinha/Scripts/Editor/FarmV36Setup.cs:53)\nMiniFazendinha.EditorTools.FarmV36Setup:Apply () (at Assets/MiniFazendinha/Scripts/Editor/FarmV36Setup.cs:42)\nUnityEditor.EditorApplication:ExecuteMenuItem (string)\nUnity.Pipeline.Editor.Commands.MenuItemCommand:InvokeMenu (string) (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Editor/Commands/MenuItemCommand.cs:75)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nUnity.Pipeline.Commands.DefaultCommandQueue:InvokeDirect (Unity.Pipeline.Commands.CommandContext,Unity.Pipeline.Commands.CommandInfo,object[]) (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Runtime/CommandExecution/CommandQueue/DefaultCommandQueue.cs:487)\nUnity.Pipeline.Commands.DefaultCommandQueue/<>c__DisplayClass19_0:<Invoke>b__1 () (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Runtime/CommandExecution/CommandQueue/DefaultCommandQueue.cs:409)\nUnity.Pipeline.Threading.Dispatcher/WorkItem`1<object>:ExecuteCore () (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Runtime/Common/Dispatcher.cs:342)\nUnity.Pipeline.Threading.Dispatcher/WorkItem:Execute () (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Runtime/Common/Dispatcher.cs:285)\nUnity.Pipeline.Threading.Dispatcher:ProcessWorkQueue (int) (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Runtime/Common/Dispatcher.cs:251)\nUnity.Pipeline.Threading.Dispatcher:ProcessWorkQueue () (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Runtime/Common/Dispatcher.cs:266)\nUnityEditor.EditorApplication:Internal_CallUpdateFunctions ()\n",
+          "seeded": false
+        },
+        {
+          "seq": 169607,
+          "timestampUtc": "2026-10-22T17:12:27.4009869Z",
+          "level": "error",
+          "logType": "Error",
+          "message": "Releasing render texture that is set as Camera.targetTexture!",
+          "stackTrace": "UnityEngine.Object:DestroyImmediate (UnityEngine.Object)\nMiniFazendinha.EditorTools.FarmV36Setup:Portrait (MiniFazendinha.Animals.AnimalDefinition) (at Assets/MiniFazendinha/Scripts/Editor/FarmV36Setup.cs:53)\nMiniFazendinha.EditorTools.FarmV36Setup:Apply () (at Assets/MiniFazendinha/Scripts/Editor/FarmV36Setup.cs:42)\nUnityEditor.EditorApplication:ExecuteMenuItem (string)\nUnity.Pipeline.Editor.Commands.MenuItemCommand:InvokeMenu (string) (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Editor/Commands/MenuItemCommand.cs:75)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nUnity.Pipeline.Commands.DefaultCommandQueue:InvokeDirect (Unity.Pipeline.Commands.CommandContext,Unity.Pipeline.Commands.CommandInfo,object[]) (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Runtime/CommandExecution/CommandQueue/DefaultCommandQueue.cs:487)\nUnity.Pipeline.Commands.DefaultCommandQueue/<>c__DisplayClass19_0:<Invoke>b__1 () (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Runtime/CommandExecution/CommandQueue/DefaultCommandQueue.cs:409)\nUnity.Pipeline.Threading.Dispatcher/WorkItem`1<object>:ExecuteCore () (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Runtime/Common/Dispatcher.cs:342)\nUnity.Pipeline.Threading.Dispatcher/WorkItem:Execute () (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Runtime/Common/Dispatcher.cs:285)\nUnity.Pipeline.Threading.Dispatcher:ProcessWorkQueue (int) (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Runtime/Common/Dispatcher.cs:251)\nUnity.Pipeline.Threading.Dispatcher:ProcessWorkQueue () (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Runtime/Common/Dispatcher.cs:266)\nUnityEditor.EditorApplication:Internal_CallUpdateFunctions ()\n",
+          "seeded": false
+        },
+        {
+          "seq": 169608,
+          "timestampUtc": "2026-10-22T17:12:27.4913186Z",
+          "level": "error",
+          "logType": "Error",
+          "message": "Releasing render texture that is set as Camera.targetTexture!",
+          "stackTrace": "UnityEngine.Object:DestroyImmediate (UnityEngine.Object)\nMiniFazendinha.EditorTools.FarmV36Setup:Portrait (MiniFazendinha.Animals.AnimalDefinition) (at Assets/MiniFazendinha/Scripts/Editor/FarmV36Setup.cs:53)\nMiniFazendinha.EditorTools.FarmV36Setup:Apply () (at Assets/MiniFazendinha/Scripts/Editor/FarmV36Setup.cs:42)\nUnityEditor.EditorApplication:ExecuteMenuItem (string)\nUnity.Pipeline.Editor.Commands.MenuItemCommand:InvokeMenu (string) (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Editor/Commands/MenuItemCommand.cs:75)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nUnity.Pipeline.Commands.DefaultCommandQueue:InvokeDirect (Unity.Pipeline.Commands.CommandContext,Unity.Pipeline.Commands.CommandInfo,object[]) (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Runtime/CommandExecution/CommandQueue/DefaultCommandQueue.cs:487)\nUnity.Pipeline.Commands.DefaultCommandQueue/<>c__DisplayClass19_0:<Invoke>b__1 () (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Runtime/CommandExecution/CommandQueue/DefaultCommandQueue.cs:409)\nUnity.Pipeline.Threading.Dispatcher/WorkItem`1<object>:ExecuteCore () (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Runtime/Common/Dispatcher.cs:342)\nUnity.Pipeline.Threading.Dispatcher/WorkItem:Execute () (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Runtime/Common/Dispatcher.cs:285)\nUnity.Pipeline.Threading.Dispatcher:ProcessWorkQueue (int) (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Runtime/Common/Dispatcher.cs:251)\nUnity.Pipeline.Threading.Dispatcher:ProcessWorkQueue () (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Runtime/Common/Dispatcher.cs:266)\nUnityEditor.EditorApplication:Internal_CallUpdateFunctions ()\n",
+          "seeded": false
+        },
+        {
+          "seq": 169609,
+          "timestampUtc": "2026-10-22T17:12:27.5945968Z",
+          "level": "error",
+          "logType": "Error",
+          "message": "Releasing render texture that is set as Camera.targetTexture!",
+          "stackTrace": "UnityEngine.Object:DestroyImmediate (UnityEngine.Object)\nMiniFazendinha.EditorTools.FarmV36Setup:Portrait (MiniFazendinha.Animals.AnimalDefinition) (at Assets/MiniFazendinha/Scripts/Editor/FarmV36Setup.cs:53)\nMiniFazendinha.EditorTools.FarmV36Setup:Apply () (at Assets/MiniFazendinha/Scripts/Editor/FarmV36Setup.cs:42)\nUnityEditor.EditorApplication:ExecuteMenuItem (string)\nUnity.Pipeline.Editor.Commands.MenuItemCommand:InvokeMenu (string) (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Editor/Commands/MenuItemCommand.cs:75)\nSystem.Reflection.MethodBase:Invoke (object,object[])\nUnity.Pipeline.Commands.DefaultCommandQueue:InvokeDirect (Unity.Pipeline.Commands.CommandContext,Unity.Pipeline.Commands.CommandInfo,object[]) (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Runtime/CommandExecution/CommandQueue/DefaultCommandQueue.cs:487)\nUnity.Pipeline.Commands.DefaultCommandQueue/<>c__DisplayClass19_0:<Invoke>b__1 () (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Runtime/CommandExecution/CommandQueue/DefaultCommandQueue.cs:409)\nUnity.Pipeline.Threading.Dispatcher/WorkItem`1<object>:ExecuteCore () (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Runtime/Common/Dispatcher.cs:342)\nUnity.Pipeline.Threading.Dispatcher/WorkItem:Execute () (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Runtime/Common/Dispatcher.cs:285)\nUnity.Pipeline.Threading.Dispatcher:ProcessWorkQueue (int) (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Runtime/Common/Dispatcher.cs:251)\nUnity.Pipeline.Threading.Dispatcher:ProcessWorkQueue () (at ./Library/PackageCache/com.unity.pipeline@f311b58065e4/Runtime/Common/Dispatcher.cs:266)\nUnityEditor.EditorApplication:Internal_CallUpdateFunctions ()\n",
+          "seeded": false
+        }
+      ],
+      "cursor": 169609,
+      "session": "b121a34762d74c29899d67cc551acf6c",
+      "returned": 22,
+      "dropped": false,
+      "reset": false,
+      "counts": {
+        "error": 22,
+        "warn": 89,
+        "log": 55
+      },
+      "groundTruth": {
+        "sampledUtc": "2026-10-22T17:13:38.9013984Z",
+        "ageMs": 42,
+        "compilationFailed": false,
+        "compiling": false,
+        "consoleErrors": 7,
+        "consoleWarnings": 2,
+        "consoleLogs": 0,
+        "seeded": true
+      }
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7801,
+      "projectPath": "C:\\Users\\Túlio\\My project"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

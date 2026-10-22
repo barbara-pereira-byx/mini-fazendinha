@@ -1,0 +1,12 @@
+Real unaccelerated runtime Update; no direct Produce calls for these isolated fixtures
+PASS V37Clock_Chicken first product at 60,003 s, configured 60 s
+PASS V37Clock_Duck first product at 90,024 s, configured 90 s
+PASS V37Clock_Cow first product at 119,999 s, configured 120 s
+PASS V37Clock_Pig first product at 150,078 s, configured 150 s
+PASS V37Clock_Sheep first product at 180,069 s, configured 180 s
+PASS V37Clock_Chicken available=3 after 185,06 s
+PASS V37Clock_Cow available=2 after 185,06 s
+PASS V37Clock_Duck available=2 after 185,06 s
+PASS V37Clock_Pig available=1 after 185,06 s
+PASS V37Clock_Sheep available=2 after 185,06 s
+COMPLETED
